@@ -22,24 +22,43 @@ class AuthController extends Controller
             ]);
         }
 
+        return response()->json($this->returnToken($token), 200);
+    }
+
+    public function refresh()
+    {
+        $newToken = JWTAuth::refresh();
+
+        return response()->json($this->returnToken($newToken), 200);
+    }
+
+    public function logout()
+    {
+        JWTAuth::logout();
+        return response()->json(['message' => 'You logged out.'], 200);
+    }
+
+    public function me()
+    {
+        $user = JWTAuth::user();
         return response()->json([
+            'user' => $user,
+        ], 200);
+    }
+
+    private function returnToken(string $token): array
+    {
+        return [
             'access_token' => $token,
             'token_type' => 'bearer',
             'expires_in' => JWTAuth::factory()->getTTL() * 60,
-            'user' => auth('api')->user(),
-        ]);
+            'user' => JWTAuth::user(),
+            'message' => 'You are logged in.'
+        ];
     }
 
-    public function refresh(Request $request)
-    {
-        return 'refresh';
-    }
-    public function logout(Request $request)
-    {
-        return 'logout';
-    }
-    public function me(Request $request)
-    {
-        return 'me';
+    //TODO: json standard format to frontend
+    private function returnAuthPayload() {
+        return;
     }
 }
