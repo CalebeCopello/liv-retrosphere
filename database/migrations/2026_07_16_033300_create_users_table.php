@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('display_name')->unique();
             $table->string('avatar_path')->nullable();
             $table->text('bio')->nullable();
-            $table->boolean('status')->default(1);
+            $table->tinyInteger('status')->default(1);
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
             $table->softDeletes();
