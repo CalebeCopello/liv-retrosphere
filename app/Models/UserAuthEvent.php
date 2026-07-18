@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Override;
 
 class UserAuthEvent extends Model
 {
     use HasFactory, HasUuids;
 
     protected $keyType = 'string';
+
     public $incrementing = false;
 
     protected $fillable = [
@@ -19,14 +19,14 @@ class UserAuthEvent extends Model
         'event_type',
         'ip_address',
         'user_agent',
-        'is_success'
+        'is_success',
     ];
 
     protected function casts(): array
     {
         return [
             'event_type' => 'integer',
-            'is_success' => 'boolean'
+            'is_success' => 'boolean',
         ];
     }
 
@@ -34,5 +34,4 @@ class UserAuthEvent extends Model
     {
         return $this->belongsTo(User::class);
     }
-    
 }

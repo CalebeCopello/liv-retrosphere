@@ -10,9 +10,10 @@ use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject
 {
-    use HasFactory, Notifiable, HasUuids;
+    use HasFactory, HasUuids, Notifiable;
 
-    protected  $keyType = 'string';
+    protected $keyType = 'string';
+
     public $incrementing = false;
 
     protected $fillable = [
@@ -34,7 +35,7 @@ class User extends Authenticatable implements JWTSubject
     {
         return [
             'password' => 'hashed',
-            'email_verified_at' => 'datetime'
+            'email_verified_at' => 'datetime',
         ];
     }
 

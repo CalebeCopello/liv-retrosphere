@@ -8,23 +8,23 @@ use App\Models\User;
 use App\Services\Auth\UserAuthEventService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Hash;
 use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
     public function __construct(protected UserAuthEventService $authEventService) {}
+
     public function register(Request $request): JsonResponse
     {
         $payload = $request->validate([
             'username' => ['required', 'string', 'unique:users,username'],
             'email' => ['required', 'email', 'unique:users,email'],
-            'password' => ['required', 'string', 'min:4', 'max:32']
+            'password' => ['required', 'string', 'min:4', 'max:32'],
         ]);
 
         $user = User::create([
             'username' => $payload['username'],
-            'display_name' => $payload['username'] . bin2hex(random_bytes(2)),
+            'display_name' => $payload['username'].bin2hex(random_bytes(2)),
             'email' => $payload['email'],
             'password' => $payload['password'],
         ]);
@@ -35,20 +35,22 @@ class AuthController extends Controller
 
         return $this->returnAuthPayload(message: 'Your account was created.', token: $token, user: $user, errors: null, httpCode: 201);
     }
+
     public function login(Request $request): JsonResponse
     {
         $credentials = $request->validate([
             'email' => ['required', 'email'],
-            'password' => ['required', 'string']
+            'password' => ['required', 'string'],
         ]);
 
         $token = JWTAuth::attempt($credentials);
 
-        if (!$token) {
+        if (! $token) {
             return $this->returnAuthPayload(message: 'The provided credentials are incorrect.', token: null, user: null, errors: ['email' => ['The provided credentials are incorrect.']], httpCode: 401);
         }
 
         $user = JWTAuth::user();
+
         $this->authEventService->log(user: $user, eventType: UserAuthEventType::LOGIN, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
 
         return $this->returnAuthPayload(message: 'You are logged in.', token: $token, user: JWTAuth::user(), errors: null, httpCode: 200);
@@ -60,7 +62,6 @@ class AuthController extends Controller
         $user = JWTAuth::setToken($newToken)->toUser();
 
         $this->authEventService->log(user: $user, eventType: UserAuthEventType::TOKEN_REFRESH, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
-
 
         return $this->returnAuthPayload(message: 'Your token was refreshed.', token: $newToken, user: $user, errors: null, httpCode: 200);
     }
