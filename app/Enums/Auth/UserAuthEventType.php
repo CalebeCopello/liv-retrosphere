@@ -4,9 +4,11 @@ namespace App\Enums\Auth;
 
 enum UserAuthEventType: int
 {
-    case LOGIN = 1;
-    case LOGOUT = 2;
-    case FAILED_LOGIN = 3;
-    case PASSWORD_CHANGED = 4;
-    case PASSWORD_RESET = 5;
+    case REGISTER = 1;
+    case LOGIN = 2;
+    case LOGOUT = 3;
+    case FAILED_LOGIN = 4;
+    case PASSWORD_CHANGED = 5;
+    case PASSWORD_RESET = 6;
+    case TOKEN_REFRESH = 7;
 }

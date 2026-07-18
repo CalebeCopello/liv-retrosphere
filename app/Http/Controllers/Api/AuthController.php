@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Enums\Auth\UserAuthEventType;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Services\Auth\UserAuthEventService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -11,11 +13,13 @@ use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
 
 class AuthController extends Controller
 {
-    public function register(Request $request): JsonResponse {
+    public function __construct(protected UserAuthEventService $authEventService) {}
+    public function register(Request $request): JsonResponse
+    {
         $payload = $request->validate([
             'username' => ['required', 'string', 'unique:users,username'],
             'email' => ['required', 'email', 'unique:users,email'],
-            'password' => ['required','string', 'min:4', 'max:32']
+            'password' => ['required', 'string', 'min:4', 'max:32']
         ]);
 
         $user = User::create([
@@ -26,6 +30,8 @@ class AuthController extends Controller
         ]);
 
         $token = JWTAuth::fromUser($user);
+
+        $this->authEventService->log(user: $user, eventType: UserAuthEventType::REGISTER, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
 
         return $this->returnAuthPayload(message: 'Your account was created.', token: $token, user: $user, errors: null, httpCode: 201);
     }
@@ -42,26 +48,36 @@ class AuthController extends Controller
             return $this->returnAuthPayload(message: 'The provided credentials are incorrect.', token: null, user: null, errors: ['email' => ['The provided credentials are incorrect.']], httpCode: 401);
         }
 
+        $user = JWTAuth::user();
+        $this->authEventService->log(user: $user, eventType: UserAuthEventType::LOGIN, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
+
         return $this->returnAuthPayload(message: 'You are logged in.', token: $token, user: JWTAuth::user(), errors: null, httpCode: 200);
     }
 
-    public function refresh(): JsonResponse
+    public function refresh(Request $request): JsonResponse
     {
         $newToken = JWTAuth::parseToken()->refresh();
+        $user = JWTAuth::setToken($newToken)->toUser();
 
-        return $this->returnAuthPayload(message: 'Your token was refreshed.', token: $newToken, user: JWTAuth::setToken($newToken)->toUser(), errors: null, httpCode: 200);
+        $this->authEventService->log(user: $user, eventType: UserAuthEventType::TOKEN_REFRESH, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
+
+
+        return $this->returnAuthPayload(message: 'Your token was refreshed.', token: $newToken, user: $user, errors: null, httpCode: 200);
     }
 
-    public function logout(): JsonResponse
+    public function logout(Request $request): JsonResponse
     {
+        $user = JWTAuth::user();
         JWTAuth::parseToken()->invalidate();
-        return $this->returnAuthPayload(message: 'You logged out.', token: null, user: null, errors: null, httpCode: 200);
+
+        $this->authEventService->log(user: $user, eventType: UserAuthEventType::LOGOUT, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
+
+        return $this->returnAuthPayload(message: 'You logged out.', token: null, user: $user, errors: null, httpCode: 200);
     }
 
     public function me(): JsonResponse
     {
         return $this->returnAuthPayload(message: 'Request succeeded.', token: null, user: JWTAuth::user(), errors: null, httpCode: 200);
-
     }
 
     private function returnAuthPayload(string $message, ?string $token, mixed $user, ?array $errors, int $httpCode): JsonResponse
