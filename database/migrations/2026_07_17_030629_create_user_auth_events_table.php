@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignUuid('user_id')->references('id')->on('users')->cascadeOnDelete();
             $table->tinyInteger('event_type');
             $table->string('ip_address');
-            $table->string('user_agent');
+            $table->text('user_agent');
             $table->boolean('is_success');
             $table->timestamps();
         });
