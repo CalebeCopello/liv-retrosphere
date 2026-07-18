@@ -11,3 +11,7 @@ Route::prefix('auth')->group(function () {
         Route::get('/me', [App\Http\Controllers\Api\AuthController::class, 'me'])->name('auth.me');
     });
 });
+
+Route::middleware('auth:api')->group(function () {
+    Route::get('/me', [App\Http\Controllers\Api\AuthController::class, 'me'])->name('auth.me');
+});
