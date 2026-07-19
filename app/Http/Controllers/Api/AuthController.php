@@ -119,7 +119,7 @@ class AuthController extends Controller
         if (!$user) {
             return $this->authErrorReturn(message: 'The authenticated user was not found.', errors: null, httpCode: Response::HTTP_UNAUTHORIZED);
         }
-     
+
         return $this->returnAuthPayload(message: 'Request succeeded.', token: null, user: $user, errors: null, httpCode: Response::HTTP_OK);
     }
 
