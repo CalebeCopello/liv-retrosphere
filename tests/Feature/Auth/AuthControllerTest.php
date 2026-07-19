@@ -245,4 +245,117 @@ class AuthControllerTest extends TestCase
             ->getJson(self::ME_ENDPOINT)
             ->assertUnauthorized();
     }
+
+    public function test_register_requires_required_fields(): void
+    {
+        $this->postJson(self::REGISTER_ENDPOINT, [])
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors([
+                'username',
+                'email',
+                'password',
+            ]);
+    }
+
+    public function test_register_rejects_duplicate_email(): void
+    {
+        $user = $this->createUser();
+
+        $this->postJson(self::REGISTER_ENDPOINT, [
+            'username' => 'anotherUser',
+            'email' => $user->email,
+            'password' => 'password123',
+        ])
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors('email');
+    }
+
+    public function test_login_requires_email_and_password(): void
+    {
+        $this->postJson(self::LOGIN_ENDPOINT, [])
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors([
+                'email',
+                'password',
+            ]);
+    }
+
+    public function test_register_requires_username_email_and_password(): void
+    {
+        $response = $this->postJson(self::REGISTER_ENDPOINT, []);
+
+        $response
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors([
+                'username',
+                'email',
+                'password',
+            ]);
+    }
+
+    public function test_register_rejects_invalid_email(): void
+    {
+        $response = $this->postJson(self::REGISTER_ENDPOINT, [
+            'username' => 'testUser',
+            'email' => 'invalid-email',
+            'password' => 'password123',
+        ]);
+
+        $response
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors('email');
+    }
+
+    public function test_register_rejects_short_username(): void
+    {
+        $response = $this->postJson(self::REGISTER_ENDPOINT, [
+            'username' => 'abc',
+            'email' => 'testuser@email.com',
+            'password' => 'password123',
+        ]);
+
+        $response
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors('username');
+    }
+
+    public function test_register_rejects_short_password(): void
+    {
+        $response = $this->postJson(self::REGISTER_ENDPOINT, [
+            'username' => 'testUser',
+            'email' => 'testuser@email.com',
+            'password' => '1234567',
+        ]);
+
+        $response
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors('password');
+    }
+
+    public function test_register_rejects_duplicate_username(): void
+    {
+        $user = $this->createUser();
+
+        $response = $this->postJson(self::REGISTER_ENDPOINT, [
+            'username' => $user->username,
+            'email' => 'another@email.com',
+            'password' => 'password123',
+        ]);
+
+        $response
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors('username');
+    }
+
+    public function test_login_rejects_invalid_email_format(): void
+    {
+        $response = $this->postJson(self::LOGIN_ENDPOINT, [
+            'email' => 'invalid-email',
+            'password' => 'password123',
+        ]);
+
+        $response
+            ->assertUnprocessable()
+            ->assertJsonValidationErrors('email');
+    }
 }
