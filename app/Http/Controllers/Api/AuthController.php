@@ -6,6 +6,7 @@ use App\Enums\Auth\UserAuthEventType;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Services\Auth\UserAuthEventService;
+use App\Services\Auth\UserSessionService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
@@ -13,7 +14,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AuthController extends Controller
 {
-    public function __construct(protected UserAuthEventService $authEventService) {}
+    public function __construct(protected UserAuthEventService $authEventService, protected UserSessionService $userSessionService) {}
 
     public function register(Request $request): JsonResponse
     {
@@ -77,6 +78,8 @@ class AuthController extends Controller
         }
 
         $this->authEventService->log(user: $user, eventType: UserAuthEventType::LOGIN, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
+
+        $this->userSessionService->createSession(user: $user, token: $token, request: $request);
 
         return $this->returnAuthPayload(message: 'You are logged in.', token: $token, user: $user, errors: null, httpCode: Response::HTTP_OK);
     }
