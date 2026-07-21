@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Enums\Auth\SessionRevocationReason;
 use App\Enums\Auth\UserAuthEventType;
 use App\Http\Controllers\Controller;
 use App\Models\User;
@@ -37,6 +38,8 @@ class AuthController extends Controller
         ]);
 
         $token = JWTAuth::fromUser($user);
+
+        $this->userSessionService->createSession(user: $user, token: $token, request: $request);
 
         $this->authEventService->log(user: $user, eventType: UserAuthEventType::REGISTER, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
 
@@ -103,12 +106,15 @@ class AuthController extends Controller
     public function logout(Request $request): JsonResponse
     {
         $user = JWTAuth::parseToken()->authenticate();
+        $token = (string) JWTAuth::getToken();
 
         if (!$user) {
             return $this->authErrorReturn(message: 'The authenticated user was not found.', errors: null, httpCode: Response::HTTP_UNAUTHORIZED);
         }
 
         $this->authEventService->log(user: $user, eventType: UserAuthEventType::LOGOUT, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
+
+        $this->userSessionService->revokeCurrentSession(token: $token, reason: SessionRevocationReason::LOGOUT);
 
         JWTAuth::parseToken()->invalidate();
 

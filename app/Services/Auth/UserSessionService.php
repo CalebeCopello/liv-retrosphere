@@ -2,6 +2,7 @@
 
 namespace App\Services\Auth;
 
+use App\Enums\Auth\SessionRevocationReason;
 use App\Models\User;
 use App\Models\UserSession;
 use Carbon\Carbon;
@@ -45,5 +46,17 @@ class UserSessionService
             'last_seen_at' => now(),
             'expires_at'   => Carbon::createFromTimestamp($payload->get('exp')),
         ]);
+    }
+
+    public function revokeCurrentSession(string $token, SessionRevocationReason $reason): UserSession
+    {
+        $payload = JWTAuth::setToken($token)->getPayload();
+
+        $jti = $payload->get('jti');
+
+        $session = UserSession::where('token_jti', $jti)->whereNull('revoked_at')->firstOrFail();
+        $session->update(['revoked_at' => now(), 'revoked_reason' => $reason->value]); 
+
+        return $session;
     }
 }
