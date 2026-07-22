@@ -22,7 +22,7 @@ class UserSessionService
 
         $agent = new Agent();
 
-        $agent->setUserAgent($request->userAgent());
+        $agent->setUserAgent($userAgent);
 
         $browser = $agent->browser() ?: 'Unknown browser';
         $platform = $agent->platform() ?: 'Unknown platform';
@@ -73,5 +73,17 @@ class UserSessionService
         ]);
 
         return $session;
+    }
+
+    public function revokeAllSessions(User $user, SessionRevocationReason $reason): int
+    {
+        $sessions = $user->sessions()
+            ->whereNull('revoked_at')
+            ->update([
+                'revoked_at' => now(),
+                'revoked_reason' => $reason->value,
+            ]);
+
+        return $sessions->count();
     }
 }

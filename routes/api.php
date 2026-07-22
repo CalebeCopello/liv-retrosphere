@@ -8,6 +8,7 @@ Route::prefix('auth')->group(function () {
     Route::post('/refresh', [App\Http\Controllers\Api\AuthController::class, 'refresh'])->name('auth.refresh');
     Route::middleware('auth:api')->group(function () {
         Route::post('logout', [App\Http\Controllers\Api\AuthController::class, 'logout'])->name('auth.logout');
+        Route::post('logout-all', [App\Http\Controllers\Api\AuthController::class, 'logoutAll'])->name('auth.logout_all');
     });
 });
 

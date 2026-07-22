@@ -124,6 +124,17 @@ class AuthController extends Controller
         return $this->returnAuthPayload(message: 'You logged out.', token: null, user: $user, errors: null, httpCode: Response::HTTP_OK);
     }
 
+    public function logoutAll(Request $request): JsonResponse 
+    {
+        $user = JWTAuth::parseToken()->authenticate();
+        $sessionsCount = $this->userSessionService->revokeAllSessions(user: $user, reason: SessionRevocationReason::LOGOUT_ALL);
+        JWTAuth::parseToken()->invalidate();
+        
+        $this->authEventService->log(user: $user, eventType: UserAuthEventType::LOGOUT_ALL, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
+
+        return $this->returnAuthPayload(message: "You logged out from all {$sessionsCount} devices.", token: null, user: $user, errors: null, httpCode: Response::HTTP_OK);
+    }
+
     public function me(): JsonResponse
     {
         $user = JWTAuth::parseToken()->authenticate();

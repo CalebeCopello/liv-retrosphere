@@ -11,4 +11,5 @@ enum UserAuthEventType: int
     case PASSWORD_CHANGED = 5;
     case PASSWORD_RESET = 6;
     case TOKEN_REFRESH = 7;
+    case LOGOUT_ALL = 8;
 }
