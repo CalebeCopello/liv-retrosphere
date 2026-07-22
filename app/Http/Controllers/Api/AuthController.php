@@ -89,6 +89,7 @@ class AuthController extends Controller
 
     public function refresh(Request $request): JsonResponse
     {
+        $oldToken = JWTAuth::getToken();
         $newToken = JWTAuth::parseToken()->refresh();
         $user = JWTAuth::setToken($newToken)->toUser();
 
@@ -99,6 +100,8 @@ class AuthController extends Controller
         }
 
         $this->authEventService->log(user: $user, eventType: UserAuthEventType::TOKEN_REFRESH, ip: $request->ip(), userAgent: $request->userAgent(), isSuccess: true);
+
+        $this->userSessionService->rotateSessionToken(oldToken: (string) $oldToken, newToken: (string) $newToken);
 
         return $this->returnAuthPayload(message: 'Your token was refreshed.', token: $newToken, user: $user, errors: null, httpCode: Response::HTTP_OK);
     }

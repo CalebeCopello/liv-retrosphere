@@ -55,7 +55,22 @@ class UserSessionService
         $jti = $payload->get('jti');
 
         $session = UserSession::where('token_jti', $jti)->whereNull('revoked_at')->firstOrFail();
-        $session->update(['revoked_at' => now(), 'revoked_reason' => $reason->value]); 
+        $session->update(['revoked_at' => now(), 'revoked_reason' => $reason->value]);
+
+        return $session;
+    }
+
+    public function rotateSessionToken(string $oldToken, string $newToken): UserSession
+    {
+        $oldPayload = JWTAuth::setToken($oldToken)->getPayload();
+        $newPayload = JWTAuth::setToken($newToken)->getPayload();
+
+        $session = UserSession::where('token_jti', $oldPayload->get('jti'))->whereNull('revoked_at')->firstOrFail();
+        $session->update([
+            'token_jti' => $newPayload->get('jti'),
+            'expires_at' => Carbon::createFromTimestamp($newPayload->get('exp')),
+            'last_seen_at' => now()
+        ]);
 
         return $session;
     }
