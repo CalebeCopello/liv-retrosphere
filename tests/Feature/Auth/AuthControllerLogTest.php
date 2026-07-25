@@ -190,7 +190,9 @@ class AuthControllerLogTest extends TestCase
     public function test_me_does_not_create_authentication_event(): void
     {
         $user = $this->createUser();
-        $token = JWTAuth::fromUser($user);
+        $token = $this->loginAndGetToken($user);
+
+        UserAuthEvent::query()->delete();
 
         $this
             ->withToken($token)

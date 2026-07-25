@@ -93,10 +93,6 @@ class AuthControllerExceptionTest extends TestCase
 
     public function test_refresh_returns_unauthorized_when_new_token_has_no_valid_user(): void
     {
-        JWTAuth::shouldReceive('getToken')
-            ->once()
-            ->andReturn('current-token');
-
         JWTAuth::shouldReceive('parseToken')
             ->twice()
             ->andReturnSelf();
