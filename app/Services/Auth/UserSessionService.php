@@ -77,13 +77,11 @@ class UserSessionService
 
     public function revokeAllSessions(User $user, SessionRevocationReason $reason): int
     {
-        $sessions = $user->sessions()
+        return $sessions = $user->sessions()
             ->whereNull('revoked_at')
             ->update([
                 'revoked_at' => now(),
                 'revoked_reason' => $reason->value,
             ]);
-
-        return $sessions->count();
     }
 }
