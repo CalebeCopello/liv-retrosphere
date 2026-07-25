@@ -142,8 +142,6 @@ class AuthControllerLogTest extends TestCase
 
         UserAuthEvent::query()->delete();
 
-        $this->travel(1)->second();
-
         $response = $this
             ->withServerVariables([
                 'REMOTE_ADDR' => '192.168.1.13',

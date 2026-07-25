@@ -4,6 +4,7 @@ namespace Tests\Feature\Auth;
 
 use App\Http\Controllers\Api\AuthController;
 use App\Services\Auth\UserAuthEventService;
+use App\Services\Auth\UserSessionService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Request;
 use Mockery\MockInterface;
@@ -28,7 +29,20 @@ class AuthControllerExceptionTest extends TestCase
             },
         );
 
-        $this->controller = new AuthController($authEventService);
+        $userSessionService = $this->mock(
+            UserSessionService::class,
+            function (MockInterface $mock): void {
+                $mock->shouldNotReceive('createSession');
+                $mock->shouldNotReceive('rotateSessionToken');
+                $mock->shouldNotReceive('revokeCurrentSession');
+                $mock->shouldNotReceive('revokeAllSessions');
+            },
+        );
+
+        $this->controller = new AuthController(
+            $authEventService,
+            $userSessionService,
+        );
     }
 
     public function test_login_returns_unauthorized_when_token_user_cannot_be_found(): void
@@ -79,9 +93,24 @@ class AuthControllerExceptionTest extends TestCase
 
     public function test_refresh_returns_unauthorized_when_new_token_has_no_valid_user(): void
     {
-        JWTAuth::shouldReceive('parseToken')
+        JWTAuth::shouldReceive('getToken')
             ->once()
+            ->andReturn('current-token');
+
+        JWTAuth::shouldReceive('parseToken')
+            ->twice()
             ->andReturnSelf();
+
+        $oldPayload = new class {
+            public function get(string $claim): string
+            {
+                return 'old-token-jti';
+            }
+        };
+
+        JWTAuth::shouldReceive('getPayload')
+            ->once()
+            ->andReturn($oldPayload);
 
         JWTAuth::shouldReceive('refresh')
             ->once()
@@ -128,6 +157,10 @@ class AuthControllerExceptionTest extends TestCase
         JWTAuth::shouldReceive('authenticate')
             ->once()
             ->andReturnNull();
+
+        JWTAuth::shouldReceive('getToken')
+            ->once()
+            ->andReturn('current-token');
 
         JWTAuth::shouldNotReceive('invalidate');
 

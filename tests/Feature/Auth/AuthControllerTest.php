@@ -24,7 +24,7 @@ class AuthControllerTest extends TestCase
         return User::factory()->create([
             'username' => 'testUser',
             'email' => 'testuser@email.com',
-            'password' => Hash::make('password123'),
+            'password' => 'password123',
         ]);
     }
 
@@ -191,12 +191,10 @@ class AuthControllerTest extends TestCase
         $user = $this->createUser();
         $oldToken = $this->loginAndGetToken($user);
 
-        $this->travel(1)->second();
-
         $response = $this->withToken($oldToken)->postJson(self::REFRESH_ENDPOINT);
 
         $response->assertOk();
-        $response->assertJsonStructure([
+    $response->assertJsonStructure([
             'message',
             'data' => [
                 'access_token',
