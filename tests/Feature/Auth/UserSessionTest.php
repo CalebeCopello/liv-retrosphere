@@ -19,6 +19,7 @@ class UserSessionTest extends TestCase
     private const REFRESH_ENDPOINT = '/api/auth/refresh';
     private const LOGOUT_ENDPOINT = '/api/auth/logout';
     private const LOGOUT_ALL_ENDPOINT = '/api/auth/logout-all';
+    private const ME_ENDPOINT = '/api/me';
 
     private function authenticatedHeader(string $token): array
     {
@@ -355,5 +356,121 @@ class UserSessionTest extends TestCase
 
         $this->assertNull($otherUserSession->revoked_at);
         $this->assertNull($otherUserSession->revoked_reason);
+    }
+
+    public function test_revoked_session_cannot_access_me(): void
+    {
+        $user = User::factory()->create();
+
+        $token = JWTAuth::fromUser($user);
+        $payload = JWTAuth::setToken($token)->getPayload();
+
+        $this->createUserSession(
+            user: $user,
+            jti: $payload->get('jti'),
+            attributes: [
+                'revoked_at' => now(),
+                'revoked_reason' => SessionRevocationReason::LOGOUT->value,
+            ],
+        );
+
+        $this
+            ->withHeaders($this->authenticatedHeader($token))
+            ->getJson(self::ME_ENDPOINT)
+            ->assertUnauthorized()
+            ->assertJsonPath('message', 'The authenticated session is no longer active.');
+    }
+
+    public function test_expired_session_cannot_access_me(): void
+    {
+        $user = User::factory()->create();
+
+        $token = JWTAuth::fromUser($user);
+        $payload = JWTAuth::setToken($token)->getPayload();
+
+        $this->createUserSession(
+            user: $user,
+            jti: $payload->get('jti'),
+            attributes: [
+                'expires_at' => now()->subMinute(),
+            ],
+        );
+
+        $this
+            ->withHeaders($this->authenticatedHeader($token))
+            ->getJson(self::ME_ENDPOINT)
+            ->assertUnauthorized()
+            ->assertJsonPath('message', 'The authenticated session is no longer active.');
+    }
+
+    public function test_valid_session_can_access_me(): void
+    {
+        $user = User::factory()->create();
+
+        $token = JWTAuth::fromUser($user);
+        $payload = JWTAuth::setToken($token)->getPayload();
+
+        $this->createUserSession(
+            user: $user,
+            jti: $payload->get('jti'),
+            attributes: [
+                'revoked_at' => null,
+                'expires_at' => now()->addHour(),
+            ],
+        );
+
+        $this
+            ->withHeaders($this->authenticatedHeader($token))
+            ->getJson(self::ME_ENDPOINT)
+            ->assertOk()
+            ->assertJsonPath('data.user.id', $user->id);
+    }
+
+    public function test_logout_all_makes_another_device_unable_to_access_me(): void
+    {
+        User::factory()->create([
+            'email' => 'testuser@email.com',
+            'password' => 'password123',
+        ]);
+
+        $firstLoginResponse = $this->postJson(self::LOGIN_ENDPOINT, [
+            'email' => 'testuser@email.com',
+            'password' => 'password123',
+        ]);
+
+        $firstLoginResponse->assertOk();
+
+        $firstDeviceToken = $firstLoginResponse->json('data.access_token');
+
+        $this->assertIsString($firstDeviceToken);
+
+        $this->travel(10)->second();
+
+        $secondLoginResponse = $this->postJson(self::LOGIN_ENDPOINT, [
+            'email' => 'testuser@email.com',
+            'password' => 'password123',
+        ]);
+
+        $secondLoginResponse->assertOk();
+
+        $secondDeviceToken = $secondLoginResponse->json('data.access_token');
+
+        $this->assertIsString($secondDeviceToken);
+        $this->assertNotSame($firstDeviceToken, $secondDeviceToken);
+
+        $this
+            ->withHeaders($this->authenticatedHeader($secondDeviceToken))
+            ->getJson(self::ME_ENDPOINT)
+            ->assertOk();
+
+        $this
+            ->withHeaders($this->authenticatedHeader($firstDeviceToken))
+            ->postJson(self::LOGOUT_ALL_ENDPOINT)
+            ->assertOk();
+
+        $this
+            ->withHeaders($this->authenticatedHeader($secondDeviceToken))
+            ->getJson(self::ME_ENDPOINT)
+            ->assertUnauthorized();
     }
 }
