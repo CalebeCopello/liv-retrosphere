@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Testing\TestResponse;
 use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
+use PHPOpenSourceSaver\JWTAuth\JWT;
 use Tests\TestCase;
 
 class AuthRateLimitTest extends TestCase
@@ -31,7 +32,7 @@ class AuthRateLimitTest extends TestCase
         );
 
         $payload = [
-            'email' => 'missing-'.Str::uuid().'@example.com',
+            'email' => 'missing-' . Str::uuid() . '@example.com',
             'password' => 'IncorrectPassword123!',
         ];
 
@@ -69,7 +70,7 @@ class AuthRateLimitTest extends TestCase
         $password = 'CorrectPassword123!';
 
         $user = User::factory()->create([
-            'email' => 'login-'.Str::uuid().'@example.com',
+            'email' => 'login-' . Str::uuid() . '@example.com',
             'password' => $password,
         ]);
 
@@ -207,35 +208,34 @@ class AuthRateLimitTest extends TestCase
             maxAttempts: 2,
         );
 
-        $firstUserIp = $this->uniqueIpAddress();
-        $secondUserIp = $this->uniqueIpAddress();
+        $sharedIpAddress = '198.51.100.10';
 
         $firstUser = User::factory()->create();
         $secondUser = User::factory()->create();
 
         $firstUserToken = $this->createSessionToken(
             user: $firstUser,
-            ipAddress: $firstUserIp,
+            ipAddress: $sharedIpAddress,
         );
 
         $secondUserToken = $this->createSessionToken(
             user: $secondUser,
-            ipAddress: $secondUserIp,
+            ipAddress: $sharedIpAddress,
         );
 
         $this->getMe(
             token: $firstUserToken,
-            ipAddress: $firstUserIp,
+            ipAddress: $sharedIpAddress,
         )->assertOk();
 
         $this->getMe(
             token: $firstUserToken,
-            ipAddress: $firstUserIp,
+            ipAddress: $sharedIpAddress,
         )->assertOk();
 
         $this->getMe(
             token: $firstUserToken,
-            ipAddress: $firstUserIp,
+            ipAddress: $sharedIpAddress,
         )
             ->assertTooManyRequests()
             ->assertJson([
@@ -244,8 +244,130 @@ class AuthRateLimitTest extends TestCase
 
         $this->getMe(
             token: $secondUserToken,
-            ipAddress: $secondUserIp,
+            ipAddress: $sharedIpAddress,
         )->assertOk();
+    }
+
+    public function test_refresh_returns_too_many_requests_after_limit(): void
+    {
+        $this->setRateLimit(
+            configKey: 'auth.refresh',
+            maxAttempts: 1,
+        );
+
+        $ipAddress = $this->uniqueIpAddress();
+        $user = User::factory()->create();
+
+        $token = $this->createSessionToken(
+            user: $user,
+            ipAddress: $ipAddress,
+        );
+
+        $response = $this->postAuthenticatedJson(
+            uri: '/api/auth/refresh',
+            token: $token,
+            ipAddress: $ipAddress,
+        )
+            ->assertOk()
+            ->assertJsonStructure([
+                'message',
+                'data' => [
+                    'access_token',
+                ],
+            ]);
+
+        $refreshedToken = $this->tokenFromResponse($response);
+
+        $this->postAuthenticatedJson(
+            uri: '/api/auth/refresh',
+            token: $refreshedToken,
+            ipAddress: $ipAddress,
+        )
+            ->assertTooManyRequests()
+            ->assertHeader('Retry-After')
+            ->assertJson([
+                'message' => 'Too many requests.',
+            ]);
+    }
+
+    public function test_logout_returns_too_many_requests_after_limit(): void
+    {
+        $this->setRateLimit(
+            configKey: 'auth.logout',
+            maxAttempts: 1,
+        );
+
+        $ipAddress = $this->uniqueIpAddress();
+        $user = User::factory()->create();
+
+        $firstToken = $this->createSessionToken(
+            user: $user,
+            ipAddress: $ipAddress,
+        );
+
+        $secondToken = $this->createSessionToken(
+            user: $user,
+            ipAddress: $ipAddress,
+        );
+
+        $this->postAuthenticatedJson(
+            uri: '/api/auth/logout',
+            token: $firstToken,
+            ipAddress: $ipAddress,
+        )->assertOk();
+
+        $this->postAuthenticatedJson(
+            uri: '/api/auth/logout',
+            token: $secondToken,
+            ipAddress: $ipAddress,
+        )
+            ->assertTooManyRequests()
+            ->assertHeader('Retry-After')
+            ->assertJson([
+                'message' => 'Too many requests.',
+            ]);
+    }
+
+    public function test_logout_all_returns_too_many_requests_after_limit(): void
+    {
+        $this->setRateLimit(
+            configKey: 'auth.logout_all',
+            maxAttempts: 1,
+        );
+
+        $ipAddress = $this->uniqueIpAddress();
+        $user = User::factory()->create();
+
+        $firstToken = $this->createSessionToken(
+            user: $user,
+            ipAddress: $ipAddress,
+        );
+
+        $this->postAuthenticatedJson(
+            uri: '/api/auth/logout-all',
+            token: $firstToken,
+            ipAddress: $ipAddress,
+        )->assertOk();
+
+        /*
+     * The first request revoked all previous sessions, so create a new
+     * valid session for the same user before testing the limiter.
+     */
+        $secondToken = $this->createSessionToken(
+            user: $user,
+            ipAddress: $ipAddress,
+        );
+
+        $this->postAuthenticatedJson(
+            uri: '/api/auth/logout-all',
+            token: $secondToken,
+            ipAddress: $ipAddress,
+        )
+            ->assertTooManyRequests()
+            ->assertHeader('Retry-After')
+            ->assertJson([
+                'message' => 'Too many requests.',
+            ]);
     }
 
     private function setRateLimit(
@@ -277,51 +399,32 @@ class AuthRateLimitTest extends TestCase
             ->postJson($uri, $payload);
     }
 
-private function getMe(
-    string $token,
-    string $ipAddress,
-): TestResponse {
-    Auth::forgetGuards();
+    private function getMe(
+        string $token,
+        string $ipAddress,
+    ): TestResponse {
+        Auth::forgetGuards();
+        JWTAuth::unsetToken();
+        app(JWT::class)->unsetToken();
 
-    return $this
-        ->withServerVariables([
-            'REMOTE_ADDR' => $ipAddress,
-            'HTTP_USER_AGENT' => 'PHPUnit',
-        ])
-        ->withToken($token)
-        ->getJson('/api/me');
-}
+        return $this
+            ->withServerVariables([
+                'REMOTE_ADDR' => $ipAddress,
+                'HTTP_USER_AGENT' => 'PHPUnit',
+            ])
+            ->withToken($token)
+            ->getJson('/api/me');
+    }
 
     private function registrationPayload(): array
     {
         $suffix = Str::lower(Str::random(12));
 
         return [
-            'username' => 'user'.$suffix,
-            'email' => $suffix.'@example.com',
+            'username' => 'user' . $suffix,
+            'email' => $suffix . '@example.com',
             'password' => 'Password123!',
         ];
-    }
-
-    private function createSessionToken(
-        User $user,
-        string $ipAddress,
-    ): string {
-        $token = JWTAuth::fromUser($user);
-        $payload = JWTAuth::setToken($token)->getPayload();
-
-        $session = new UserSession();
-        $session->user_id = $user->id;
-        $session->token_jti = (string) $payload->get('jti');
-        $session->device_name = 'PHPUnit';
-        $session->ip_address = $ipAddress;
-        $session->user_agent = 'PHPUnit';
-        $session->expires_at = Carbon::createFromTimestamp(
-            (int) $payload->get('exp'),
-        );
-        $session->save();
-
-        return $token;
     }
 
     private function uniqueIpAddress(): string
@@ -332,9 +435,69 @@ private function getMe(
             24,
         );
 
-        return '2001:db8:'.implode(
+        return '2001:db8:' . implode(
             ':',
             str_split($hexadecimal, 4),
         );
+    }
+    private function createSessionToken(
+        User $user,
+        string $ipAddress,
+    ): string {
+        $token = JWTAuth::fromUser($user);
+
+        try {
+            $payload = JWTAuth::setToken($token)->getPayload();
+
+            UserSession::create([
+                'user_id' => $user->id,
+                'token_jti' => (string) $payload->get('jti'),
+                'device_name' => 'PHPUnit',
+                'ip_address' => $ipAddress,
+                'user_agent' => 'PHPUnit',
+                'expires_at' => Carbon::createFromTimestamp(
+                    (int) $payload->get('exp'),
+                ),
+            ]);
+        } finally {
+            JWTAuth::unsetToken();
+            app(JWT::class)->unsetToken();
+        }
+
+        return $token;
+    }
+
+    private function postAuthenticatedJson(
+        string $uri,
+        string $token,
+        string $ipAddress,
+        array $payload = [],
+    ): TestResponse {
+        $this->resetJwtAuthenticationState();
+
+        return $this
+            ->withServerVariables([
+                'REMOTE_ADDR' => $ipAddress,
+                'HTTP_USER_AGENT' => 'PHPUnit',
+            ])
+            ->withToken($token)
+            ->postJson($uri, $payload);
+    }
+
+    private function tokenFromResponse(TestResponse $response): string
+    {
+        $token = $response->json('data.access_token');
+
+        $this->assertIsString($token);
+        $this->assertNotEmpty($token);
+
+        return $token;
+    }
+
+    private function resetJwtAuthenticationState(): void
+    {
+        Auth::forgetGuards();
+        JWTAuth::unsetToken();
+        app(JWT::class)->unsetToken();
     }
 }
