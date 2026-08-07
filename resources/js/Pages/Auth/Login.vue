@@ -58,7 +58,6 @@ function applyApiErrors(errors: Record<string, string[]>, fallbackMessage: strin
 
     const hasFieldErrors = Boolean(emailError) || Boolean(passwordError);
 
-
     if (!hasFieldErrors) {
         generalMessage.value = fallbackMessage;
     }
@@ -77,7 +76,7 @@ async function submit(): Promise<void> {
         const result = await login({
             email: form.email.trim().toLocaleLowerCase(),
             password: form.password,
-        })
+        });
 
         if (isLoginSuccess(result)) {
             successMessage.value = result.message;
@@ -85,8 +84,8 @@ async function submit(): Promise<void> {
             return;
         }
 
-        if(isRateLimitError(result)) {
-            generalMessage.value = `${result.message} Try again in ${result.retry_after} seconds.`
+        if (isRateLimitError(result)) {
+            generalMessage.value = `${result.message} Try again in ${result.retry_after} seconds.`;
 
             return;
         }
@@ -100,9 +99,63 @@ async function submit(): Promise<void> {
         generalMessage.value = result.message;
     } catch (error) {
         generalMessage.value = 'The server could not be reached. Please try again.';
-        console.error(error)
+        console.error(error);
     } finally {
         isSubmitting.value = false;
     }
 }
 </script>
+<template>
+    <Head title="Log in" />
+    <main class="login-page">
+        <section class="login-card">
+            <header class="login-header">
+                <p class="login-eyebrow">PLAYER ACCESS</p>
+                <h1>Log in</h1>
+                <p class="login-introduction">Continue your journey through retro gaming.</p>
+            </header>
+            <div v-if="successMessage" class="message message--success" role="status">
+                <strong>{{ successMessage }}</strong>
+                <span> Authenticated as {{ authenticatedUserName }} </span>
+            </div>
+            <div v-if="generalMessage" class="message message--error" role="alert">{{ generalMessage }}</div>
+            <form class="login-form" novalidate @submit.prevent="submit">
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        v-model="form.email"
+                        name="email"
+                        autocomplete="email"
+                        placeholder="player@example.com"
+                        :disabled="isSubmitting"
+                        :aria-invalid="fieldErrors.email ? 'true' : 'false'"
+                        :aria-describedby="fieldErrors.email ? 'email-error' : undefined"
+                    />
+                    <p v-if="fieldErrors.email" id="email-error" class="field-error">{{ fieldErrors.email }}</p>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        v-model="form.password"
+                        name="password"
+                        autocomplete="current-password"
+                        placeholder="Enter your password"
+                        :disabled="isSubmitting"
+                        :aria-invalid="fieldErrors.password ? 'true' : 'false'"
+                        :aria-describedby="fieldErrors.password ? 'password-error' : undefined"
+                    />
+                    <p v-if="fieldErrors.password" id="password-error" class="field-error">
+                        {{ fieldErrors.password }}
+                    </p>
+                </div>
+                <button type="submit" class="submit-button" :disabled="isSubmitting">
+                    {{ isSubmitting ? 'CONNECTING...' : 'START SESSION' }}
+                </button>
+            </form>
+        </section>
+    </main>
+</template>
