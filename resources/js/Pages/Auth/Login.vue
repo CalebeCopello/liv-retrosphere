@@ -6,6 +6,8 @@ import { login } from '../../api/auth';
 
 import type { AuthErrorResponse, LoginCredentials, LoginResponse, RateLimitErrorResponse } from '../../types/auth';
 
+import RetroButton from '../../components/ui/RetroButton.vue';
+
 type LoginResult = LoginResponse | AuthErrorResponse;
 
 type LoginFieldErrors = Partial<Record<keyof LoginCredentials, string>>;
@@ -152,9 +154,9 @@ async function submit(): Promise<void> {
                         {{ fieldErrors.password }}
                     </p>
                 </div>
-                <button type="submit" class="submit-button" :disabled="isSubmitting">
+                <RetroButton type="submit" :loading="isSubmitting">
                     {{ isSubmitting ? 'CONNECTING...' : 'START SESSION' }}
-                </button>
+                </RetroButton>
             </form>
         </section>
     </main>
