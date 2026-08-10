@@ -1,0 +1,96 @@
+/*
+|--------------------------------------------------------------------------
+| Document
+|--------------------------------------------------------------------------
+|
+| These styles apply to the entire application.
+|
+| Unlike <style scoped> inside a Vue component, nothing here is restricted to
+| one component.
+|
+*/
+
+html {
+    /*
+     * Ensure the document can occupy the entire browser height.
+     */
+    min-height: 100%;
+}
+
+body {
+    /*
+     * Browsers add a default margin around <body>.
+     *
+     * Remove it so our background reaches every edge of the viewport.
+     */
+    margin: 0;
+
+    /*
+     * The page should always be at least as tall as the browser viewport.
+     *
+     * If page content becomes taller, the body naturally grows.
+     */
+    min-height: 100vh;
+
+    /*
+     * Default site text color.
+     *
+     * Child components inherit this unless they override it.
+     */
+    color: var(--color-text);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Global RetroSphere grid
+    |--------------------------------------------------------------------------
+    |
+    | CSS allows multiple backgrounds to be layered.
+    |
+    | Layer 1:
+    |     horizontal grid lines
+    |
+    | Layer 2:
+    |     vertical grid lines
+    |
+    | Layer 3:
+    |     dark solid background
+    |
+    */
+
+    background:
+        linear-gradient(
+            var(--grid-color) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            var(--grid-color) 1px,
+            transparent 1px
+        ),
+        var(--color-background);
+
+    /*
+     * Both gradients repeat every 24px.
+     *
+     * Because this comes from a token, you can later change the whole site's
+     * grid density by changing --grid-size.
+     */
+    background-size:
+        var(--grid-size)
+        var(--grid-size);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Inertia application root
+|--------------------------------------------------------------------------
+|
+| Inertia mounts the Vue application into its root element.
+|
+| Giving it a minimum height helps layouts naturally fill the viewport.
+|
+*/
+
+#app {
+    min-height: 100vh;
+}
