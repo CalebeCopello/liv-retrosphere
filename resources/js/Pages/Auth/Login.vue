@@ -6,7 +6,9 @@ import { login } from '../../api/auth';
 
 import type { AuthErrorResponse, LoginCredentials, LoginResponse, RateLimitErrorResponse } from '../../types/auth';
 
+import AuthLayout from '../../layouts/AuthLayout.vue';
 import RetroButton from '../../components/ui/RetroButton.vue';
+import RetroCard from '../../components/ui/RetroCard.vue';
 
 type LoginResult = LoginResponse | AuthErrorResponse;
 
@@ -23,7 +25,7 @@ const fieldErrors = ref<LoginFieldErrors>({});
 
 const generalMessage = ref('');
 const successMessage = ref('');
-const authenticatedUserName = ref('');
+const authenticatedUsername = ref('');
 
 function isLoginSuccess(result: LoginResult): result is LoginResponse {
     return 'data' in result && result.data !== null && result.data !== undefined;
@@ -37,7 +39,7 @@ function clearMessages(): void {
     fieldErrors.value = {};
     generalMessage.value = '';
     successMessage.value = '';
-    authenticatedUserName.value = '';
+    authenticatedUsername.value = '';
 }
 
 function applyApiErrors(errors: Record<string, string[]>, fallbackMessage: string): void {
@@ -82,7 +84,7 @@ async function submit(): Promise<void> {
 
         if (isLoginSuccess(result)) {
             successMessage.value = result.message;
-            authenticatedUserName.value = result.data?.user.username;
+            authenticatedUsername.value = result.data?.user.username;
             return;
         }
 
@@ -109,25 +111,37 @@ async function submit(): Promise<void> {
 </script>
 <template>
     <Head title="Log in" />
-    <main class="login-page">
-        <section class="login-card">
-            <header class="login-header">
+    <AuthLayout>
+        <RetroCard>
+            <template #header>
                 <p class="login-eyebrow">PLAYER ACCESS</p>
-                <h1>Log in</h1>
+
+                <h1 class="login-title">Log in</h1>
+
                 <p class="login-introduction">Continue your journey through retro gaming.</p>
-            </header>
+            </template>
             <div v-if="successMessage" class="message message--success" role="status">
-                <strong>{{ successMessage }}</strong>
-                <span> Authenticated as {{ authenticatedUserName }} </span>
+                <strong>
+                    {{ successMessage }}
+                </strong>
+
+                <span>
+                    Authenticated as
+                    {{ authenticatedUsername }}.
+                </span>
             </div>
-            <div v-if="generalMessage" class="message message--error" role="alert">{{ generalMessage }}</div>
+
+            <div v-if="generalMessage" class="message message--error" role="alert">
+                {{ generalMessage }}
+            </div>
             <form class="login-form" novalidate @submit.prevent="submit">
                 <div class="form-field">
-                    <label for="email">Email</label>
+                    <label for="email"> Email </label>
+
                     <input
-                        type="email"
                         id="email"
                         v-model="form.email"
+                        type="email"
                         name="email"
                         autocomplete="email"
                         placeholder="player@example.com"
@@ -135,14 +149,18 @@ async function submit(): Promise<void> {
                         :aria-invalid="fieldErrors.email ? 'true' : 'false'"
                         :aria-describedby="fieldErrors.email ? 'email-error' : undefined"
                     />
-                    <p v-if="fieldErrors.email" id="email-error" class="field-error">{{ fieldErrors.email }}</p>
+
+                    <p v-if="fieldErrors.email" id="email-error" class="field-error">
+                        {{ fieldErrors.email }}
+                    </p>
                 </div>
                 <div class="form-field">
-                    <label for="password">Password</label>
+                    <label for="password"> Password </label>
+
                     <input
-                        type="password"
                         id="password"
                         v-model="form.password"
+                        type="password"
                         name="password"
                         autocomplete="current-password"
                         placeholder="Enter your password"
@@ -150,6 +168,7 @@ async function submit(): Promise<void> {
                         :aria-invalid="fieldErrors.password ? 'true' : 'false'"
                         :aria-describedby="fieldErrors.password ? 'password-error' : undefined"
                     />
+
                     <p v-if="fieldErrors.password" id="password-error" class="field-error">
                         {{ fieldErrors.password }}
                     </p>
@@ -158,59 +177,15 @@ async function submit(): Promise<void> {
                     {{ isSubmitting ? 'CONNECTING...' : 'START SESSION' }}
                 </RetroButton>
             </form>
-        </section>
-    </main>
+        </RetroCard>
+    </AuthLayout>
 </template>
 
 <style scoped>
-.login-page {
-    --page-background: #10121a;
-    --card-background: #1a1d29;
-    --input-background: #10121a;
-    --border: #393e52;
-    --text: #f6f3e8;
-    --muted: #a8adbd;
-    --accent: #8cff98;
-    --accent-text: #102014;
-    --danger: #ff9090;
-    --success-background: rgb(140 255 152 / 8%);
-    --error-background: rgb(255 144 144 / 8%);
-
-    display: grid;
-    min-height: 100vh;
-    padding: 1rem;
-    place-items: center;
-
-    color: var(--text);
-
-    background:
-        linear-gradient(rgb(255 255 255 / 2%) 1px, transparent 1px),
-        linear-gradient(90deg, rgb(255 255 255 / 2%) 1px, transparent 1px), var(--page-background);
-
-    background-size: 24px 24px;
-}
-
-.login-card {
-    width: 100%;
-    max-width: 28rem;
-    box-sizing: border-box;
-    padding: 1.25rem;
-
-    border: 1px solid var(--border);
-    border-radius: 1rem;
-
-    background: var(--card-background);
-    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 35%);
-}
-
-.login-header {
-    margin-bottom: 1.5rem;
-}
-
 .login-eyebrow {
-    margin: 0 0 0.5rem;
+    margin: 0 0 var(--space-sm);
 
-    color: var(--accent);
+    color: var(--color-primary);
 
     font-family: monospace;
     font-size: 0.75rem;
@@ -218,134 +193,119 @@ async function submit(): Promise<void> {
     letter-spacing: 0.16em;
 }
 
-.login-header h1 {
+.login-title {
     margin: 0;
 
     font-size: clamp(2rem, 10vw, 3rem);
+
     line-height: 1;
 }
 
 .login-introduction {
     margin: 0.75rem 0 0;
 
-    color: var(--muted);
+    color: var(--color-text-muted);
+
     line-height: 1.6;
 }
 
 .message {
     display: grid;
-    gap: 0.25rem;
 
-    margin-bottom: 1rem;
+    gap: var(--space-xs);
+
+    margin-bottom: var(--space-md);
+
     padding: 0.875rem;
 
     border: 1px solid;
-    border-radius: 0.5rem;
+
+    border-radius: var(--radius-sm);
 
     line-height: 1.5;
 }
 
 .message--success {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: var(--success-background);
+    border-color: var(--color-primary);
+
+    color: var(--color-primary);
+
+    background: var(--color-success-background);
 }
 
 .message--error {
-    border-color: var(--danger);
-    color: var(--danger);
-    background: var(--error-background);
-}
+    border-color: var(--color-danger);
 
+    color: var(--color-danger);
+
+    background: var(--color-danger-background);
+}
 .login-form {
     display: grid;
+
     gap: 1.25rem;
 }
 
 .form-field {
     display: grid;
-    gap: 0.5rem;
+
+    gap: var(--space-sm);
 }
 
 .form-field label {
     font-size: 0.875rem;
+
     font-weight: 700;
 }
 
 .form-field input {
     width: 100%;
-    min-height: 3rem;
+
+    min-height: var(--control-height);
+
     box-sizing: border-box;
+
     padding: 0.75rem;
 
-    border: 1px solid var(--border);
-    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-sm);
+
     outline: none;
 
-    color: var(--text);
-    background: var(--input-background);
+    color: var(--color-text);
+
+    background: var(--color-surface-dark);
 
     font: inherit;
 }
 
+/*
+ * Custom keyboard/mouse focus indicator.
+ */
 .form-field input:focus {
-    border-color: var(--accent);
+    border-color: var(--color-primary);
+
     box-shadow: 0 0 0 3px rgb(140 255 152 / 12%);
 }
 
 .form-field input[aria-invalid='true'] {
-    border-color: var(--danger);
+    border-color: var(--color-danger);
 }
 
 .form-field input:disabled {
     cursor: not-allowed;
+
     opacity: 0.65;
 }
 
 .field-error {
     margin: 0;
 
-    color: var(--danger);
+    color: var(--color-danger);
 
     font-size: 0.8125rem;
+
     line-height: 1.4;
-}
-
-.submit-button {
-    min-height: 3rem;
-    padding: 0.75rem 1rem;
-
-    border: 1px solid var(--accent);
-    border-radius: 0.5rem;
-
-    cursor: pointer;
-
-    color: var(--accent-text);
-    background: var(--accent);
-
-    font-family: monospace;
-    font-size: 0.875rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-}
-
-.submit-button:hover:not(:disabled) {
-    filter: brightness(1.08);
-    transform: translateY(-1px);
-}
-
-.submit-button:disabled {
-    cursor: wait;
-    opacity: 0.65;
-}
-
-@media (min-width: 40rem) {
-    .login-page {
-        padding: 2rem;
-    }
-
-    .login-card {
-        padding: 2rem;
-    }
 }
 </style>
