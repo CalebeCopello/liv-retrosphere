@@ -7,7 +7,7 @@ import type { ApiErrors, AuthErrorResponse, RegisterCredentials, RegisterRespons
 
 import AuthLayout from '../../layouts/AuthLayout.vue';
 import RetroButton from '../../components/ui/RetroButton.vue';
-import RetroCard from '../../components/ui/RetroCard.vue';
+import RetroFormCard from '../../components/ui/RetroFormCard.vue';
 
 const form = reactive<RegisterCredentials>({
     username: '',
@@ -68,16 +68,14 @@ async function submit(): Promise<void> {
 }
 </script>
 <template>
+    <Head title="Create account" />
     <AuthLayout>
-        <RetroCard class="register-card">
-            <div class="register-card__header">
-                <span class="register-card__eyebrow"> NEW PLAYER </span>
-                <h1 class="register-card__title">Create account</h1>
-                <p class="register-card__description">
-                    Join the community and start building your retro gaming profile.
-                </p>
-            </div>
-
+        <RetroFormCard
+            max-width="30rem"
+            eyebrow="NEW PLAYER"
+            title="Create Account"
+            description="Join the community and start building your retro gaming profile."
+        >
             <form class="register-form" novalidate @submit.prevent="submit">
                 <div class="register-form__field">
                     <label for="username" class="register-form__label"> Username </label>
@@ -154,58 +152,20 @@ async function submit(): Promise<void> {
                     {{ loading ? 'CREATING PLAYER...' : 'CREATE ACCOUNT' }}</RetroButton
                 >
             </form>
-            <div class="register-card__footer">
+            <template #footer>
                 <span>Already registered?</span>
-                <a href="/login" class="register-card__link">LOGIN</a>
-            </div>
-        </RetroCard>
+                <a href="/login">LOGIN</a>
+            </template>
+        </RetroFormCard>
     </AuthLayout>
 </template>
 <style scoped>
-.register-card {
-    width: 100%;
-    max-width: 30rem;
-}
-
-.register-card__header {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-
-    margin-bottom: var(--space-xl);
-}
-
-.register-card__eyebrow {
-    color: var(--color-primary);
-
-    font-family: monospace;
-    font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-}
-
-.register-card__title {
-    margin: 0;
-
-    color: var(--color-text);
-
-    font-size: clamp(1.75rem, 8vw, 2.5rem);
-    line-height: 1;
-}
-
-.register-card__description {
-    margin: 0;
-
-    color: var(--color-text-muted);
-
-    font-size: 0.875rem;
-    line-height: 1.6;
-}
-
 .register-form {
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
+
+    font-family: var(--font-retro);
 }
 
 .register-form__field {
@@ -287,36 +247,5 @@ async function submit(): Promise<void> {
 
 .register-form__submit {
     width: 100%;
-}
-
-.register-card__footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-xs);
-
-    margin-top: var(--space-xl);
-
-    color: var(--color-text-muted);
-
-    font-size: 0.8rem;
-}
-
-.register-card__link {
-    color: var(--color-primary);
-
-    font-family: monospace;
-    font-weight: 800;
-    text-decoration: none;
-}
-
-.register-card__link:hover {
-    text-decoration: underline;
-}
-
-@media (min-width: 40rem) {
-    .register-card__description {
-        font-size: 0.9375rem;
-    }
 }
 </style>

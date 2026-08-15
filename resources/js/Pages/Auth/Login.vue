@@ -8,7 +8,7 @@ import type { AuthErrorResponse, LoginCredentials, LoginResponse, RateLimitError
 
 import AuthLayout from '../../layouts/AuthLayout.vue';
 import RetroButton from '../../components/ui/RetroButton.vue';
-import RetroCard from '../../components/ui/RetroCard.vue';
+import RetroFormCard from '../../components/ui/RetroFormCard.vue';
 
 type LoginResult = LoginResponse | AuthErrorResponse;
 
@@ -112,14 +112,7 @@ async function submit(): Promise<void> {
 <template>
     <Head title="Log in" />
     <AuthLayout>
-        <RetroCard>
-            <template #header>
-                <p class="login-eyebrow">PLAYER ACCESS</p>
-
-                <h1 class="login-title">Log in</h1>
-
-                <p class="login-introduction">Continue your journey through retro gaming.</p>
-            </template>
+        <RetroFormCard eyebrow="PLAYER ACCESS" title="Log in" description="Continue your journey through retro gaming.">
             <div v-if="successMessage" class="message message--success" role="status">
                 <strong>
                     {{ successMessage }}
@@ -177,38 +170,11 @@ async function submit(): Promise<void> {
                     {{ isSubmitting ? 'CONNECTING...' : 'START SESSION' }}
                 </RetroButton>
             </form>
-        </RetroCard>
+        </RetroFormCard>
     </AuthLayout>
 </template>
 
 <style scoped>
-.login-eyebrow {
-    margin: 0 0 var(--space-sm);
-
-    color: var(--color-primary);
-
-    font-family: monospace;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-}
-
-.login-title {
-    margin: 0;
-
-    font-size: clamp(2rem, 10vw, 3rem);
-
-    line-height: 1;
-}
-
-.login-introduction {
-    margin: 0.75rem 0 0;
-
-    color: var(--color-text-muted);
-
-    line-height: 1.6;
-}
-
 .message {
     display: grid;
 
