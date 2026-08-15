@@ -2,9 +2,11 @@
 withDefaults(
     defineProps<{
         maxWidth?: string;
+        padding?: 'sm' | 'md' | 'lg';
     }>(),
     {
         maxWidth: '28rem',
+        padding: 'md',
     },
 );
 </script>
@@ -12,25 +14,19 @@ withDefaults(
 <template>
     <section
         class="retro-card"
+        :class="`retro-card--padding-${padding}`"
         :style="{
             maxWidth,
         }"
     >
-
-        <header
-            v-if="$slots.header"
-            class="retro-card__header"
-        >
+        <header v-if="$slots.header" class="retro-card__header">
             <slot name="header" />
         </header>
 
         <div class="retro-card__content">
             <slot />
         </div>
-        <footer
-            v-if="$slots.footer"
-            class="retro-card__footer"
-        >
+        <footer v-if="$slots.footer" class="retro-card__footer">
             <slot name="footer" />
         </footer>
     </section>
@@ -41,29 +37,27 @@ withDefaults(
     width: 100%;
     box-sizing: border-box;
 
-    padding: 1.25rem;
-
-    border:
-        1px solid
-        var(--color-border);
-
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
 
     background: var(--color-surface);
 
     box-shadow: var(--shadow-card);
 }
+.retro-card--padding-sm {
+    padding: var(--space-md);
+}
+
+.retro-card--padding-md {
+    padding: 1.25rem;
+}
+
+.retro-card--padding-lg {
+    padding: var(--space-xl);
+}
 
 .retro-card__header {
     margin-bottom: var(--space-lg);
-}
-
-.retro-card__content {
-    /*
-     * The content area itself does not force a layout.
-     *
-     * The page or form inside controls its own structure.
-     */
 }
 
 .retro-card__footer {
@@ -71,7 +65,7 @@ withDefaults(
 }
 
 @media (min-width: 40rem) {
-    .retro-card {
+    .retro-card--padding-md {
         padding: var(--space-xl);
     }
 }
