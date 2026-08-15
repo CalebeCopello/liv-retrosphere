@@ -33,10 +33,11 @@ withDefaults(
             <span class="retro-form-card__topbar-decoration" aria-hidden="true">
                 <i></i>
                 <i></i>
+                <i></i>
             </span>
         </div>
         <div class="retro-form-card__body">
-            <header v-if="eyebrow || title || description || $slots.header" class="retro-form-card__header">
+            <header v-if="title || description || $slots.header" class="retro-form-card__header">
                 <h1 v-if="title" class="retro-form-card__title">{{ title }}</h1>
                 <p v-if="description" class="retro-form-card__description">{{ description }}</p>
                 <slot name="header" />
@@ -67,6 +68,8 @@ withDefaults(
     font-family: var(--font-retro);
 
     box-shadow: var(--shadow-card);
+
+    color: var(--color-text);
 }
 
 /*
@@ -90,7 +93,6 @@ withDefaults(
 .retro-form-card__eyebrow {
     color: var(--color-primary);
 
-    font-family: monospace;
     font-size: 0.6875rem;
     font-weight: 800;
     letter-spacing: 0.14em;
@@ -132,23 +134,18 @@ withDefaults(
 }
 
 .retro-form-card__title {
-    margin: 0;
-
     color: var(--color-text);
 
-    font-family: monospace;
     font-size: clamp(1.5rem, 6vw, 2rem);
     font-weight: 800;
     line-height: 1.15;
     letter-spacing: -0.03em;
-
-    margin-bottom: var(--space-sm);
 }
 
 .retro-form-card__description {
     max-width: 22rem;
 
-    margin: var(--space-xs) 0 0 var(--space-md);
+    margin: var(--space-sm) 0 0 var(--space-md);
 
     color: var(--color-text-muted);
 
@@ -172,7 +169,6 @@ withDefaults(
 .retro-form-card__footer :deep(a) {
     color: var(--color-primary);
 
-    font-family: monospace;
     font-weight: 800;
     text-decoration: none;
 }
@@ -184,6 +180,9 @@ withDefaults(
 @media (min-width: 40rem) {
     .retro-form-card--padding-md .retro-form-card__body {
         padding: var(--space-xl);
+    }
+    .retro-form-card__description {
+        margin-left: var(--space-md);
     }
 }
 </style>
