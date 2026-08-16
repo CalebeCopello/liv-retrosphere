@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue';
+import { Head } from '@inertiajs/vue3';
 
 import { register } from '../../api/auth';
 
@@ -8,6 +9,7 @@ import type { ApiErrors, AuthErrorResponse, RegisterCredentials, RegisterRespons
 import AuthLayout from '../../layouts/AuthLayout.vue';
 import RetroButton from '../../components/ui/RetroButton.vue';
 import RetroFormCard from '../../components/ui/RetroFormCard.vue';
+import RetroFormInputField from '../../components/ui/RetroFormInputField.vue';
 
 const form = reactive<RegisterCredentials>({
     username: '',
@@ -77,76 +79,58 @@ async function submit(): Promise<void> {
             description="Join the community and start building your retro gaming profile."
         >
             <form class="register-form" novalidate @submit.prevent="submit">
-                <div class="register-form__field">
-                    <label for="username" class="register-form__label"> Username </label>
-                    <input
-                        type="text"
-                        id="username"
-                        v-model="form.username"
-                        class="register-form__input"
-                        :class="{ 'register-form__input--error': errors.username }"
-                        name="username"
-                        autocomplete="username"
-                        minlength="4"
-                        maxlength="32"
-                        placeholder="playerOne"
-                    />
-                    <p class="register-form__error" v-if="errors.username">{{ errors.username[0] }}</p>
-                </div>
-                <div class="register-form__field">
-                    <label for="email" class="register-form__label"> Email </label>
-                    <input
-                        type="email"
-                        id="email"
-                        v-model="form.email"
-                        class="register-form__input"
-                        :class="{ 'register-form__input--error': errors.email }"
-                        name="email"
-                        autocomplete="email"
-                        minlength="4"
-                        maxlength="255"
-                        placeholder="player@example.com"
-                    />
-                    <p class="register-form__error" v-if="errors.email">{{ errors.email[0] }}</p>
-                </div>
-                <div class="register-form__field">
-                    <label for="password" class="register-form__label"> Password </label>
-                    <input
-                        type="password"
-                        id="password"
-                        v-model="form.password"
-                        class="register-form__input"
-                        :class="{ 'register-form__input--error': errors.password }"
-                        name="password"
-                        autocomplete="new-password"
-                        minlength="8"
-                        maxlength="32"
-                        placeholder="password"
-                    />
-                    <p class="register-form__error" v-if="errors.password">{{ errors.password[0] }}</p>
-                </div>
-                <div class="register-form__field">
-                    <label for="password-confirmation" class="register-form__label"> Confirm password </label>
-                    <input
-                        type="password"
-                        id="password-confirmation"
-                        v-model="form.password_confirmation"
-                        class="register-form__input"
-                        :class="{
-                            'register-form__input--error': errors.password_confirmation || !passwordsMatch,
-                        }"
-                        name="password_confirmation"
-                        autocomplete="new-password"
-                        minlength="8"
-                        maxlength="32"
-                        placeholder="confirm password"
-                    />
-                    <p v-if="errors.password_confirmation" class="register-form__error">
-                        {{ errors.password_confirmation[0] }}
-                    </p>
+                <RetroFormInputField
+                    id="username"
+                    v-model="form.username"
+                    label="Username"
+                    autocomplete="username"
+                    placeholder="playerOne"
+                    :min-length="4"
+                    :max-length="32"
+                    :disabled="loading"
+                    :error="errors.username?.[0]"
+                />
+                <RetroFormInputField
+                    id="email"
+                    v-model="form.email"
+                    label="Email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="player@example.com"
+                    :max-length="255"
+                    :disabled="loading"
+                    :error="errors.email?.[0]"
+                />
 
-                    <p v-else-if="!passwordsMatch" class="register-form__error">Passwords do not match.</p>
-                </div>
+                <RetroFormInputField
+                    id="password"
+                    v-model="form.password"
+                    label="Password"
+                    type="password"
+                    autocomplete="new-password"
+                    placeholder="Enter a password"
+                    :min-length="8"
+                    :max-length="32"
+                    :disabled="loading"
+                    :error="errors.password?.[0]"
+                />
+
+                <RetroFormInputField
+                    id="password-confirmation"
+                    v-model="form.password_confirmation"
+                    label="Confirm password"
+                    type="password"
+                    name="password_confirmation"
+                    autocomplete="new-password"
+                    placeholder="Confirm your password"
+                    :min-length="8"
+                    :max-length="32"
+                    :disabled="loading"
+                    :error="
+                        errors.password_confirmation?.[0] ?? (!passwordsMatch ? 'Passwords do not match.' : undefined)
+                    "
+                />
+
                 <div class="register-form__message" role="alert" v-if="message">{{ message }}</div>
                 <RetroButton type="submit" :loading="loading" :disabled="loading" class="register-form__submit">
                     {{ loading ? 'CREATING PLAYER...' : 'CREATE ACCOUNT' }}</RetroButton

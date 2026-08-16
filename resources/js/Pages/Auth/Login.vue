@@ -9,6 +9,7 @@ import type { AuthErrorResponse, LoginCredentials, LoginResponse, RateLimitError
 import AuthLayout from '../../layouts/AuthLayout.vue';
 import RetroButton from '../../components/ui/RetroButton.vue';
 import RetroFormCard from '../../components/ui/RetroFormCard.vue';
+import RetroFormInputField from '../../components/ui/RetroFormInputField.vue';
 
 type LoginResult = LoginResponse | AuthErrorResponse;
 
@@ -128,44 +129,27 @@ async function submit(): Promise<void> {
                 {{ generalMessage }}
             </div>
             <form class="login-form" novalidate @submit.prevent="submit">
-                <div class="form-field">
-                    <label for="email"> Email </label>
+                <RetroFormInputField
+                    id="email"
+                    v-model="form.email"
+                    label="Email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="player@example.com"
+                    :disabled="isSubmitting"
+                    :error="fieldErrors.email"
+                />
 
-                    <input
-                        id="email"
-                        v-model="form.email"
-                        type="email"
-                        name="email"
-                        autocomplete="email"
-                        placeholder="player@example.com"
-                        :disabled="isSubmitting"
-                        :aria-invalid="fieldErrors.email ? 'true' : 'false'"
-                        :aria-describedby="fieldErrors.email ? 'email-error' : undefined"
-                    />
-
-                    <p v-if="fieldErrors.email" id="email-error" class="field-error">
-                        {{ fieldErrors.email }}
-                    </p>
-                </div>
-                <div class="form-field">
-                    <label for="password"> Password </label>
-
-                    <input
-                        id="password"
-                        v-model="form.password"
-                        type="password"
-                        name="password"
-                        autocomplete="current-password"
-                        placeholder="Enter your password"
-                        :disabled="isSubmitting"
-                        :aria-invalid="fieldErrors.password ? 'true' : 'false'"
-                        :aria-describedby="fieldErrors.password ? 'password-error' : undefined"
-                    />
-
-                    <p v-if="fieldErrors.password" id="password-error" class="field-error">
-                        {{ fieldErrors.password }}
-                    </p>
-                </div>
+                <RetroFormInputField
+                    id="password"
+                    v-model="form.password"
+                    label="Password"
+                    type="password"
+                    autocomplete="current-password"
+                    placeholder="Enter your password"
+                    :disabled="isSubmitting"
+                    :error="fieldErrors.password"
+                />
                 <RetroButton type="submit" :loading="isSubmitting">
                     {{ isSubmitting ? 'CONNECTING...' : 'START SESSION' }}
                 </RetroButton>
