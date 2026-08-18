@@ -2,6 +2,7 @@ import type {
     AuthErrorResponse,
     LoginCredentials,
     LoginResponse,
+    RefreshResponse,
     RegisterCredentials,
     RegisterResponse,
 } from '../types/auth';
@@ -41,6 +42,42 @@ export async function register(credentials: RegisterCredentials): Promise<Regist
 
     if (response.ok) {
         return payload as RegisterResponse;
+    }
+
+    return payload as AuthErrorResponse;
+}
+
+export async function refresh(token: string): Promise<RefreshResponse | AuthErrorResponse> {
+    const response = await fetch(apiRoutes.auth.refresh, {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            Authorization: `Bearer ${token}`,
+        },
+    });
+
+    const payload = (await response.json()) as RefreshResponse | AuthErrorResponse;
+
+    if (response.ok) {
+            return payload as RefreshResponse;
+    }
+
+    return payload as AuthErrorResponse;
+}
+
+export async function me(token: string): Promise<RefreshResponse | AuthErrorResponse> {
+    const response = await fetch(apiRoutes.auth.me, {
+        method: 'GET',
+        headers: {
+            Accept: 'application/json',
+            Authorization: `Bearer ${token}`,
+        },
+    });
+
+    const payload = (await response.json()) as RefreshResponse | AuthErrorResponse;
+
+    if (response.ok) {
+            return payload as RefreshResponse;
     }
 
     return payload as AuthErrorResponse;
