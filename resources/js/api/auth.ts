@@ -2,6 +2,7 @@ import type {
     AuthErrorResponse,
     LoginCredentials,
     LoginResponse,
+    MeResponse,
     RefreshResponse,
     RegisterCredentials,
     RegisterResponse,
@@ -65,7 +66,7 @@ export async function refresh(token: string): Promise<RefreshResponse | AuthErro
     return payload as AuthErrorResponse;
 }
 
-export async function me(token: string): Promise<RefreshResponse | AuthErrorResponse> {
+export async function me(token: string): Promise<MeResponse | AuthErrorResponse> {
     const response = await fetch(apiRoutes.auth.me, {
         method: 'GET',
         headers: {
@@ -74,10 +75,10 @@ export async function me(token: string): Promise<RefreshResponse | AuthErrorResp
         },
     });
 
-    const payload = (await response.json()) as RefreshResponse | AuthErrorResponse;
+    const payload = (await response.json()) as MeResponse | AuthErrorResponse;
 
     if (response.ok) {
-            return payload as RefreshResponse;
+            return payload as MeResponse;
     }
 
     return payload as AuthErrorResponse;
