@@ -13,3 +13,6 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return Inertia::render('Auth/Register');
 })->name('web.auth.register');
+Route::get('/me', function(){
+    return Inertia::render('Me');
+})->name('web.me');
