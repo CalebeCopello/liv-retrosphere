@@ -10,6 +10,7 @@ import AuthLayout from '../../layouts/AuthLayout.vue';
 import RetroButton from '../../components/ui/RetroButton.vue';
 import RetroFormCard from '../../components/ui/RetroFormCard.vue';
 import RetroFormInputField from '../../components/ui/RetroFormInputField.vue';
+import { setAuthToken } from '../../auth/token';
 
 type LoginResult = LoginResponse | AuthErrorResponse;
 
@@ -84,6 +85,8 @@ async function submit(): Promise<void> {
         });
 
         if (isLoginSuccess(result)) {
+            setAuthToken(result.data.access_token, result.data.expires_in);
+
             successMessage.value = result.message;
             authenticatedUsername.value = result.data?.user.username;
             return;

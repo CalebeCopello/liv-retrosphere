@@ -10,6 +10,7 @@ import AuthLayout from '../../layouts/AuthLayout.vue';
 import RetroButton from '../../components/ui/RetroButton.vue';
 import RetroFormCard from '../../components/ui/RetroFormCard.vue';
 import RetroFormInputField from '../../components/ui/RetroFormInputField.vue';
+import { setAuthToken } from '../../auth/token';
 
 const form = reactive<RegisterCredentials>({
     username: '',
@@ -56,11 +57,12 @@ async function submit(): Promise<void> {
 
             return;
         }
-        const token = response.data.access_token;
+        setAuthToken(response.data.access_token, response.data.expires_in)
 
-        localStorage.setItem('access_token', token);
+        console.log('access_token:', response.data.access_token);
+        console.log('expires_in:', response.data.expires_in);
 
-        window.location.href = '/';
+        // window.location.href = '/me';
     } catch (error) {
         message.value = 'Something went wrong while creating your account. Please try again.';
         console.error(error);
