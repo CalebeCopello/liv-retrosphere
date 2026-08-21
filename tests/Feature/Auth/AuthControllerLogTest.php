@@ -55,7 +55,8 @@ class AuthControllerLogTest extends TestCase
             ->postJson(self::REGISTER_ENDPOINT, [
                 'username' => 'newUser',
                 'email' => 'newuser@email.com',
-                'password' => 'password123',
+            'password' => 'password123',
+            'password_confirmation' => 'password123'
             ]);
 
         $response->assertCreated();

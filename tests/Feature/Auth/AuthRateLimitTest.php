@@ -423,7 +423,8 @@ class AuthRateLimitTest extends TestCase
         return [
             'username' => 'user' . $suffix,
             'email' => $suffix . '@example.com',
-            'password' => 'Password123!',
+            'password' => 'password123',
+            'password_confirmation' => 'password123'
         ];
     }
 

@@ -53,6 +53,7 @@ class UserSessionTest extends TestCase
             'username' => 'testUser',
             'email' => 'testuser@email.com',
             'password' => 'password123',
+            'password_confirmation' => 'password123'
         ]);
 
         $response

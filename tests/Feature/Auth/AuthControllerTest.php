@@ -60,7 +60,9 @@ class AuthControllerTest extends TestCase
         $response = $this->postJson(self::REGISTER_ENDPOINT, [
             'username' => 'testUser',
             'email' => 'testuser@email.com',
-            'password' => 'password123'
+            'password' => 'password123',
+            'password_confirmation' => 'password123'
+
         ]);
         $response->assertCreated();
         $response->assertJsonStructure([
