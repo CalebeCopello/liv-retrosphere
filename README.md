@@ -22,3 +22,5 @@ Open:
 
 - http://localhost:8090
 - Mailpit: http://localhost:8025
+
+docker exec -it retro-app php artisan jwt:secret

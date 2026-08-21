@@ -48,6 +48,11 @@ prepare_laravel() {
         echo "Generating Laravel application key..."
         php artisan key:generate --no-interaction
     fi
+
+    if [ -f .env ] && grep -q '^JWT_SECRET=$' .env; then
+        echo "Generating JWT secret..."
+        php artisan jwt:secret --no-interaction
+    fi
 }
 
 if [ "${CONTAINER_ROLE:-app}" = "app" ]; then
