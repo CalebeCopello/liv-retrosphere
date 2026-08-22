@@ -474,4 +474,143 @@ class UserSessionTest extends TestCase
             ->getJson(self::ME_ENDPOINT)
             ->assertUnauthorized();
     }
+
+    public function test_access_token_can_be_refreshed_before_its_thirty_day_expiration(): void
+    {
+        $originalTtl = JWTAuth::factory()->getTTL();
+
+        try {
+            JWTAuth::factory()->setTTL(43200);
+
+            $user = User::factory()->create([
+                'email' => 'testuser@email.com',
+                'password' => 'password123',
+            ]);
+
+            $loginResponse = $this->postJson(self::LOGIN_ENDPOINT, [
+                'email' => $user->email,
+                'password' => 'password123',
+            ]);
+
+            $loginResponse->assertOk();
+
+            $oldToken = $loginResponse->json('data.access_token');
+
+            $this->assertIsString($oldToken);
+
+            $oldPayload = JWTAuth::setToken($oldToken)->getPayload();
+            $oldJti = (string) $oldPayload->get('jti');
+
+            // The token remains valid because its TTL is 30 days.
+            $this->travel(29)->days();
+
+            $refreshResponse = $this
+                ->withHeaders($this->authenticatedHeader($oldToken))
+                ->postJson(self::REFRESH_ENDPOINT);
+
+            $refreshResponse
+                ->assertOk()
+                ->assertJsonPath('message', 'Your token was refreshed.');
+
+            $newToken = $refreshResponse->json('data.access_token');
+
+            $this->assertIsString($newToken);
+            $this->assertNotSame($oldToken, $newToken);
+
+            $newPayload = JWTAuth::setToken($newToken)->getPayload();
+            $newJti = (string) $newPayload->get('jti');
+
+            $this->assertNotSame($oldJti, $newJti);
+
+            $this->assertDatabaseMissing('user_sessions', [
+                'token_jti' => $oldJti,
+            ]);
+
+            $this->assertDatabaseHas('user_sessions', [
+                'user_id' => $user->id,
+                'token_jti' => $newJti,
+                'revoked_at' => null,
+            ]);
+
+            $this
+                ->withHeaders($this->authenticatedHeader($newToken))
+                ->getJson(self::ME_ENDPOINT)
+                ->assertOk()
+                ->assertJsonPath('data.user.id', $user->id);
+        } finally {
+            JWTAuth::factory()->setTTL($originalTtl);
+        }
+    }
+
+    public function test_expired_access_token_cannot_be_refreshed(): void
+    {
+        $originalTtl = JWTAuth::factory()->getTTL();
+
+        try {
+            JWTAuth::factory()->setTTL(1);
+
+            $user = User::factory()->create([
+                'email' => 'testuser@email.com',
+                'password' => 'password123',
+            ]);
+
+            $loginResponse = $this->postJson(self::LOGIN_ENDPOINT, [
+                'email' => $user->email,
+                'password' => 'password123',
+            ]);
+
+            $loginResponse->assertOk();
+
+            $oldToken = $loginResponse->json('data.access_token');
+
+            $this->assertIsString($oldToken);
+
+            $this->travel(2)->minutes();
+
+            $this
+                ->withHeaders($this->authenticatedHeader($oldToken))
+                ->postJson(self::REFRESH_ENDPOINT)
+                ->assertUnauthorized();
+
+            // The failed refresh must not rotate the session.
+            $oldJti = JWTAuth::manager()
+                ->getPayloadFactory()
+                ->setRefreshFlow(true);
+
+            $this->assertDatabaseCount('user_sessions', 1);
+        } finally {
+            JWTAuth::factory()->setTTL($originalTtl);
+        }
+    }
+
+    public function test_access_token_has_a_thirty_day_lifetime(): void
+    {
+        $user = User::factory()->create([
+            'email' => 'testuser@email.com',
+            'password' => 'password123',
+        ]);
+
+        $response = $this->postJson(self::LOGIN_ENDPOINT, [
+            'email' => $user->email,
+            'password' => 'password123',
+        ]);
+
+        $response->assertOk();
+
+        $token = $response->json('data.access_token');
+
+        $this->assertIsString($token);
+
+        $payload = JWTAuth::setToken($token)->getPayload();
+
+        $lifetimeInSeconds =
+            (int) $payload->get('exp') - (int) $payload->get('iat');
+
+        $this->assertSame(30 * 24 * 60 * 60, $lifetimeInSeconds);
+
+        $response->assertJsonPath(
+            'data.expires_in',
+            30 * 24 * 60 * 60,
+        );
+    }
 }

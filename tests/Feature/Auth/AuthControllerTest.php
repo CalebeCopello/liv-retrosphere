@@ -3,9 +3,11 @@
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
+use App\Models\UserSession;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Hash;
+use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
 use Tests\TestCase;
 
 class AuthControllerTest extends TestCase
@@ -196,7 +198,7 @@ class AuthControllerTest extends TestCase
         $response = $this->withToken($oldToken)->postJson(self::REFRESH_ENDPOINT);
 
         $response->assertOk();
-    $response->assertJsonStructure([
+        $response->assertJsonStructure([
             'message',
             'data' => [
                 'access_token',
@@ -357,5 +359,48 @@ class AuthControllerTest extends TestCase
         $response
             ->assertUnprocessable()
             ->assertJsonValidationErrors('email');
+    }
+
+    public function test_expired_access_token_cannot_be_refreshed(): void
+    {
+        $originalTtl = JWTAuth::factory()->getTTL();
+
+        try {
+            JWTAuth::factory()->setTTL(1);
+
+            $user = User::factory()->create([
+                'password' => Hash::make('password'),
+            ]);
+
+            $loginResponse = $this->postJson(self::LOGIN_ENDPOINT, [
+                'email' => $user->email,
+                'password' => 'password',
+            ]);
+
+            $loginResponse->assertOk();
+
+            $oldToken = $loginResponse->json('data.access_token');
+
+            $this->assertIsString($oldToken);
+
+            $session = UserSession::firstOrFail();
+            $originalJti = $session->token_jti;
+
+            $this->travel(2)->minutes();
+
+            $this
+                ->withToken($oldToken)
+                ->postJson(self::REFRESH_ENDPOINT)
+                ->assertUnauthorized();
+
+            // A rejected refresh must not rotate or create a session.
+            $this->assertDatabaseCount('user_sessions', 1);
+
+            $session->refresh();
+
+            $this->assertSame($originalJti, $session->token_jti);
+        } finally {
+            JWTAuth::factory()->setTTL($originalTtl);
+        }
     }
 }
