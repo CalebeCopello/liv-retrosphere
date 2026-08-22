@@ -403,4 +403,59 @@ class AuthControllerTest extends TestCase
             JWTAuth::factory()->setTTL($originalTtl);
         }
     }
+
+    public function test_unexpired_access_token_can_be_refreshed(): void
+    {
+        $user = User::factory()->create([
+            'password' => Hash::make('password'),
+        ]);
+
+        $loginResponse = $this->postJson(self::LOGIN_ENDPOINT, [
+            'email' => $user->email,
+            'password' => 'password',
+        ]);
+
+        $loginResponse->assertOk();
+
+        $oldToken = $loginResponse->json('data.access_token');
+
+        $this->assertIsString($oldToken);
+
+        $refreshResponse = $this
+            ->withToken($oldToken)
+            ->postJson(self::REFRESH_ENDPOINT);
+
+        $refreshResponse->assertOk();
+
+        $newToken = $refreshResponse->json('data.access_token');
+
+        $this->assertIsString($newToken);
+        $this->assertNotSame($oldToken, $newToken);
+
+        $this
+            ->withToken($newToken)
+            ->getJson(self::ME_ENDPOINT)
+            ->assertOk();
+    }
+
+    public function test_expired_token_cannot_be_refreshed(): void
+    {
+        $originalTtl = JWTAuth::factory()->getTTL();
+
+        try {
+            JWTAuth::factory()->setTTL(43200);
+
+            $user = $this->createUser();
+            $token = $this->loginAndGetToken($user);
+
+            $this->travel(31)->days();
+
+            $this
+                ->withToken($token)
+                ->postJson(self::REFRESH_ENDPOINT)
+                ->assertUnauthorized();
+        } finally {
+            JWTAuth::factory()->setTTL($originalTtl);
+        }
+    }
 }
