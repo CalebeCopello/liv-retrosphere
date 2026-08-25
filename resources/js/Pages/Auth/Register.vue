@@ -58,11 +58,6 @@ async function submit(): Promise<void> {
             return;
         }
         setAuthToken(response.data.access_token, response.data.expires_in)
-
-        console.log('access_token:', response.data.access_token);
-        console.log('expires_in:', response.data.expires_in);
-
-        // window.location.href = '/me';
     } catch (error) {
         message.value = 'Something went wrong while creating your account. Please try again.';
         console.error(error);

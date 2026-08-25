@@ -1,6 +1,6 @@
 import { refresh } from '../api/auth';
 
-import type { AuthErrorResponse, RefreshResponse } from '../types/auth';
+import type { RefreshResponse } from '../types/auth';
 
 const TOKEN_KEY = 'access_token';
 const EXPIRES_AT_KEY = 'access_token_expires_at';

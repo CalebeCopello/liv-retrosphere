@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue';
 import { Head } from '@inertiajs/vue3';
 
 import { me } from '../api/auth';
-import { getAuthToken } from '../auth/token';
+import { getValidAuthToken } from '../auth/token';
 
 import type { AuthUser } from '../types/auth';
 
@@ -15,16 +15,16 @@ const message = ref('');
 const loading = ref(true);
 
 async function loadUser(): Promise<void> {
-    const token = getAuthToken();
-
-    if (!token) {
-        message.value = 'No access token found.';
-        loading.value = false;
-
-        return;
-    }
-
     try {
+        const token = await getValidAuthToken();
+
+        if (!token) {
+            message.value = 'No access token found.';
+            loading.value = false;
+
+            return;
+        }
+
         const response = await me(token);
 
         if (!response.data) {
