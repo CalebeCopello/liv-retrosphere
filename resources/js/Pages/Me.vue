@@ -2,13 +2,14 @@
 import { onMounted, ref } from 'vue';
 import { Head } from '@inertiajs/vue3';
 
-import { me } from '../api/auth';
-import { getValidAuthToken } from '../auth/token';
+import { logout, me } from '../api/auth';
+import { clearAuthToken, getValidAuthToken } from '../auth/token';
 
 import type { AuthUser } from '../types/auth';
 
 import AuthLayout from '../layouts/AuthLayout.vue';
 import RetroFormCard from '../components/ui/RetroFormCard.vue';
+import RetroButton from '../components/ui/RetroButton.vue';
 
 const user = ref<AuthUser | null>(null);
 const message = ref('');
@@ -43,6 +44,22 @@ async function loadUser(): Promise<void> {
     }
 }
 
+async function submitLogout(): Promise<void> {
+    const token = await getValidAuthToken();
+
+    try {
+        if (token) {
+            await logout(token);
+        }
+    } catch (error) {
+        console.error(error);
+    } finally {
+        clearAuthToken();
+        user.value = null;
+        message.value = 'You logged out.';
+    }
+}
+
 onMounted(loadUser);
 </script>
 
@@ -60,8 +77,15 @@ onMounted(loadUser);
 
             <div v-else-if="user">
                 <p>{{ message }}</p>
-
                 <pre>{{ JSON.stringify(user, null, 2) }}</pre>
+                <RetroButton
+                    type="button"
+                    variant="secondary"
+                    @click="submitLogout"
+                    style="margin-top: 1rem;"
+                >
+                    Logout
+                </RetroButton>
             </div>
 
             <p v-else>
