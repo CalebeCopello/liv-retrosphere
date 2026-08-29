@@ -11,11 +11,12 @@ import type {
     ApiErrorResponse,
     LoginCredentials,
     LoginResponse,
+    LogoutResponse,
     RateLimitErrorResponse,
     ValidationErrorResponse,
 } from '../types/auth';
 
-import { login } from './auth';
+import { login, logout } from './auth';
 import { apiRoutes } from './routes';
 
 const credentials: LoginCredentials = {
@@ -161,5 +162,49 @@ describe('login API boundary', () => {
                 ? result.retry_after
                 : undefined,
         ).toBe(60);
+    });
+});
+
+describe('logout API boundary', () => {
+    beforeEach(() => {
+        fetchMock.mockReset();
+        vi.stubGlobal('fetch', fetchMock);
+    });
+
+    afterEach(() => {
+        vi.unstubAllGlobals();
+    });
+
+    it('sends the token and returns the successful logout response', async () => {
+        const token = 'example-jwt-token';
+        const responsePayload: LogoutResponse = {
+            message: 'You logged out.',
+            data: {
+                access_token: null,
+                token_type: null,
+                expires_in: null,
+                user: authenticatedUser,
+            },
+            errors: null,
+        };
+
+        fetchMock.mockResolvedValue(
+            jsonResponse(responsePayload, 200),
+        );
+
+        const result = await logout(token);
+
+        expect(fetchMock).toHaveBeenCalledOnce();
+        expect(fetchMock).toHaveBeenCalledWith(
+            apiRoutes.auth.logout,
+            {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    Authorization: `Bearer ${token}`,
+                },
+            },
+        );
+        expect(result).toEqual(responsePayload);
     });
 });
