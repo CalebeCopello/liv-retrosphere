@@ -2,6 +2,7 @@ import type {
     AuthErrorResponse,
     LoginCredentials,
     LoginResponse,
+    LogoutResponse,
     MeResponse,
     RefreshResponse,
     RegisterCredentials,
@@ -60,7 +61,7 @@ export async function refresh(token: string): Promise<RefreshResponse | AuthErro
     const payload = (await response.json()) as RefreshResponse | AuthErrorResponse;
 
     if (response.ok) {
-            return payload as RefreshResponse;
+        return payload as RefreshResponse;
     }
 
     return payload as AuthErrorResponse;
@@ -78,7 +79,25 @@ export async function me(token: string): Promise<MeResponse | AuthErrorResponse>
     const payload = (await response.json()) as MeResponse | AuthErrorResponse;
 
     if (response.ok) {
-            return payload as MeResponse;
+        return payload as MeResponse;
+    }
+
+    return payload as AuthErrorResponse;
+}
+
+export async function logout(token: string): Promise<LogoutResponse | AuthErrorResponse> {
+    const response = await fetch(apiRoutes.auth.logout, {
+        method: 'POST',
+        headers: {
+            Accept: 'application/json',
+            Authorization: `Bearer ${token}`,
+        },
+    });
+
+    const payload = (await response.json()) as LogoutResponse | AuthErrorResponse;
+
+    if (response.ok) {
+        return payload as LogoutResponse;
     }
 
     return payload as AuthErrorResponse;
