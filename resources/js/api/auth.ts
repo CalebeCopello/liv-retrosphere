@@ -3,6 +3,7 @@ import type {
     LoginCredentials,
     LoginResponse,
     LogoutResponse,
+    LogoutAllResponse,
     MeResponse,
     RefreshResponse,
     RegisterCredentials,
@@ -99,6 +100,23 @@ export async function logout(token: string): Promise<LogoutResponse | AuthErrorR
     if (response.ok) {
         return payload as LogoutResponse;
     }
+
+    return payload as AuthErrorResponse;
+}
+
+export async function logoutAll(token: string): Promise<LogoutAllResponse | AuthErrorResponse> {
+    const response = await fetch(apiRoutes.auth.logoutAll, {
+        headers: {
+            Accept: 'application/json',
+            Authorization: `Bearer ${token}`,
+        },
+    });
+
+    const payload = await response.json() as LogoutAllResponse | AuthErrorResponse;
+
+    if (response.ok) {{
+        return payload as LogoutAllResponse;
+    }}
 
     return payload as AuthErrorResponse;
 }
