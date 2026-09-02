@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue';
 import { Head } from '@inertiajs/vue3';
 
-import { logout, me } from '../api/auth';
+import { logout, logoutAll, me } from '../api/auth';
 import { clearAuthToken, getValidAuthToken } from '../auth/token';
 
 import type { AuthUser } from '../types/auth';
@@ -60,6 +60,21 @@ async function submitLogout(): Promise<void> {
     }
 }
 
+async function submitLogoutAll(): Promise<void> {
+    const token = await getValidAuthToken();
+    try {
+        if (token) {
+            await logoutAll(token);
+        }
+    } catch (error) {
+        console.error(error);
+    } finally {
+        clearAuthToken();
+        user.value = null;
+        message.value = 'You logged out from all devices.';
+    }
+}
+
 onMounted(loadUser);
 </script>
 
@@ -76,16 +91,18 @@ onMounted(loadUser);
             <p v-if="loading">Loading...</p>
 
             <div v-else-if="user">
-                <p>{{ message }}</p>
-                <pre>{{ JSON.stringify(user, null, 2) }}</pre>
-                <RetroButton
-                    type="button"
-                    variant="secondary"
-                    @click="submitLogout"
-                    style="margin-top: 1rem;"
-                >
-                    Logout
-                </RetroButton>
+                <div>
+                    <p>{{ message }}</p>
+                    <pre>{{ JSON.stringify(user, null, 2) }}</pre>
+                    <RetroButton type="button" variant="secondary" @click="submitLogout" style="margin-top: 1rem">
+                        Logout
+                    </RetroButton>
+                </div>
+                <div>
+                    <RetroButton type="button" variant="secondary" @click="submitLogoutAll">
+                        Logout from all devices
+                    </RetroButton>
+                </div>
             </div>
 
             <p v-else>
