@@ -106,6 +106,7 @@ export async function logout(token: string): Promise<LogoutResponse | AuthErrorR
 
 export async function logoutAll(token: string): Promise<LogoutAllResponse | AuthErrorResponse> {
     const response = await fetch(apiRoutes.auth.logoutAll, {
+        method: 'POST',
         headers: {
             Accept: 'application/json',
             Authorization: `Bearer ${token}`,
@@ -114,9 +115,9 @@ export async function logoutAll(token: string): Promise<LogoutAllResponse | Auth
 
     const payload = await response.json() as LogoutAllResponse | AuthErrorResponse;
 
-    if (response.ok) {{
+    if (response.ok) {
         return payload as LogoutAllResponse;
-    }}
+    }
 
     return payload as AuthErrorResponse;
 }
