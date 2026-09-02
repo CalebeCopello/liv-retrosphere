@@ -1,22 +1,16 @@
-import {
-    afterEach,
-    beforeEach,
-    describe,
-    expect,
-    it,
-    vi,
-} from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import type {
     ApiErrorResponse,
     LoginCredentials,
     LoginResponse,
     LogoutResponse,
+    LogoutAllResponse,
     RateLimitErrorResponse,
     ValidationErrorResponse,
 } from '../types/auth';
 
-import { login, logout } from './auth';
+import { login, logout, logoutAll } from './auth';
 import { apiRoutes } from './routes';
 
 const credentials: LoginCredentials = {
@@ -35,10 +29,7 @@ const authenticatedUser = {
 
 const fetchMock = vi.fn<typeof fetch>();
 
-function jsonResponse(
-    payload: unknown,
-    status: number,
-): Response {
+function jsonResponse(payload: unknown, status: number): Response {
     return new Response(JSON.stringify(payload), {
         status,
         headers: {
@@ -69,44 +60,34 @@ describe('login API boundary', () => {
             errors: null,
         };
 
-        fetchMock.mockResolvedValue(
-            jsonResponse(responsePayload, 200),
-        );
+        fetchMock.mockResolvedValue(jsonResponse(responsePayload, 200));
 
         const result = await login(credentials);
 
         expect(fetchMock).toHaveBeenCalledOnce();
 
-        expect(fetchMock).toHaveBeenCalledWith(
-            apiRoutes.auth.login,
-            {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(credentials),
+        expect(fetchMock).toHaveBeenCalledWith(apiRoutes.auth.login, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
             },
-        );
+            body: JSON.stringify(credentials),
+        });
 
         expect(result).toEqual(responsePayload);
     });
 
     it('returns the incorrect-credentials response', async () => {
         const responsePayload: ApiErrorResponse = {
-            message:
-                'The provided credentials are incorrect.',
+            message: 'The provided credentials are incorrect.',
             data: null,
             errors: {
-                credentials: [
-                    'The provided credentials are incorrect.',
-                ],
+                credentials: ['The provided credentials are incorrect.'],
             },
         };
 
-        fetchMock.mockResolvedValue(
-            jsonResponse(responsePayload, 401),
-        );
+        fetchMock.mockResolvedValue(jsonResponse(responsePayload, 401));
 
         const result = await login({
             ...credentials,
@@ -118,21 +99,14 @@ describe('login API boundary', () => {
 
     it('returns the validation failure response', async () => {
         const responsePayload: ValidationErrorResponse = {
-            message:
-                'The email field is required. (and 1 more error)',
+            message: 'The email field is required. (and 1 more error)',
             errors: {
-                email: [
-                    'The email field is required.',
-                ],
-                password: [
-                    'The password field is required.',
-                ],
+                email: ['The email field is required.'],
+                password: ['The password field is required.'],
             },
         };
 
-        fetchMock.mockResolvedValue(
-            jsonResponse(responsePayload, 422),
-        );
+        fetchMock.mockResolvedValue(jsonResponse(responsePayload, 422));
 
         const result = await login({
             email: '',
@@ -149,19 +123,13 @@ describe('login API boundary', () => {
             retry_after: 60,
         };
 
-        fetchMock.mockResolvedValue(
-            jsonResponse(responsePayload, 429),
-        );
+        fetchMock.mockResolvedValue(jsonResponse(responsePayload, 429));
 
         const result = await login(credentials);
 
         expect(result).toEqual(responsePayload);
 
-        expect(
-            'retry_after' in result
-                ? result.retry_after
-                : undefined,
-        ).toBe(60);
+        expect('retry_after' in result ? result.retry_after : undefined).toBe(60);
     });
 });
 
@@ -188,23 +156,60 @@ describe('logout API boundary', () => {
             errors: null,
         };
 
-        fetchMock.mockResolvedValue(
-            jsonResponse(responsePayload, 200),
-        );
+        fetchMock.mockResolvedValue(jsonResponse(responsePayload, 200));
 
         const result = await logout(token);
 
         expect(fetchMock).toHaveBeenCalledOnce();
-        expect(fetchMock).toHaveBeenCalledWith(
-            apiRoutes.auth.logout,
-            {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    Authorization: `Bearer ${token}`,
-                },
+        expect(fetchMock).toHaveBeenCalledWith(apiRoutes.auth.logout, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                Authorization: `Bearer ${token}`,
             },
-        );
+        });
+        expect(result).toEqual(responsePayload);
+    });
+});
+
+describe('logout-all API boundary', () => {
+    beforeEach(() => {
+        fetchMock.mockReset();
+        vi.stubGlobal('fetch', fetchMock);
+    });
+
+    afterEach(() => {
+        vi.unstubAllGlobals();
+    });
+
+    it('sends the token and returns the successful logout-all response', async () => {
+        const token = 'example-jwt-token';
+
+        const responsePayload: LogoutAllResponse = {
+            message: 'You logged out from all devices.',
+            data: {
+                access_token: null,
+                token_type: null,
+                expires_in: null,
+                user: authenticatedUser,
+            },
+            errors: null,
+        };
+
+        fetchMock.mockResolvedValue(jsonResponse(responsePayload, 200));
+
+        const result = await logoutAll(token);
+
+        expect(fetchMock).toHaveBeenCalledOnce();
+
+        expect(fetchMock).toHaveBeenCalledWith(apiRoutes.auth.logoutAll, {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                Authorization: `Bearer ${token}`,
+            },
+        });
+
         expect(result).toEqual(responsePayload);
     });
 });
