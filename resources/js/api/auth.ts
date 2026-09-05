@@ -18,7 +18,7 @@ interface ApiRequestOptions<TBody> {
     body?: TBody;
 }
 
-async function authRequest<TResponse, TBody = never>(url: string, options: ApiRequestOptions<TBody> = {}) {
+async function authRequest<TResponse, TBody = never>(url: string, options: ApiRequestOptions<TBody> = {}): Promise<TResponse | AuthErrorResponse> {
     const headers: Record<string, string> = {
         Accept: 'application/json',
     };
@@ -27,7 +27,7 @@ async function authRequest<TResponse, TBody = never>(url: string, options: ApiRe
         headers.Authorization = `Bearer ${options.token}`;
     }
 
-    if (options.body) {
+    if (options.body !== undefined) {
         headers['Content-Type'] = 'application/json';
     }
 
