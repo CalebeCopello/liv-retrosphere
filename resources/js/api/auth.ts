@@ -21,7 +21,7 @@ interface ApiRequestOptions<TBody> {
 async function authRequest<TResponse, TBody = never>(url: string, options: ApiRequestOptions<TBody> = {}) {
     const headers: Record<string, string> = {
         Accept: 'application/json',
-    }
+    };
 
     if (options.token) {
         headers.Authorization = `Bearer ${options.token}`;
@@ -34,118 +34,47 @@ async function authRequest<TResponse, TBody = never>(url: string, options: ApiRe
     const response = await fetch(url, {
         method: options.method ?? 'POST',
         headers,
-        body: options.body === undefined ? undefined : JSON.stringify(options.body)
+        body: options.body === undefined ? undefined : JSON.stringify(options.body),
     });
 
     return response.json() as Promise<TResponse | AuthErrorResponse>;
 }
 
-export async function login(credentials: LoginCredentials): Promise<LoginResponse | AuthErrorResponse> {
-    const response = await fetch(apiRoutes.auth.login, {
-        method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(credentials),
+export function login(credentials: LoginCredentials): Promise<LoginResponse | AuthErrorResponse> {
+    return authRequest<LoginResponse, LoginCredentials>(apiRoutes.auth.login, {
+        body: credentials,
     });
-
-    const payload = (await response.json()) as LoginResponse | AuthErrorResponse;
-
-    if (response.ok) {
-        return payload as LoginResponse;
-    }
-
-    return payload as AuthErrorResponse;
 }
 
-export async function register(credentials: RegisterCredentials): Promise<RegisterResponse | AuthErrorResponse> {
-    const response = await fetch(apiRoutes.auth.register, {
-        method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(credentials),
+export function register(credentials: RegisterCredentials): Promise<RegisterResponse | AuthErrorResponse> {
+    return authRequest<RegisterResponse, RegisterCredentials>(apiRoutes.auth.register, {
+        body: credentials,
     });
-
-    const payload = (await response.json()) as RegisterResponse | AuthErrorResponse;
-
-    if (response.ok) {
-        return payload as RegisterResponse;
-    }
-
-    return payload as AuthErrorResponse;
 }
 
-export async function refresh(token: string): Promise<RefreshResponse | AuthErrorResponse> {
-    const response = await fetch(apiRoutes.auth.refresh, {
+export function refresh(token: string): Promise<RefreshResponse | AuthErrorResponse> {
+    return authRequest<RefreshResponse>(apiRoutes.auth.refresh, {
         method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            Authorization: `Bearer ${token}`,
-        },
+        token,
     });
-
-    const payload = (await response.json()) as RefreshResponse | AuthErrorResponse;
-
-    if (response.ok) {
-        return payload as RefreshResponse;
-    }
-
-    return payload as AuthErrorResponse;
 }
 
-export async function me(token: string): Promise<MeResponse | AuthErrorResponse> {
-    const response = await fetch(apiRoutes.auth.me, {
-        method: 'GET',
-        headers: {
-            Accept: 'application/json',
-            Authorization: `Bearer ${token}`,
-        },
+export function me(token: string): Promise<MeResponse | AuthErrorResponse> {
+    return authRequest<MeResponse>(apiRoutes.auth.me, {
+        token,
     });
-
-    const payload = (await response.json()) as MeResponse | AuthErrorResponse;
-
-    if (response.ok) {
-        return payload as MeResponse;
-    }
-
-    return payload as AuthErrorResponse;
 }
 
-export async function logout(token: string): Promise<LogoutResponse | AuthErrorResponse> {
-    const response = await fetch(apiRoutes.auth.logout, {
+export function logout(token: string): Promise<LogoutResponse | AuthErrorResponse> {
+    return authRequest<LogoutResponse>(apiRoutes.auth.logout, {
         method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            Authorization: `Bearer ${token}`,
-        },
+        token,
     });
-
-    const payload = (await response.json()) as LogoutResponse | AuthErrorResponse;
-
-    if (response.ok) {
-        return payload as LogoutResponse;
-    }
-
-    return payload as AuthErrorResponse;
 }
 
-export async function logoutAll(token: string): Promise<LogoutAllResponse | AuthErrorResponse> {
-    const response = await fetch(apiRoutes.auth.logoutAll, {
+export function logoutAll(token: string): Promise<LogoutAllResponse | AuthErrorResponse> {
+    return authRequest<LogoutAllResponse>(apiRoutes.auth.logoutAll, {
         method: 'POST',
-        headers: {
-            Accept: 'application/json',
-            Authorization: `Bearer ${token}`,
-        },
+        token,
     });
-
-    const payload = await response.json() as LogoutAllResponse | AuthErrorResponse;
-
-    if (response.ok) {
-        return payload as LogoutAllResponse;
-    }
-
-    return payload as AuthErrorResponse;
 }
