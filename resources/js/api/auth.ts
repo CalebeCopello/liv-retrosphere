@@ -12,6 +12,34 @@ import type {
 
 import { apiRoutes } from './routes';
 
+interface ApiRequestOptions<TBody> {
+    method?: 'GET' | 'POST';
+    token?: string;
+    body?: TBody;
+}
+
+async function authRequest<TResponse, TBody = never>(url: string, options: ApiRequestOptions<TBody> = {}) {
+    const headers: Record<string, string> = {
+        Accept: 'application/json',
+    }
+
+    if (options.token) {
+        headers.Authorization = `Bearer ${options.token}`;
+    }
+
+    if (options.body) {
+        headers['Content-Type'] = 'application/json';
+    }
+
+    const response = await fetch(url, {
+        method: options.method ?? 'POST',
+        headers,
+        body: options.body === undefined ? undefined : JSON.stringify(options.body)
+    });
+
+    return response.json() as Promise<TResponse | AuthErrorResponse>;
+}
+
 export async function login(credentials: LoginCredentials): Promise<LoginResponse | AuthErrorResponse> {
     const response = await fetch(apiRoutes.auth.login, {
         method: 'POST',
