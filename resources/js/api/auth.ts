@@ -54,27 +54,25 @@ export function register(credentials: RegisterCredentials): Promise<RegisterResp
 
 export function refresh(token: string): Promise<RefreshResponse | AuthErrorResponse> {
     return authRequest<RefreshResponse>(apiRoutes.auth.refresh, {
-        method: 'POST',
         token,
     });
 }
 
 export function me(token: string): Promise<MeResponse | AuthErrorResponse> {
     return authRequest<MeResponse>(apiRoutes.auth.me, {
+        method: 'GET',
         token,
     });
 }
 
 export function logout(token: string): Promise<LogoutResponse | AuthErrorResponse> {
     return authRequest<LogoutResponse>(apiRoutes.auth.logout, {
-        method: 'POST',
         token,
     });
 }
 
 export function logoutAll(token: string): Promise<LogoutAllResponse | AuthErrorResponse> {
     return authRequest<LogoutAllResponse>(apiRoutes.auth.logoutAll, {
-        method: 'POST',
         token,
     });
 }
