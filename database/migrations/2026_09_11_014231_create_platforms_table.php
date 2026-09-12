@@ -6,31 +6,29 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('platforms', function (Blueprint $table) {
-            $table->uuid('id');
+            $table->uuid('id')->primary();
+
             $table->string('name', 250)->unique();
             $table->string('slug', 120)->unique();
             $table->string('short_name', 30)->nullable();
 
-            // home_console, handheld, arcade, computer...
-            $table->string('type', 30);
+            // home_console, handheld, hybrid, computer, etc.
+            $table->string('type', 30)->default('unknown');
 
             $table->unsignedTinyInteger('generation')->nullable();
+            $table->unsignedSmallInteger('initial_release_year')->nullable();
+
             $table->text('description')->nullable();
+            $table->string('source_url', 500)->nullable();
 
             $table->timestamps();
             $table->softDeletes();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('platforms');
