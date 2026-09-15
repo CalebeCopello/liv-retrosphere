@@ -1,0 +1,1397 @@
+[
+    {
+        "name": "Magnavox Odyssey",
+        "slug": "magnavox-odyssey",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 1,
+        "initial_release_year": 1972,
+        "description": null
+    },
+    {
+        "name": "Pong",
+        "slug": "pong",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 1,
+        "initial_release_year": 1975,
+        "description": null
+    },
+    {
+        "name": "Philips Tele-Spiel",
+        "slug": "philips-tele-spiel",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 1,
+        "initial_release_year": 1975,
+        "description": null
+    },
+    {
+        "name": "Coleco Telstar",
+        "slug": "coleco-telstar",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 1,
+        "initial_release_year": 1976,
+        "description": null
+    },
+    {
+        "name": "Telejogo",
+        "slug": "telejogo",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 1,
+        "initial_release_year": 1977,
+        "description": null
+    },
+    {
+        "name": "Color TV Game",
+        "slug": "color-tv-game",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 1,
+        "initial_release_year": 1977,
+        "description": null
+    },
+    {
+        "name": "Telejogo II",
+        "slug": "telejogo-ii",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 1,
+        "initial_release_year": 1978,
+        "description": null
+    },
+    {
+        "name": "Fairchild Channel F",
+        "slug": "fairchild-channel-f",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1976,
+        "description": null
+    },
+    {
+        "name": "RCA Studio II",
+        "slug": "rca-studio-ii",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1977,
+        "description": null
+    },
+    {
+        "name": "Atari 2600",
+        "slug": "atari-2600",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1977,
+        "description": null
+    },
+    {
+        "name": "Bally Astrocade",
+        "slug": "bally-astrocade",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1977,
+        "description": null
+    },
+    {
+        "name": "Interton VC 4000",
+        "slug": "interton-vc-4000",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1978,
+        "description": null
+    },
+    {
+        "name": "Magnavox Odyssey²",
+        "slug": "magnavox-odyssey-2",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1978,
+        "description": null
+    },
+    {
+        "name": "Microvision",
+        "slug": "microvision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1979,
+        "description": null
+    },
+    {
+        "name": "Game & Watch",
+        "slug": "game-and-watch",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1980,
+        "description": null
+    },
+    {
+        "name": "Intellivision",
+        "slug": "intellivision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1980,
+        "description": null
+    },
+    {
+        "name": "PlayCable",
+        "slug": "playcable",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1981,
+        "description": null
+    },
+    {
+        "name": "VTech CreatiVision",
+        "slug": "vtech-creativision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1981,
+        "description": null
+    },
+    {
+        "name": "Epoch Cassette Vision",
+        "slug": "epoch-cassette-vision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1981,
+        "description": null
+    },
+    {
+        "name": "Coleco Gemini",
+        "slug": "coleco-gemini",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1982,
+        "description": null
+    },
+    {
+        "name": "Arcadia 2001",
+        "slug": "arcadia-2001",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1982,
+        "description": null
+    },
+    {
+        "name": "Atari 5200",
+        "slug": "atari-5200",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1982,
+        "description": null
+    },
+    {
+        "name": "ColecoVision",
+        "slug": "colecovision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1982,
+        "description": null
+    },
+    {
+        "name": "Commodore MAX Machine",
+        "slug": "commodore-max-machine",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1982,
+        "description": null
+    },
+    {
+        "name": "Entex Adventure Vision",
+        "slug": "entex-adventure-vision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1982,
+        "description": null
+    },
+    {
+        "name": "Vectrex",
+        "slug": "vectrex",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1982,
+        "description": null
+    },
+    {
+        "name": "Sega SG-1000",
+        "slug": "sega-sg-1000",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1983,
+        "description": null
+    },
+    {
+        "name": "Atari 2800",
+        "slug": "atari-2800",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1983,
+        "description": null
+    },
+    {
+        "name": "Dactar",
+        "slug": "dactar",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1983,
+        "description": null
+    },
+    {
+        "name": "Dynavision",
+        "slug": "dynavision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 2,
+        "initial_release_year": 1983,
+        "description": null
+    },
+    {
+        "name": "NES/Famicom",
+        "slug": "nes-famicom",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1983,
+        "description": null
+    },
+    {
+        "name": "Philips Videopac+ G7400",
+        "slug": "philips-videopac-g7400",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1983,
+        "description": null
+    },
+    {
+        "name": "MSX",
+        "slug": "msx",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1983,
+        "description": null
+    },
+    {
+        "name": "Casio PV-1000",
+        "slug": "casio-pv-1000",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1983,
+        "description": null
+    },
+    {
+        "name": "Atari 7800",
+        "slug": "atari-7800",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1986,
+        "description": null
+    },
+    {
+        "name": "Action Max",
+        "slug": "action-max",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1987,
+        "description": null
+    },
+    {
+        "name": "Master System",
+        "slug": "master-system",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1987,
+        "description": null
+    },
+    {
+        "name": "Game Boy",
+        "slug": "game-boy",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1989,
+        "description": null
+    },
+    {
+        "name": "Phantom System",
+        "slug": "phantom-system",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1989,
+        "description": null
+    },
+    {
+        "name": "Top Game/Turbo Game",
+        "slug": "top-game-turbo-game",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1989,
+        "description": null
+    },
+    {
+        "name": "Dynavision 2",
+        "slug": "dynavision-2",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1989,
+        "description": null
+    },
+    {
+        "name": "Hi-Top Game",
+        "slug": "hi-top-game",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1990,
+        "description": null
+    },
+    {
+        "name": "Game Gear",
+        "slug": "game-gear",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1990,
+        "description": null
+    },
+    {
+        "name": "Commodore 64GS",
+        "slug": "commodore-64gs",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1990,
+        "description": null
+    },
+    {
+        "name": "Prosystem-8",
+        "slug": "prosystem-8",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 3,
+        "initial_release_year": 1994,
+        "description": null
+    },
+    {
+        "name": "PC Engine/TurboGrafx-16",
+        "slug": "pc-engine-turbografx-16",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1987,
+        "description": null
+    },
+    {
+        "name": "Mega Drive/Genesis",
+        "slug": "mega-drive-genesis",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1988,
+        "description": null
+    },
+    {
+        "name": "Atari Lynx",
+        "slug": "atari-lynx",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1989,
+        "description": null
+    },
+    {
+        "name": "TurboExpress",
+        "slug": "turboexpress",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1990,
+        "description": null
+    },
+    {
+        "name": "Neo-Geo",
+        "slug": "neo-geo",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1990,
+        "description": null
+    },
+    {
+        "name": "Super Nintendo/Super Famicom",
+        "slug": "super-nintendo-super-famicom",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1990,
+        "description": null
+    },
+    {
+        "name": "Commodore CDTV",
+        "slug": "commodore-cdtv",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1991,
+        "description": null
+    },
+    {
+        "name": "CD-i",
+        "slug": "cd-i",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1991,
+        "description": null
+    },
+    {
+        "name": "Tera Drive",
+        "slug": "tera-drive",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1991,
+        "description": null
+    },
+    {
+        "name": "Supervision",
+        "slug": "supervision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1992,
+        "description": null
+    },
+    {
+        "name": "Wonder Mega",
+        "slug": "wonder-mega",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1992,
+        "description": null
+    },
+    {
+        "name": "Mega Duck/Cougar Boy",
+        "slug": "mega-duck-cougar-boy",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1993,
+        "description": null
+    },
+    {
+        "name": "MegaVision",
+        "slug": "megavision",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1994,
+        "description": null
+    },
+    {
+        "name": "Genesis CDX/Multi-Mega CD",
+        "slug": "genesis-cdx-multi-mega-cd",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1994,
+        "description": null
+    },
+    {
+        "name": "Neo-Geo CD",
+        "slug": "neo-geo-cd",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1994,
+        "description": null
+    },
+    {
+        "name": "Super A'Can",
+        "slug": "super-acan",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1995,
+        "description": null
+    },
+    {
+        "name": "Super Prosystem-16 Competition",
+        "slug": "super-prosystem-16-competition",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 4,
+        "initial_release_year": 1995,
+        "description": null
+    },
+    {
+        "name": "3DO",
+        "slug": "3do",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1993,
+        "description": null
+    },
+    {
+        "name": "Amiga CD32",
+        "slug": "amiga-cd32",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1993,
+        "description": null
+    },
+    {
+        "name": "FM Towns Marty",
+        "slug": "fm-towns-marty",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1993,
+        "description": null
+    },
+    {
+        "name": "Pioneer LaserActive",
+        "slug": "pioneer-laseractive",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1993,
+        "description": null
+    },
+    {
+        "name": "Atari Jaguar",
+        "slug": "atari-jaguar",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1993,
+        "description": null
+    },
+    {
+        "name": "PC-FX",
+        "slug": "pc-fx",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1994,
+        "description": null
+    },
+    {
+        "name": "Playdia",
+        "slug": "playdia",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1994,
+        "description": null
+    },
+    {
+        "name": "Sega Saturn",
+        "slug": "sega-saturn",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1994,
+        "description": null
+    },
+    {
+        "name": "PlayStation",
+        "slug": "playstation",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1994,
+        "description": null
+    },
+    {
+        "name": "Virtual Boy",
+        "slug": "virtual-boy",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1995,
+        "description": null
+    },
+    {
+        "name": "Casio Loopy",
+        "slug": "casio-loopy",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1995,
+        "description": null
+    },
+    {
+        "name": "R-Zone",
+        "slug": "r-zone",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1995,
+        "description": null
+    },
+    {
+        "name": "Atari Jaguar CD Pro",
+        "slug": "atari-jaguar-cd-pro",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1995,
+        "description": null
+    },
+    {
+        "name": "Apple Pippin",
+        "slug": "apple-pippin",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1995,
+        "description": null
+    },
+    {
+        "name": "Nintendo 64",
+        "slug": "nintendo-64",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1996,
+        "description": null
+    },
+    {
+        "name": "Game.com",
+        "slug": "game-com",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1997,
+        "description": null
+    },
+    {
+        "name": "Neo Geo Pocket",
+        "slug": "neo-geo-pocket",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1998,
+        "description": null
+    },
+    {
+        "name": "Game Boy Color",
+        "slug": "game-boy-color",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1998,
+        "description": null
+    },
+    {
+        "name": "PocketStation",
+        "slug": "pocketstation",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 5,
+        "initial_release_year": 1999,
+        "description": null
+    },
+    {
+        "name": "Dreamcast",
+        "slug": "dreamcast",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 1998,
+        "description": null
+    },
+    {
+        "name": "Neo Geo Pocket Color",
+        "slug": "neo-geo-pocket-color",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 1999,
+        "description": null
+    },
+    {
+        "name": "WonderSwan/WonderSwan Color",
+        "slug": "wonderswan-wonderswan-color",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 1999,
+        "description": null
+    },
+    {
+        "name": "PlayStation 2",
+        "slug": "playstation-2",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2000,
+        "description": null
+    },
+    {
+        "name": "Game Boy Advance",
+        "slug": "game-boy-advance",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2001,
+        "description": null
+    },
+    {
+        "name": "Nintendo GameCube",
+        "slug": "nintendo-gamecube",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2001,
+        "description": null
+    },
+    {
+        "name": "Xbox",
+        "slug": "xbox",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2001,
+        "description": null
+    },
+    {
+        "name": "Pokémon mini",
+        "slug": "pokemon-mini",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2001,
+        "description": null
+    },
+    {
+        "name": "GP32",
+        "slug": "gp32",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2001,
+        "description": null
+    },
+    {
+        "name": "Panasonic Q",
+        "slug": "panasonic-q",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2001,
+        "description": null
+    },
+    {
+        "name": "SwanCrystal",
+        "slug": "swancrystal",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2002,
+        "description": null
+    },
+    {
+        "name": "GameKing",
+        "slug": "gameking",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2003,
+        "description": null
+    },
+    {
+        "name": "N-Gage",
+        "slug": "n-gage",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2003,
+        "description": null
+    },
+    {
+        "name": "PSX",
+        "slug": "psx",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2003,
+        "description": null
+    },
+    {
+        "name": "iQue Player",
+        "slug": "ique-player",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2003,
+        "description": null
+    },
+    {
+        "name": "Tapwave Zodiac",
+        "slug": "tapwave-zodiac",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2003,
+        "description": null
+    },
+    {
+        "name": "Atari Flashback",
+        "slug": "atari-flashback",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2004,
+        "description": null
+    },
+    {
+        "name": "OneStation",
+        "slug": "onestation",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 6,
+        "initial_release_year": 2006,
+        "description": null
+    },
+    {
+        "name": "Nintendo DS",
+        "slug": "nintendo-ds",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2004,
+        "description": null
+    },
+    {
+        "name": "PSP",
+        "slug": "psp",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2004,
+        "description": null
+    },
+    {
+        "name": "Gizmondo",
+        "slug": "gizmondo",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2005,
+        "description": null
+    },
+    {
+        "name": "Xbox 360",
+        "slug": "xbox-360",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2005,
+        "description": null
+    },
+    {
+        "name": "Samsung SPH-G1000",
+        "slug": "samsung-sph-g1000",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2005,
+        "description": null
+    },
+    {
+        "name": "GP2X",
+        "slug": "gp2x",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2005,
+        "description": null
+    },
+    {
+        "name": "HyperScan",
+        "slug": "hyperscan",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2006,
+        "description": null
+    },
+    {
+        "name": "PlayStation 3",
+        "slug": "playstation-3",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2006,
+        "description": null
+    },
+    {
+        "name": "Wii",
+        "slug": "wii",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2006,
+        "description": null
+    },
+    {
+        "name": "Vii",
+        "slug": "vii",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2007,
+        "description": null
+    },
+    {
+        "name": "Nintendo DSi",
+        "slug": "nintendo-dsi",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2008,
+        "description": null
+    },
+    {
+        "name": "GP2X Wiz",
+        "slug": "gp2x-wiz",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2009,
+        "description": null
+    },
+    {
+        "name": "Dingoo",
+        "slug": "dingoo",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2009,
+        "description": null
+    },
+    {
+        "name": "Zeebo",
+        "slug": "zeebo",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2009,
+        "description": null
+    },
+    {
+        "name": "OnLive",
+        "slug": "onlive",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2009,
+        "description": null
+    },
+    {
+        "name": "Pandora",
+        "slug": "pandora",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 7,
+        "initial_release_year": 2009,
+        "description": null
+    },
+    {
+        "name": "Nintendo 3DS",
+        "slug": "nintendo-3ds",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2011,
+        "description": null
+    },
+    {
+        "name": "Xperia Play",
+        "slug": "xperia-play",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2011,
+        "description": null
+    },
+    {
+        "name": "PlayStation Vita",
+        "slug": "playstation-vita",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2011,
+        "description": null
+    },
+    {
+        "name": "Nintendo Wii U",
+        "slug": "nintendo-wii-u",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2012,
+        "description": null
+    },
+    {
+        "name": "Neo Geo X",
+        "slug": "neo-geo-x",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2012,
+        "description": null
+    },
+    {
+        "name": "Ouya",
+        "slug": "ouya",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2013,
+        "description": null
+    },
+    {
+        "name": "Nvidia Shield Portable",
+        "slug": "nvidia-shield-portable",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2013,
+        "description": null
+    },
+    {
+        "name": "PlayStation 4",
+        "slug": "playstation-4",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2013,
+        "description": null
+    },
+    {
+        "name": "Xbox One",
+        "slug": "xbox-one",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2013,
+        "description": null
+    },
+    {
+        "name": "PlayStation TV",
+        "slug": "playstation-tv",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2013,
+        "description": null
+    },
+    {
+        "name": "New Nintendo 3DS",
+        "slug": "new-nintendo-3ds",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2014,
+        "description": null
+    },
+    {
+        "name": "Fire TV Gaming Edition",
+        "slug": "fire-tv-gaming-edition",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2015,
+        "description": null
+    },
+    {
+        "name": "Nvidia Shield TV",
+        "slug": "nvidia-shield-tv",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2015,
+        "description": null
+    },
+    {
+        "name": "Razer Forge TV",
+        "slug": "razer-forge-tv",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2015,
+        "description": null
+    },
+    {
+        "name": "Steam Machine",
+        "slug": "steam-machine",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2015,
+        "description": null
+    },
+    {
+        "name": "GPD Win",
+        "slug": "gpd-win",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2016,
+        "description": null
+    },
+    {
+        "name": "Nintendo Switch",
+        "slug": "nintendo-switch",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2017,
+        "description": null
+    },
+    {
+        "name": "GPD Win 2",
+        "slug": "gpd-win-2",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2018,
+        "description": null
+    },
+    {
+        "name": "Nintendo Switch Lite",
+        "slug": "nintendo-switch-lite",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2019,
+        "description": null
+    },
+    {
+        "name": "Nintendo Switch Oled",
+        "slug": "nintendo-switch-oled",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 8,
+        "initial_release_year": 2021,
+        "description": null
+    },
+    {
+        "name": "Oculus/Meta Quest",
+        "slug": "oculus-meta-quest",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2019,
+        "description": null
+    },
+    {
+        "name": "Google Stadia",
+        "slug": "google-stadia",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2019,
+        "description": null
+    },
+    {
+        "name": "Xbox Series X/S",
+        "slug": "xbox-series-x-s",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2020,
+        "description": null
+    },
+    {
+        "name": "PlayStation 5",
+        "slug": "playstation-5",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2020,
+        "description": null
+    },
+    {
+        "name": "Atari VCS",
+        "slug": "atari-vcs",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2020,
+        "description": null
+    },
+    {
+        "name": "Playdate",
+        "slug": "playdate",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2021,
+        "description": null
+    },
+    {
+        "name": "Polymega",
+        "slug": "polymega",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2021,
+        "description": null
+    },
+    {
+        "name": "Evercade VS",
+        "slug": "evercade-vs",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2021,
+        "description": null
+    },
+    {
+        "name": "Aya Neo",
+        "slug": "aya-neo",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2021,
+        "description": null
+    },
+    {
+        "name": "OneXPlayer",
+        "slug": "onexplayer",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2021,
+        "description": null
+    },
+    {
+        "name": "Steam Deck",
+        "slug": "steam-deck",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2022,
+        "description": null
+    },
+    {
+        "name": "Logitech G Cloud",
+        "slug": "logitech-g-cloud",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2022,
+        "description": null
+    },
+    {
+        "name": "Rog Ally",
+        "slug": "rog-ally",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2023,
+        "description": null
+    },
+    {
+        "name": "AYN Loki",
+        "slug": "ayn-loki",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2023,
+        "description": null
+    },
+    {
+        "name": "Legion Go",
+        "slug": "legion-go",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2023,
+        "description": null
+    },
+    {
+        "name": "Orange Pi Neo",
+        "slug": "orange-pi-neo",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2024,
+        "description": null
+    },
+    {
+        "name": "MSI Claw",
+        "slug": "msi-claw",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2024,
+        "description": null
+    },
+    {
+        "name": "Legion Go S",
+        "slug": "legion-go-s",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2025,
+        "description": null
+    },
+    {
+        "name": "Nintendo Switch 2",
+        "slug": "nintendo-switch-2",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2025,
+        "description": null
+    },
+    {
+        "name": "ROG Xbox Ally",
+        "slug": "rog-xbox-ally",
+        "short_name": "",
+        "type": "home_console",
+        "generation": 9,
+        "initial_release_year": 2025,
+        "description": null
+    }
+]
