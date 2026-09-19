@@ -20,6 +20,7 @@ class Platform extends Model
         'initial_release_year',
         'description',
         'source_url',
+        'is_shown'
     ];
 
     protected function casts(): array
@@ -27,6 +28,7 @@ class Platform extends Model
         return [
             'generation' => 'integer',
             'initial_release_year' => 'integer',
+            'is_shown' => 'boolean',
         ];
     }
 }
