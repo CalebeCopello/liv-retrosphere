@@ -13,6 +13,9 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return Inertia::render('Auth/Register');
 })->name('web.auth.register');
-Route::get('/me', function(){
+Route::get('/me', function () {
     return Inertia::render('Me');
 })->name('web.me');
+
+
+Route::get('/platforms', [App\Http\Controllers\PlatformController::class, 'index'])->name('web.platforms.index');
