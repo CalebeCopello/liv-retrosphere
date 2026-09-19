@@ -19,6 +19,7 @@ class Platform extends Model
         'generation',
         'initial_release_year',
         'description',
+        'image',
         'source_url',
         'is_shown'
     ];

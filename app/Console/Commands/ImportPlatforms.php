@@ -123,6 +123,15 @@ class ImportPlatforms extends Command
                     'distinct',
                 ],
 
+                'platforms.*.image' => [
+                    'sometimes',
+                    'nullable',
+                    'string',
+                    'max:150',
+                    'regex:/\A[a-z0-9]+(?:-[a-z0-9]+)*\.png\z/',
+                    'distinct',
+                ],
+
                 'platforms.*.short_name' => [
                     'present',
                     'nullable',

@@ -2,6 +2,7 @@
     {
         "name": "Magnavox Odyssey",
         "slug": "magnavox-odyssey",
+        "image": "magnavox-odyssey.png",
         "short_name": "",
         "type": "home_console",
         "generation": 1,
@@ -11,6 +12,7 @@
     {
         "name": "Pong",
         "slug": "pong",
+        "image": "pong.png",
         "short_name": "",
         "type": "home_console",
         "generation": 1,
@@ -20,6 +22,7 @@
     {
         "name": "Philips Tele-Spiel",
         "slug": "philips-tele-spiel",
+        "image": "philips-tele-spiel.png",
         "short_name": "",
         "type": "home_console",
         "generation": 1,
@@ -29,6 +32,7 @@
     {
         "name": "Coleco Telstar",
         "slug": "coleco-telstar",
+        "image": "coleco-telstar.png",
         "short_name": "",
         "type": "home_console",
         "generation": 1,
@@ -38,6 +42,7 @@
     {
         "name": "Telejogo",
         "slug": "telejogo",
+        "image": "telejogo.png",
         "short_name": "",
         "type": "home_console",
         "generation": 1,
@@ -47,6 +52,7 @@
     {
         "name": "Color TV Game",
         "slug": "color-tv-game",
+        "image": "color-tv-game.png",
         "short_name": "",
         "type": "home_console",
         "generation": 1,
@@ -56,6 +62,7 @@
     {
         "name": "Telejogo II",
         "slug": "telejogo-ii",
+        "image": "telejogo-ii.png",
         "short_name": "",
         "type": "home_console",
         "generation": 1,
@@ -65,6 +72,7 @@
     {
         "name": "Fairchild Channel F",
         "slug": "fairchild-channel-f",
+        "image": "fairchild-channel-f.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -74,6 +82,7 @@
     {
         "name": "RCA Studio II",
         "slug": "rca-studio-ii",
+        "image": "rca-studio-ii.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -83,6 +92,7 @@
     {
         "name": "Atari 2600",
         "slug": "atari-2600",
+        "image": "atari-2600.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -92,6 +102,7 @@
     {
         "name": "Bally Astrocade",
         "slug": "bally-astrocade",
+        "image": "bally-astrocade.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -101,6 +112,7 @@
     {
         "name": "Interton VC 4000",
         "slug": "interton-vc-4000",
+        "image": "interton-vc-4000.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -110,6 +122,7 @@
     {
         "name": "Magnavox Odyssey²",
         "slug": "magnavox-odyssey-2",
+        "image": "magnavox-odyssey-2.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -119,6 +132,7 @@
     {
         "name": "Microvision",
         "slug": "microvision",
+        "image": "microvision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -128,6 +142,7 @@
     {
         "name": "Game & Watch",
         "slug": "game-and-watch",
+        "image": "game-and-watch.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -137,6 +152,7 @@
     {
         "name": "Intellivision",
         "slug": "intellivision",
+        "image": "intellivision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -146,6 +162,7 @@
     {
         "name": "PlayCable",
         "slug": "playcable",
+        "image": "playcable.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -155,6 +172,7 @@
     {
         "name": "VTech CreatiVision",
         "slug": "vtech-creativision",
+        "image": "vtech-creativision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -164,6 +182,7 @@
     {
         "name": "Epoch Cassette Vision",
         "slug": "epoch-cassette-vision",
+        "image": "epoch-cassette-vision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -173,6 +192,7 @@
     {
         "name": "Coleco Gemini",
         "slug": "coleco-gemini",
+        "image": "coleco-gemini.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -182,6 +202,7 @@
     {
         "name": "Arcadia 2001",
         "slug": "arcadia-2001",
+        "image": "arcadia-2001.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -191,6 +212,7 @@
     {
         "name": "Atari 5200",
         "slug": "atari-5200",
+        "image": "atari-5200.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -200,6 +222,7 @@
     {
         "name": "ColecoVision",
         "slug": "colecovision",
+        "image": "colecovision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -209,6 +232,7 @@
     {
         "name": "Commodore MAX Machine",
         "slug": "commodore-max-machine",
+        "image": "commodore-max-machine.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -218,6 +242,7 @@
     {
         "name": "Entex Adventure Vision",
         "slug": "entex-adventure-vision",
+        "image": "entex-adventure-vision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -227,6 +252,7 @@
     {
         "name": "Vectrex",
         "slug": "vectrex",
+        "image": "vectrex.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -236,6 +262,7 @@
     {
         "name": "Sega SG-1000",
         "slug": "sega-sg-1000",
+        "image": "sega-sg-1000.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -245,6 +272,7 @@
     {
         "name": "Atari 2800",
         "slug": "atari-2800",
+        "image": "atari-2800.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -254,6 +282,7 @@
     {
         "name": "Dactar",
         "slug": "dactar",
+        "image": "dactar.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -263,6 +292,7 @@
     {
         "name": "Dynavision",
         "slug": "dynavision",
+        "image": "dynavision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 2,
@@ -272,6 +302,7 @@
     {
         "name": "NES/Famicom",
         "slug": "nes-famicom",
+        "image": "nes-famicom.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -281,6 +312,7 @@
     {
         "name": "Philips Videopac+ G7400",
         "slug": "philips-videopac-g7400",
+        "image": "philips-videopac-g7400.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -290,6 +322,7 @@
     {
         "name": "MSX",
         "slug": "msx",
+        "image": "msx.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -299,6 +332,7 @@
     {
         "name": "Casio PV-1000",
         "slug": "casio-pv-1000",
+        "image": "casio-pv-1000.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -308,6 +342,7 @@
     {
         "name": "Atari 7800",
         "slug": "atari-7800",
+        "image": "atari-7800.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -317,6 +352,7 @@
     {
         "name": "Action Max",
         "slug": "action-max",
+        "image": "action-max.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -326,6 +362,7 @@
     {
         "name": "Master System",
         "slug": "master-system",
+        "image": "master-system.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -335,6 +372,7 @@
     {
         "name": "Game Boy",
         "slug": "game-boy",
+        "image": "game-boy.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -344,6 +382,7 @@
     {
         "name": "Phantom System",
         "slug": "phantom-system",
+        "image": "phantom-system.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -353,6 +392,7 @@
     {
         "name": "Top Game/Turbo Game",
         "slug": "top-game-turbo-game",
+        "image": "top-game-turbo-game.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -362,6 +402,7 @@
     {
         "name": "Dynavision 2",
         "slug": "dynavision-2",
+        "image": "dynavision-2.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -371,6 +412,7 @@
     {
         "name": "Hi-Top Game",
         "slug": "hi-top-game",
+        "image": "hi-top-game.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -380,6 +422,7 @@
     {
         "name": "Game Gear",
         "slug": "game-gear",
+        "image": "game-gear.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -389,6 +432,7 @@
     {
         "name": "Commodore 64GS",
         "slug": "commodore-64gs",
+        "image": "commodore-64gs.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -398,6 +442,7 @@
     {
         "name": "Prosystem-8",
         "slug": "prosystem-8",
+        "image": "prosystem-8.png",
         "short_name": "",
         "type": "home_console",
         "generation": 3,
@@ -407,6 +452,7 @@
     {
         "name": "PC Engine/TurboGrafx-16",
         "slug": "pc-engine-turbografx-16",
+        "image": "pc-engine-turbografx-16.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -416,6 +462,7 @@
     {
         "name": "Mega Drive/Genesis",
         "slug": "mega-drive-genesis",
+        "image": "mega-drive-genesis.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -425,6 +472,7 @@
     {
         "name": "Atari Lynx",
         "slug": "atari-lynx",
+        "image": "atari-lynx.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -434,6 +482,7 @@
     {
         "name": "TurboExpress",
         "slug": "turboexpress",
+        "image": "turboexpress.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -443,6 +492,7 @@
     {
         "name": "Neo-Geo",
         "slug": "neo-geo",
+        "image": "neo-geo.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -452,6 +502,7 @@
     {
         "name": "Super Nintendo/Super Famicom",
         "slug": "super-nintendo-super-famicom",
+        "image": "super-nintendo-super-famicom.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -461,6 +512,7 @@
     {
         "name": "Commodore CDTV",
         "slug": "commodore-cdtv",
+        "image": "commodore-cdtv.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -470,6 +522,7 @@
     {
         "name": "CD-i",
         "slug": "cd-i",
+        "image": "cd-i.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -479,6 +532,7 @@
     {
         "name": "Tera Drive",
         "slug": "tera-drive",
+        "image": "tera-drive.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -488,6 +542,7 @@
     {
         "name": "Supervision",
         "slug": "supervision",
+        "image": "supervision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -497,6 +552,7 @@
     {
         "name": "Wonder Mega",
         "slug": "wonder-mega",
+        "image": "wonder-mega.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -506,6 +562,7 @@
     {
         "name": "Mega Duck/Cougar Boy",
         "slug": "mega-duck-cougar-boy",
+        "image": "mega-duck-cougar-boy.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -515,6 +572,7 @@
     {
         "name": "MegaVision",
         "slug": "megavision",
+        "image": "megavision.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -524,6 +582,7 @@
     {
         "name": "Genesis CDX/Multi-Mega CD",
         "slug": "genesis-cdx-multi-mega-cd",
+        "image": "genesis-cdx-multi-mega-cd.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -533,6 +592,7 @@
     {
         "name": "Neo-Geo CD",
         "slug": "neo-geo-cd",
+        "image": "neo-geo-cd.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -542,6 +602,7 @@
     {
         "name": "Super A'Can",
         "slug": "super-acan",
+        "image": "super-acan.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -551,6 +612,7 @@
     {
         "name": "Super Prosystem-16 Competition",
         "slug": "super-prosystem-16-competition",
+        "image": "super-prosystem-16-competition.png",
         "short_name": "",
         "type": "home_console",
         "generation": 4,
@@ -560,6 +622,7 @@
     {
         "name": "3DO",
         "slug": "3do",
+        "image": "3do.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -569,6 +632,7 @@
     {
         "name": "Amiga CD32",
         "slug": "amiga-cd32",
+        "image": "amiga-cd32.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -578,6 +642,7 @@
     {
         "name": "FM Towns Marty",
         "slug": "fm-towns-marty",
+        "image": "fm-towns-marty.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -587,6 +652,7 @@
     {
         "name": "Pioneer LaserActive",
         "slug": "pioneer-laseractive",
+        "image": "pioneer-laseractive.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -596,6 +662,7 @@
     {
         "name": "Atari Jaguar",
         "slug": "atari-jaguar",
+        "image": "atari-jaguar.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -605,6 +672,7 @@
     {
         "name": "PC-FX",
         "slug": "pc-fx",
+        "image": "pc-fx.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -614,6 +682,7 @@
     {
         "name": "Playdia",
         "slug": "playdia",
+        "image": "playdia.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -623,6 +692,7 @@
     {
         "name": "Sega Saturn",
         "slug": "sega-saturn",
+        "image": "sega-saturn.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -632,6 +702,7 @@
     {
         "name": "PlayStation",
         "slug": "playstation",
+        "image": "playstation.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -641,6 +712,7 @@
     {
         "name": "Virtual Boy",
         "slug": "virtual-boy",
+        "image": "virtual-boy.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -650,6 +722,7 @@
     {
         "name": "Casio Loopy",
         "slug": "casio-loopy",
+        "image": "casio-loopy.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -659,6 +732,7 @@
     {
         "name": "R-Zone",
         "slug": "r-zone",
+        "image": "r-zone.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -668,6 +742,7 @@
     {
         "name": "Atari Jaguar CD Pro",
         "slug": "atari-jaguar-cd-pro",
+        "image": "atari-jaguar-cd-pro.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -677,6 +752,7 @@
     {
         "name": "Apple Pippin",
         "slug": "apple-pippin",
+        "image": "apple-pippin.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -686,6 +762,7 @@
     {
         "name": "Nintendo 64",
         "slug": "nintendo-64",
+        "image": "nintendo-64.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -695,6 +772,7 @@
     {
         "name": "Game.com",
         "slug": "game-com",
+        "image": "game-com.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -704,6 +782,7 @@
     {
         "name": "Neo Geo Pocket",
         "slug": "neo-geo-pocket",
+        "image": "neo-geo-pocket.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -713,6 +792,7 @@
     {
         "name": "Game Boy Color",
         "slug": "game-boy-color",
+        "image": "game-boy-color.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -722,6 +802,7 @@
     {
         "name": "PocketStation",
         "slug": "pocketstation",
+        "image": "pocketstation.png",
         "short_name": "",
         "type": "home_console",
         "generation": 5,
@@ -731,6 +812,7 @@
     {
         "name": "Dreamcast",
         "slug": "dreamcast",
+        "image": "dreamcast.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -740,6 +822,7 @@
     {
         "name": "Neo Geo Pocket Color",
         "slug": "neo-geo-pocket-color",
+        "image": "neo-geo-pocket-color.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -749,6 +832,7 @@
     {
         "name": "WonderSwan/WonderSwan Color",
         "slug": "wonderswan-wonderswan-color",
+        "image": "wonderswan-wonderswan-color.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -758,6 +842,7 @@
     {
         "name": "PlayStation 2",
         "slug": "playstation-2",
+        "image": "playstation-2.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -767,6 +852,7 @@
     {
         "name": "Game Boy Advance",
         "slug": "game-boy-advance",
+        "image": "game-boy-advance.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -776,6 +862,7 @@
     {
         "name": "Nintendo GameCube",
         "slug": "nintendo-gamecube",
+        "image": "nintendo-gamecube.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -785,6 +872,7 @@
     {
         "name": "Xbox",
         "slug": "xbox",
+        "image": "xbox.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -794,6 +882,7 @@
     {
         "name": "Pokémon mini",
         "slug": "pokemon-mini",
+        "image": "pokemon-mini.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -803,6 +892,7 @@
     {
         "name": "GP32",
         "slug": "gp32",
+        "image": "gp32.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -812,6 +902,7 @@
     {
         "name": "Panasonic Q",
         "slug": "panasonic-q",
+        "image": "panasonic-q.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -821,6 +912,7 @@
     {
         "name": "SwanCrystal",
         "slug": "swancrystal",
+        "image": "swancrystal.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -830,6 +922,7 @@
     {
         "name": "GameKing",
         "slug": "gameking",
+        "image": "gameking.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -839,6 +932,7 @@
     {
         "name": "N-Gage",
         "slug": "n-gage",
+        "image": "n-gage.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -848,6 +942,7 @@
     {
         "name": "PSX",
         "slug": "psx",
+        "image": "psx.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -857,6 +952,7 @@
     {
         "name": "iQue Player",
         "slug": "ique-player",
+        "image": "ique-player.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -866,6 +962,7 @@
     {
         "name": "Tapwave Zodiac",
         "slug": "tapwave-zodiac",
+        "image": "tapwave-zodiac.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -875,6 +972,7 @@
     {
         "name": "Atari Flashback",
         "slug": "atari-flashback",
+        "image": "atari-flashback.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -884,6 +982,7 @@
     {
         "name": "OneStation",
         "slug": "onestation",
+        "image": "onestation.png",
         "short_name": "",
         "type": "home_console",
         "generation": 6,
@@ -893,6 +992,7 @@
     {
         "name": "Nintendo DS",
         "slug": "nintendo-ds",
+        "image": "nintendo-ds.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -902,6 +1002,7 @@
     {
         "name": "PSP",
         "slug": "psp",
+        "image": "psp.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -911,6 +1012,7 @@
     {
         "name": "Gizmondo",
         "slug": "gizmondo",
+        "image": "gizmondo.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -920,6 +1022,7 @@
     {
         "name": "Xbox 360",
         "slug": "xbox-360",
+        "image": "xbox-360.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -929,6 +1032,7 @@
     {
         "name": "Samsung SPH-G1000",
         "slug": "samsung-sph-g1000",
+        "image": "samsung-sph-g1000.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -938,6 +1042,7 @@
     {
         "name": "GP2X",
         "slug": "gp2x",
+        "image": "gp2x.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -947,6 +1052,7 @@
     {
         "name": "HyperScan",
         "slug": "hyperscan",
+        "image": "hyperscan.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -956,6 +1062,7 @@
     {
         "name": "PlayStation 3",
         "slug": "playstation-3",
+        "image": "playstation-3.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -965,6 +1072,7 @@
     {
         "name": "Wii",
         "slug": "wii",
+        "image": "wii.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -974,6 +1082,7 @@
     {
         "name": "Vii",
         "slug": "vii",
+        "image": "vii.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -983,6 +1092,7 @@
     {
         "name": "Nintendo DSi",
         "slug": "nintendo-dsi",
+        "image": "nintendo-dsi.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -992,6 +1102,7 @@
     {
         "name": "GP2X Wiz",
         "slug": "gp2x-wiz",
+        "image": "gp2x-wiz.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -1001,6 +1112,7 @@
     {
         "name": "Dingoo",
         "slug": "dingoo",
+        "image": "dingoo.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -1010,6 +1122,7 @@
     {
         "name": "Zeebo",
         "slug": "zeebo",
+        "image": "zeebo.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -1019,6 +1132,7 @@
     {
         "name": "OnLive",
         "slug": "onlive",
+        "image": "onlive.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -1028,6 +1142,7 @@
     {
         "name": "Pandora",
         "slug": "pandora",
+        "image": "pandora.png",
         "short_name": "",
         "type": "home_console",
         "generation": 7,
@@ -1037,6 +1152,7 @@
     {
         "name": "Nintendo 3DS",
         "slug": "nintendo-3ds",
+        "image": "nintendo-3ds.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1046,6 +1162,7 @@
     {
         "name": "Xperia Play",
         "slug": "xperia-play",
+        "image": "xperia-play.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1055,6 +1172,7 @@
     {
         "name": "PlayStation Vita",
         "slug": "playstation-vita",
+        "image": "playstation-vita.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1064,6 +1182,7 @@
     {
         "name": "Nintendo Wii U",
         "slug": "nintendo-wii-u",
+        "image": "nintendo-wii-u.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1073,6 +1192,7 @@
     {
         "name": "Neo Geo X",
         "slug": "neo-geo-x",
+        "image": "neo-geo-x.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1082,6 +1202,7 @@
     {
         "name": "Ouya",
         "slug": "ouya",
+        "image": "ouya.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1091,6 +1212,7 @@
     {
         "name": "Nvidia Shield Portable",
         "slug": "nvidia-shield-portable",
+        "image": "nvidia-shield-portable.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1100,6 +1222,7 @@
     {
         "name": "PlayStation 4",
         "slug": "playstation-4",
+        "image": "playstation-4.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1109,6 +1232,7 @@
     {
         "name": "Xbox One",
         "slug": "xbox-one",
+        "image": "xbox-one.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1118,6 +1242,7 @@
     {
         "name": "PlayStation TV",
         "slug": "playstation-tv",
+        "image": "playstation-tv.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1127,6 +1252,7 @@
     {
         "name": "New Nintendo 3DS",
         "slug": "new-nintendo-3ds",
+        "image": "new-nintendo-3ds.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1136,6 +1262,7 @@
     {
         "name": "Fire TV Gaming Edition",
         "slug": "fire-tv-gaming-edition",
+        "image": "fire-tv-gaming-edition.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1145,6 +1272,7 @@
     {
         "name": "Nvidia Shield TV",
         "slug": "nvidia-shield-tv",
+        "image": "nvidia-shield-tv.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1154,6 +1282,7 @@
     {
         "name": "Razer Forge TV",
         "slug": "razer-forge-tv",
+        "image": "razer-forge-tv.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1163,6 +1292,7 @@
     {
         "name": "Steam Machine",
         "slug": "steam-machine",
+        "image": "steam-machine.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1172,6 +1302,7 @@
     {
         "name": "GPD Win",
         "slug": "gpd-win",
+        "image": "gpd-win.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1181,6 +1312,7 @@
     {
         "name": "Nintendo Switch",
         "slug": "nintendo-switch",
+        "image": "nintendo-switch.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1190,6 +1322,7 @@
     {
         "name": "GPD Win 2",
         "slug": "gpd-win-2",
+        "image": "gpd-win-2.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1199,6 +1332,7 @@
     {
         "name": "Nintendo Switch Lite",
         "slug": "nintendo-switch-lite",
+        "image": "nintendo-switch-lite.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1208,6 +1342,7 @@
     {
         "name": "Nintendo Switch Oled",
         "slug": "nintendo-switch-oled",
+        "image": "nintendo-switch-oled.png",
         "short_name": "",
         "type": "home_console",
         "generation": 8,
@@ -1217,6 +1352,7 @@
     {
         "name": "Oculus/Meta Quest",
         "slug": "oculus-meta-quest",
+        "image": "oculus-meta-quest.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1226,6 +1362,7 @@
     {
         "name": "Google Stadia",
         "slug": "google-stadia",
+        "image": "google-stadia.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1235,6 +1372,7 @@
     {
         "name": "Xbox Series X/S",
         "slug": "xbox-series-x-s",
+        "image": "xbox-series-x-s.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1244,6 +1382,7 @@
     {
         "name": "PlayStation 5",
         "slug": "playstation-5",
+        "image": "playstation-5.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1253,6 +1392,7 @@
     {
         "name": "Atari VCS",
         "slug": "atari-vcs",
+        "image": "atari-vcs.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1262,6 +1402,7 @@
     {
         "name": "Playdate",
         "slug": "playdate",
+        "image": "playdate.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1271,6 +1412,7 @@
     {
         "name": "Polymega",
         "slug": "polymega",
+        "image": "polymega.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1280,6 +1422,7 @@
     {
         "name": "Evercade VS",
         "slug": "evercade-vs",
+        "image": "evercade-vs.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1289,6 +1432,7 @@
     {
         "name": "Aya Neo",
         "slug": "aya-neo",
+        "image": "aya-neo.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1298,6 +1442,7 @@
     {
         "name": "OneXPlayer",
         "slug": "onexplayer",
+        "image": "onexplayer.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1307,6 +1452,7 @@
     {
         "name": "Steam Deck",
         "slug": "steam-deck",
+        "image": "steam-deck.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1316,6 +1462,7 @@
     {
         "name": "Logitech G Cloud",
         "slug": "logitech-g-cloud",
+        "image": "logitech-g-cloud.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1325,6 +1472,7 @@
     {
         "name": "Rog Ally",
         "slug": "rog-ally",
+        "image": "rog-ally.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1334,6 +1482,7 @@
     {
         "name": "AYN Loki",
         "slug": "ayn-loki",
+        "image": "ayn-loki.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1343,6 +1492,7 @@
     {
         "name": "Legion Go",
         "slug": "legion-go",
+        "image": "legion-go.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1352,6 +1502,7 @@
     {
         "name": "Orange Pi Neo",
         "slug": "orange-pi-neo",
+        "image": "orange-pi-neo.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1361,6 +1512,7 @@
     {
         "name": "MSI Claw",
         "slug": "msi-claw",
+        "image": "msi-claw.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1370,6 +1522,7 @@
     {
         "name": "Legion Go S",
         "slug": "legion-go-s",
+        "image": "legion-go-s.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1379,6 +1532,7 @@
     {
         "name": "Nintendo Switch 2",
         "slug": "nintendo-switch-2",
+        "image": "nintendo-switch-2.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,
@@ -1388,6 +1542,7 @@
     {
         "name": "ROG Xbox Ally",
         "slug": "rog-xbox-ally",
+        "image": "rog-xbox-ally.png",
         "short_name": "",
         "type": "home_console",
         "generation": 9,

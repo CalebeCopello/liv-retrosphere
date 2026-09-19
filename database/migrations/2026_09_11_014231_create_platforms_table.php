@@ -23,6 +23,7 @@ return new class extends Migration
 
             $table->text('description')->nullable();
             $table->string('source_url', 500)->nullable();
+            $table->string('image', 120)->nullable();
 
             $table->boolean('is_shown')->default(true);
 
