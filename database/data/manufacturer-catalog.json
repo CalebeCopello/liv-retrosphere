@@ -1,0 +1,432 @@
+[
+    {
+        "id": "d15153f1-9366-4066-b352-6ff375fc44e6",
+        "name": "Alphabet",
+        "slug": "alphabet"
+    },
+    {
+        "id": "ab3021e5-0435-47d0-a48e-43d4a80f5e89",
+        "name": "Amazon",
+        "slug": "amazon"
+    },
+    {
+        "id": "9c28fd8e-05a0-412c-a9f8-f983829f1dc0",
+        "name": "Amstrad",
+        "slug": "amstrad"
+    },
+    {
+        "id": "cfb9645a-6eb3-44a2-8802-a21dd1713329",
+        "name": "Apple",
+        "slug": "apple"
+    },
+    {
+        "id": "b68659e5-8406-4d35-82c3-9d691a00c85c",
+        "name": "Asus",
+        "slug": "asus"
+    },
+    {
+        "id": "12408c6f-b517-4c5c-bc04-b8be903e9177",
+        "name": "Atari",
+        "slug": "atari"
+    },
+    {
+        "id": "87d5f779-76ca-4529-bcd3-1de0a810a893",
+        "name": "Ayaneo",
+        "slug": "ayaneo"
+    },
+    {
+        "id": "7f529461-82b4-4511-a679-533b7e607488",
+        "name": "AYN",
+        "slug": "ayn"
+    },
+    {
+        "id": "918e2af0-e0da-44ca-9aeb-91b82175443c",
+        "name": "Bandai",
+        "slug": "bandai"
+    },
+    {
+        "id": "5ff8d430-47dc-4798-85df-21a21740264e",
+        "name": "Blaze Entertainment",
+        "slug": "blaze-entertainment"
+    },
+    {
+        "id": "c8fa1047-ceed-4d37-ae44-bbdeff43f614",
+        "name": "Casio",
+        "slug": "casio"
+    },
+    {
+        "id": "3eda4dca-af89-4634-acb0-1c1d4c84bebe",
+        "name": "CCE",
+        "slug": "cce"
+    },
+    {
+        "id": "f5b6718f-87ad-4501-9703-d7c59b6cb551",
+        "name": "Chintendo",
+        "slug": "chintendo"
+    },
+    {
+        "id": "93fe68de-f390-42a6-9d37-98e56faf9d86",
+        "name": "Chips do Brasil",
+        "slug": "chips-do-brasil"
+    },
+    {
+        "id": "6326f06d-3d96-48e2-96a7-73cd6d83073d",
+        "name": "Coleco",
+        "slug": "coleco"
+    },
+    {
+        "id": "f2492afc-d74b-4c34-bcc8-fb8431b7ea5e",
+        "name": "Commodore",
+        "slug": "commodore"
+    },
+    {
+        "id": "d19e66a0-6504-4ff3-906d-c849eebdf32e",
+        "name": "Creatonic",
+        "slug": "creatonic"
+    },
+    {
+        "id": "30db53e5-597a-48bc-9ae4-f430eced9dd9",
+        "name": "Dynacom",
+        "slug": "dynacom"
+    },
+    {
+        "id": "321236e0-b4ca-4b10-a4f2-452733531a49",
+        "name": "Emerson Radio",
+        "slug": "emerson-radio"
+    },
+    {
+        "id": "02009758-b78a-45c6-ae32-04a1a7326b23",
+        "name": "Entex",
+        "slug": "entex"
+    },
+    {
+        "id": "9b5195b4-02b7-4795-beb5-f41d7df4dd4b",
+        "name": "Epoch",
+        "slug": "epoch"
+    },
+    {
+        "id": "8aea4b09-aadd-45bf-961a-b75db8792913",
+        "name": "Estrela",
+        "slug": "estrela"
+    },
+    {
+        "id": "4a57dccf-6196-49ed-a0d2-628c6e1ff20f",
+        "name": "Fairchild",
+        "slug": "fairchild"
+    },
+    {
+        "id": "57285e33-a771-4263-8ff3-38897304742e",
+        "name": "Ford",
+        "slug": "ford"
+    },
+    {
+        "id": "3d88a4c1-3286-48fa-9be1-9cf0ab0b03be",
+        "name": "Fujitsu",
+        "slug": "fujitsu"
+    },
+    {
+        "id": "b1279fe6-45b9-4480-9543-a9d31f12091f",
+        "name": "Funtech",
+        "slug": "funtech"
+    },
+    {
+        "id": "1e2d415f-edaa-4686-98a4-da4d264dacf1",
+        "name": "GamePark",
+        "slug": "gamepark"
+    },
+    {
+        "id": "4054137c-be00-4558-86c4-2a5b17ccc1ac",
+        "name": "GamePark Holdings",
+        "slug": "gamepark-holdings"
+    },
+    {
+        "id": "cd4135ad-dd02-428d-9d67-9e10299a9b7f",
+        "name": "Gigabyte",
+        "slug": "gigabyte"
+    },
+    {
+        "id": "9c5ef133-c81e-458b-81a4-f66845103782",
+        "name": "GoldStar",
+        "slug": "goldstar"
+    },
+    {
+        "id": "eafda691-da84-40b0-a948-7a91c47498fe",
+        "name": "GPD Corporation",
+        "slug": "gpd-corporation"
+    },
+    {
+        "id": "28cc4162-8b42-48bf-9dae-71111025c785",
+        "name": "Gradiente",
+        "slug": "gradiente"
+    },
+    {
+        "id": "ed339934-b200-4737-880a-f04ec9e4f1f7",
+        "name": "Interton",
+        "slug": "interton"
+    },
+    {
+        "id": "74983ecf-db76-48df-9917-19c5b47cad11",
+        "name": "Jungle Soft",
+        "slug": "jungle-soft"
+    },
+    {
+        "id": "a33f98cc-13d9-42b1-9ca3-63bcce187f0d",
+        "name": "JVC",
+        "slug": "jvc"
+    },
+    {
+        "id": "d73344f0-2265-4478-8205-4c79d00ac1a6",
+        "name": "Lenovo",
+        "slug": "lenovo"
+    },
+    {
+        "id": "678b41d4-5419-4159-b94d-1102aaca1267",
+        "name": "Logitech",
+        "slug": "logitech"
+    },
+    {
+        "id": "1fb362a4-b0cf-424c-948b-09eb4b00a280",
+        "name": "Magnavox",
+        "slug": "magnavox"
+    },
+    {
+        "id": "1eaf3369-914f-4728-8945-a5a37e7b0a5e",
+        "name": "Manjaro",
+        "slug": "manjaro"
+    },
+    {
+        "id": "e0149937-263b-4b84-b83d-ae6ce24fd999",
+        "name": "Mattel",
+        "slug": "mattel"
+    },
+    {
+        "id": "51946833-c3a7-489c-8485-d07f70f42da7",
+        "name": "Meta",
+        "slug": "meta"
+    },
+    {
+        "id": "552c509b-a8a2-4a13-93ec-04012c2da607",
+        "name": "Microsoft",
+        "slug": "microsoft"
+    },
+    {
+        "id": "6624fa27-f3de-4319-a7ca-030badab4ae5",
+        "name": "Microsoft Japan",
+        "slug": "microsoft-japan"
+    },
+    {
+        "id": "350ba92e-93af-47b8-a39d-1e2f17f831cf",
+        "name": "Midway",
+        "slug": "midway"
+    },
+    {
+        "id": "f75e0d2c-d130-4915-9c91-bc255ffe4a84",
+        "name": "Milmar",
+        "slug": "milmar"
+    },
+    {
+        "id": "2a418bb3-6272-44d6-b601-3d4452e97517",
+        "name": "Milton Bradley",
+        "slug": "milton-bradley"
+    },
+    {
+        "id": "924fa1ba-7dd6-43bb-b7eb-eae014edf602",
+        "name": "MSI",
+        "slug": "msi"
+    },
+    {
+        "id": "3cd688c7-4d99-4ad2-9348-b002e21fa9e7",
+        "name": "NEC",
+        "slug": "nec"
+    },
+    {
+        "id": "eee00f31-efc2-4613-af0d-a3088a44b990",
+        "name": "Nintendo",
+        "slug": "nintendo"
+    },
+    {
+        "id": "2b981fd9-6a4f-462d-8fea-4e929d962be6",
+        "name": "Nokia",
+        "slug": "nokia"
+    },
+    {
+        "id": "c5c6aeaa-1b17-4cb1-af7e-bfa205e59a73",
+        "name": "Nvidia",
+        "slug": "nvidia"
+    },
+    {
+        "id": "92149988-5baa-4adb-9568-92efa3d523e8",
+        "name": "One-Netbook",
+        "slug": "one-netbook"
+    },
+    {
+        "id": "46337261-bf08-439c-951d-6d5413d9d880",
+        "name": "OnLive",
+        "slug": "onlive"
+    },
+    {
+        "id": "80c7200f-62b6-44b9-a278-1883ebd10e44",
+        "name": "OpenPandora",
+        "slug": "openpandora"
+    },
+    {
+        "id": "9c90a0de-2e4d-465b-9c53-ff027f2b13c0",
+        "name": "Orange Pi",
+        "slug": "orange-pi"
+    },
+    {
+        "id": "da7cbf2f-2fdf-4818-9dc1-5062e4022c36",
+        "name": "Ouya Inc.",
+        "slug": "ouya-inc"
+    },
+    {
+        "id": "6611a45b-5410-495f-9ce6-cbef99a2ad0f",
+        "name": "Panasonic",
+        "slug": "panasonic"
+    },
+    {
+        "id": "7f11fb55-d01d-4d86-a230-fe352078339a",
+        "name": "Panic Inc.",
+        "slug": "panic-inc"
+    },
+    {
+        "id": "76de654c-83d8-4f7e-bbd0-8aa3e9d39e2a",
+        "name": "Philco",
+        "slug": "philco"
+    },
+    {
+        "id": "9671770e-ad23-42b9-aaaa-70a74a46a885",
+        "name": "Philips",
+        "slug": "philips"
+    },
+    {
+        "id": "d67b4956-2ae2-478b-be6d-4d762df5408b",
+        "name": "Pioneer",
+        "slug": "pioneer"
+    },
+    {
+        "id": "2aa29454-321e-4beb-bb9e-d06fa2c13518",
+        "name": "Playmaji",
+        "slug": "playmaji"
+    },
+    {
+        "id": "4b8b10d7-a15e-4604-8619-fb0d6a425718",
+        "name": "Qualcomm",
+        "slug": "qualcomm"
+    },
+    {
+        "id": "8333bab3-00ea-497e-9e91-c9c82096208b",
+        "name": "Razer",
+        "slug": "razer"
+    },
+    {
+        "id": "9ea3eb8c-1d68-4db9-9518-a5c602c412c6",
+        "name": "RCA",
+        "slug": "rca"
+    },
+    {
+        "id": "23e71d83-fb0a-4cb0-b56e-d92d95b2447e",
+        "name": "Samsung",
+        "slug": "samsung"
+    },
+    {
+        "id": "c627cdbf-63b8-4d79-9546-22f7f3384dc5",
+        "name": "Sanyo",
+        "slug": "sanyo"
+    },
+    {
+        "id": "058e7202-54aa-444f-89ec-bddf4be54e3e",
+        "name": "Sega",
+        "slug": "sega"
+    },
+    {
+        "id": "1d1e87fa-53dc-406f-a38b-05b0c150bf36",
+        "name": "Shenzhen Dingoo Digital",
+        "slug": "shenzhen-dingoo-digital"
+    },
+    {
+        "id": "1dc36f5d-c718-425b-93ea-90446aacf6a1",
+        "name": "SNK",
+        "slug": "snk"
+    },
+    {
+        "id": "a278ab7e-1e3f-4593-b726-4935d0e0cc25",
+        "name": "SNK Playmore",
+        "slug": "snk-playmore"
+    },
+    {
+        "id": "c01d4954-17f9-459e-83b3-003b4cd7dec3",
+        "name": "Sony",
+        "slug": "sony"
+    },
+    {
+        "id": "92b055d5-e34f-4769-adfc-1cab1542da56",
+        "name": "Tapwave",
+        "slug": "tapwave"
+    },
+    {
+        "id": "8fc631d6-936e-4082-8863-231fe3800f78",
+        "name": "Tectoy",
+        "slug": "tectoy"
+    },
+    {
+        "id": "7bd4f23f-90d0-492c-91bc-b33a1a94bd3c",
+        "name": "Tiger Electronics",
+        "slug": "tiger-electronics"
+    },
+    {
+        "id": "a2113e09-7d75-4242-9bb9-21cd18a696d0",
+        "name": "Tiger Telematics",
+        "slug": "tiger-telematics"
+    },
+    {
+        "id": "e8eed187-b45f-486b-a068-e296b0fe0977",
+        "name": "TimeTop",
+        "slug": "timetop"
+    },
+    {
+        "id": "4de73f2a-97b7-44e6-940c-12b2d58da974",
+        "name": "Timlex",
+        "slug": "timlex"
+    },
+    {
+        "id": "0ee3364a-1425-4f7e-aabc-dacca0a1e950",
+        "name": "Valve",
+        "slug": "valve"
+    },
+    {
+        "id": "d04005e3-c09b-41e5-ad74-b5aed1f8969a",
+        "name": "Videojet",
+        "slug": "videojet"
+    },
+    {
+        "id": "1d433d69-a0fe-4724-8a4b-344e1a15e7b9",
+        "name": "VTech",
+        "slug": "vtech"
+    },
+    {
+        "id": "917da8bc-f7c2-4a78-b9c0-d9849401ea0b",
+        "name": "Watara",
+        "slug": "watara"
+    },
+    {
+        "id": "d5b4e5d7-8467-47c3-91c9-08d2b4546f2b",
+        "name": "Worlds of Wonder",
+        "slug": "worlds-of-wonder"
+    },
+    {
+        "id": "99e63341-a3b9-4738-a5bd-e4accf30594f",
+        "name": "XaviX",
+        "slug": "xavix"
+    },
+    {
+        "id": "b25dd987-9b5f-447d-947c-be5677a9bbf4",
+        "name": "Yobo",
+        "slug": "yobo"
+    },
+    {
+        "id": "8ea77bc5-a28d-438f-8055-a35e92977239",
+        "name": "ZAPiT Games",
+        "slug": "zapit-games"
+    }
+]

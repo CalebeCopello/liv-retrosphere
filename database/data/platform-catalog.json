@@ -1,5 +1,6 @@
 [
     {
+        "id": "8def8b2e-225b-489c-826f-0de2de95d955",
         "name": "Magnavox Odyssey",
         "slug": "magnavox-odyssey",
         "image": "magnavox-odyssey.png",
@@ -7,9 +8,13 @@
         "type": "home_console",
         "generation": 1,
         "initial_release_year": 1972,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1fb362a4-b0cf-424c-948b-09eb4b00a280"
+        ]
     },
     {
+        "id": "c274d161-b9cc-4883-aa19-18fe66a0dca7",
         "name": "Pong",
         "slug": "pong",
         "image": "pong.png",
@@ -17,9 +22,13 @@
         "type": "home_console",
         "generation": 1,
         "initial_release_year": 1975,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "65632bf2-86f5-42f3-ba61-8983c2fd53cd",
         "name": "Philips Tele-Spiel",
         "slug": "philips-tele-spiel",
         "image": "philips-tele-spiel.png",
@@ -27,9 +36,13 @@
         "type": "home_console",
         "generation": 1,
         "initial_release_year": 1975,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "9671770e-ad23-42b9-aaaa-70a74a46a885"
+        ]
     },
     {
+        "id": "c02d54e7-bfd6-4358-a72a-8de416e76826",
         "name": "Coleco Telstar",
         "slug": "coleco-telstar",
         "image": "coleco-telstar.png",
@@ -37,9 +50,13 @@
         "type": "home_console",
         "generation": 1,
         "initial_release_year": 1976,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "6326f06d-3d96-48e2-96a7-73cd6d83073d"
+        ]
     },
     {
+        "id": "b93ae91a-03a2-4c99-9d90-04325e4712fd",
         "name": "Telejogo",
         "slug": "telejogo",
         "image": "telejogo.png",
@@ -47,9 +64,14 @@
         "type": "home_console",
         "generation": 1,
         "initial_release_year": 1977,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "76de654c-83d8-4f7e-bbd0-8aa3e9d39e2a",
+            "57285e33-a771-4263-8ff3-38897304742e"
+        ]
     },
     {
+        "id": "deeddc28-cb41-4317-9327-cdb538eb5b69",
         "name": "Color TV Game",
         "slug": "color-tv-game",
         "image": "color-tv-game.png",
@@ -57,9 +79,13 @@
         "type": "home_console",
         "generation": 1,
         "initial_release_year": 1977,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "04261760-6cf3-475e-8a83-741bfb1f7efa",
         "name": "Telejogo II",
         "slug": "telejogo-ii",
         "image": "telejogo-ii.png",
@@ -67,9 +93,14 @@
         "type": "home_console",
         "generation": 1,
         "initial_release_year": 1978,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "76de654c-83d8-4f7e-bbd0-8aa3e9d39e2a",
+            "57285e33-a771-4263-8ff3-38897304742e"
+        ]
     },
     {
+        "id": "f6a83d87-81ed-42ef-9059-7f5c8a34fca6",
         "name": "Fairchild Channel F",
         "slug": "fairchild-channel-f",
         "image": "fairchild-channel-f.png",
@@ -77,9 +108,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1976,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "4a57dccf-6196-49ed-a0d2-628c6e1ff20f"
+        ]
     },
     {
+        "id": "0839e6b2-d555-46c2-85c9-41112dd87b7b",
         "name": "RCA Studio II",
         "slug": "rca-studio-ii",
         "image": "rca-studio-ii.png",
@@ -87,9 +122,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1977,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "9ea3eb8c-1d68-4db9-9518-a5c602c412c6"
+        ]
     },
     {
+        "id": "1fab31c5-3fa8-47aa-abc8-dea111379f1d",
         "name": "Atari 2600",
         "slug": "atari-2600",
         "image": "atari-2600.png",
@@ -97,9 +136,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1977,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "bf64621d-1ea3-4ac0-a44d-90a846afcfd3",
         "name": "Bally Astrocade",
         "slug": "bally-astrocade",
         "image": "bally-astrocade.png",
@@ -107,9 +150,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1977,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "350ba92e-93af-47b8-a39d-1e2f17f831cf"
+        ]
     },
     {
+        "id": "3e97feb1-f823-4cb4-937f-798c051b1b10",
         "name": "Interton VC 4000",
         "slug": "interton-vc-4000",
         "image": "interton-vc-4000.png",
@@ -117,9 +164,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1978,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "ed339934-b200-4737-880a-f04ec9e4f1f7"
+        ]
     },
     {
+        "id": "e901664a-0e82-4534-a109-2a47e3b9d649",
         "name": "Magnavox Odyssey²",
         "slug": "magnavox-odyssey-2",
         "image": "magnavox-odyssey-2.png",
@@ -127,9 +178,14 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1978,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1fb362a4-b0cf-424c-948b-09eb4b00a280",
+            "9671770e-ad23-42b9-aaaa-70a74a46a885"
+        ]
     },
     {
+        "id": "12446ed4-b182-47be-afe2-95318bf0c464",
         "name": "Microvision",
         "slug": "microvision",
         "image": "microvision.png",
@@ -137,9 +193,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1979,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "2a418bb3-6272-44d6-b601-3d4452e97517"
+        ]
     },
     {
+        "id": "c5a2056f-3b9f-42fa-8059-c0a7515ecff5",
         "name": "Game & Watch",
         "slug": "game-and-watch",
         "image": "game-and-watch.png",
@@ -147,9 +207,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1980,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "836a63d3-f8c5-465c-96fe-12a8295080c6",
         "name": "Intellivision",
         "slug": "intellivision",
         "image": "intellivision.png",
@@ -157,9 +221,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1980,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "e0149937-263b-4b84-b83d-ae6ce24fd999"
+        ]
     },
     {
+        "id": "2410fd8a-37b4-4106-8b3f-69e81b55f0ee",
         "name": "PlayCable",
         "slug": "playcable",
         "image": "playcable.png",
@@ -167,9 +235,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1981,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "e0149937-263b-4b84-b83d-ae6ce24fd999"
+        ]
     },
     {
+        "id": "110a25f0-99b0-4d72-9b42-dcb0ed24f9fd",
         "name": "VTech CreatiVision",
         "slug": "vtech-creativision",
         "image": "vtech-creativision.png",
@@ -177,9 +249,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1981,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1d433d69-a0fe-4724-8a4b-344e1a15e7b9"
+        ]
     },
     {
+        "id": "3f0fd687-21fb-41c7-98f3-d0b336fd8f8b",
         "name": "Epoch Cassette Vision",
         "slug": "epoch-cassette-vision",
         "image": "epoch-cassette-vision.png",
@@ -187,9 +263,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1981,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "9b5195b4-02b7-4795-beb5-f41d7df4dd4b"
+        ]
     },
     {
+        "id": "69977c8c-9c69-4bd5-87b4-440524e6a1a5",
         "name": "Coleco Gemini",
         "slug": "coleco-gemini",
         "image": "coleco-gemini.png",
@@ -197,9 +277,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1982,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "6326f06d-3d96-48e2-96a7-73cd6d83073d"
+        ]
     },
     {
+        "id": "c605923c-9a66-40fa-bc33-9d4b95652cf3",
         "name": "Arcadia 2001",
         "slug": "arcadia-2001",
         "image": "arcadia-2001.png",
@@ -207,9 +291,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1982,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "321236e0-b4ca-4b10-a4f2-452733531a49"
+        ]
     },
     {
+        "id": "aa8d06e8-e256-42c8-8a87-472fc5e3edb0",
         "name": "Atari 5200",
         "slug": "atari-5200",
         "image": "atari-5200.png",
@@ -217,9 +305,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1982,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "6d672b8d-10eb-43a4-9d89-4c427509a836",
         "name": "ColecoVision",
         "slug": "colecovision",
         "image": "colecovision.png",
@@ -227,9 +319,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1982,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "6326f06d-3d96-48e2-96a7-73cd6d83073d"
+        ]
     },
     {
+        "id": "6251f32b-97a0-4052-9fcd-1aa38a5915df",
         "name": "Commodore MAX Machine",
         "slug": "commodore-max-machine",
         "image": "commodore-max-machine.png",
@@ -237,9 +333,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1982,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "f2492afc-d74b-4c34-bcc8-fb8431b7ea5e"
+        ]
     },
     {
+        "id": "628ffdd3-58b0-4768-91ff-355404dfae80",
         "name": "Entex Adventure Vision",
         "slug": "entex-adventure-vision",
         "image": "entex-adventure-vision.png",
@@ -247,9 +347,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1982,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "02009758-b78a-45c6-ae32-04a1a7326b23"
+        ]
     },
     {
+        "id": "6ebed6f6-6062-4cfc-bc62-b2790dc4d002",
         "name": "Vectrex",
         "slug": "vectrex",
         "image": "vectrex.png",
@@ -257,9 +361,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1982,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "02009758-b78a-45c6-ae32-04a1a7326b23"
+        ]
     },
     {
+        "id": "3c2b8827-71fc-47eb-b9dc-0512a3736fc8",
         "name": "Sega SG-1000",
         "slug": "sega-sg-1000",
         "image": "sega-sg-1000.png",
@@ -267,9 +375,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1983,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e"
+        ]
     },
     {
+        "id": "903f424b-528c-4564-a51a-941e244f4788",
         "name": "Atari 2800",
         "slug": "atari-2800",
         "image": "atari-2800.png",
@@ -277,9 +389,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1983,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "1b483e9e-469a-4781-bb61-3a1f882b17df",
         "name": "Dactar",
         "slug": "dactar",
         "image": "dactar.png",
@@ -287,9 +403,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1983,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "f75e0d2c-d130-4915-9c91-bc255ffe4a84"
+        ]
     },
     {
+        "id": "05d06961-8a49-4085-a98b-142d21bad029",
         "name": "Dynavision",
         "slug": "dynavision",
         "image": "dynavision.png",
@@ -297,9 +417,13 @@
         "type": "home_console",
         "generation": 2,
         "initial_release_year": 1983,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "30db53e5-597a-48bc-9ae4-f430eced9dd9"
+        ]
     },
     {
+        "id": "417b3e66-be4f-414e-9884-faafd0f1df1e",
         "name": "NES/Famicom",
         "slug": "nes-famicom",
         "image": "nes-famicom.png",
@@ -307,9 +431,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1983,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "85a0b6ac-1a8a-4da9-887f-6705c45c7292",
         "name": "Philips Videopac+ G7400",
         "slug": "philips-videopac-g7400",
         "image": "philips-videopac-g7400.png",
@@ -317,9 +445,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1983,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "9671770e-ad23-42b9-aaaa-70a74a46a885"
+        ]
     },
     {
+        "id": "6b970016-0cb9-4970-adf3-93f3e9dd2649",
         "name": "MSX",
         "slug": "msx",
         "image": "msx.png",
@@ -327,9 +459,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1983,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "6624fa27-f3de-4319-a7ca-030badab4ae5"
+        ]
     },
     {
+        "id": "6d34ab21-8b84-4cbb-ad99-6ac731cd32d3",
         "name": "Casio PV-1000",
         "slug": "casio-pv-1000",
         "image": "casio-pv-1000.png",
@@ -337,9 +473,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1983,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c8fa1047-ceed-4d37-ae44-bbdeff43f614"
+        ]
     },
     {
+        "id": "4a8d3500-b031-4ab4-8fd6-dcf8d36eb886",
         "name": "Atari 7800",
         "slug": "atari-7800",
         "image": "atari-7800.png",
@@ -347,9 +487,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1986,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "d004c3c5-034f-408b-85d0-a435b010bc41",
         "name": "Action Max",
         "slug": "action-max",
         "image": "action-max.png",
@@ -357,9 +501,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1987,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "d5b4e5d7-8467-47c3-91c9-08d2b4546f2b"
+        ]
     },
     {
+        "id": "cdc80fb6-5721-4a66-85f4-142a408c1f15",
         "name": "Master System",
         "slug": "master-system",
         "image": "master-system.png",
@@ -367,9 +515,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1987,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e"
+        ]
     },
     {
+        "id": "70c1253f-cecc-40af-b694-1e1a63c9fbcd",
         "name": "Game Boy",
         "slug": "game-boy",
         "image": "game-boy.png",
@@ -377,9 +529,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1989,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "04de3d7e-934e-4718-86f2-195e9f717bcb",
         "name": "Phantom System",
         "slug": "phantom-system",
         "image": "phantom-system.png",
@@ -387,9 +543,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1989,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "28cc4162-8b42-48bf-9dae-71111025c785"
+        ]
     },
     {
+        "id": "21abebe6-d1f9-48e2-b830-2d435c5d9783",
         "name": "Top Game/Turbo Game",
         "slug": "top-game-turbo-game",
         "image": "top-game-turbo-game.png",
@@ -397,9 +557,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1989,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "3eda4dca-af89-4634-acb0-1c1d4c84bebe"
+        ]
     },
     {
+        "id": "f6fe3a8a-6f22-4003-97d7-25aed5a524ea",
         "name": "Dynavision 2",
         "slug": "dynavision-2",
         "image": "dynavision-2.png",
@@ -407,9 +571,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1989,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "30db53e5-597a-48bc-9ae4-f430eced9dd9"
+        ]
     },
     {
+        "id": "15097abe-35e1-4cdd-97e2-2a38f03ca31a",
         "name": "Hi-Top Game",
         "slug": "hi-top-game",
         "image": "hi-top-game.png",
@@ -417,9 +585,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1990,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "f75e0d2c-d130-4915-9c91-bc255ffe4a84"
+        ]
     },
     {
+        "id": "9e50dc09-b63b-4e92-9d7e-d06a8f48d075",
         "name": "Game Gear",
         "slug": "game-gear",
         "image": "game-gear.png",
@@ -427,9 +599,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1990,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e"
+        ]
     },
     {
+        "id": "7a58b58b-92f5-48c9-88d8-b72bd9b0dd50",
         "name": "Commodore 64GS",
         "slug": "commodore-64gs",
         "image": "commodore-64gs.png",
@@ -437,9 +613,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1990,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "f2492afc-d74b-4c34-bcc8-fb8431b7ea5e"
+        ]
     },
     {
+        "id": "7186021d-51f6-4d9b-b351-2f6cd74246b2",
         "name": "Prosystem-8",
         "slug": "prosystem-8",
         "image": "prosystem-8.png",
@@ -447,9 +627,13 @@
         "type": "home_console",
         "generation": 3,
         "initial_release_year": 1994,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "93fe68de-f390-42a6-9d37-98e56faf9d86"
+        ]
     },
     {
+        "id": "ba5fe306-20dc-4605-b2bc-7cb42af0b8cb",
         "name": "PC Engine/TurboGrafx-16",
         "slug": "pc-engine-turbografx-16",
         "image": "pc-engine-turbografx-16.png",
@@ -457,9 +641,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1987,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "3cd688c7-4d99-4ad2-9348-b002e21fa9e7"
+        ]
     },
     {
+        "id": "85d76bed-b2b1-463f-80dd-19ba0f9921c2",
         "name": "Mega Drive/Genesis",
         "slug": "mega-drive-genesis",
         "image": "mega-drive-genesis.png",
@@ -467,9 +655,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1988,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e"
+        ]
     },
     {
+        "id": "dd71047a-38fd-4b62-8167-7d85df064345",
         "name": "Atari Lynx",
         "slug": "atari-lynx",
         "image": "atari-lynx.png",
@@ -477,9 +669,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1989,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "cb2c8f57-6d32-424e-a2fc-a1e916dcd80b",
         "name": "TurboExpress",
         "slug": "turboexpress",
         "image": "turboexpress.png",
@@ -487,9 +683,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1990,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "3cd688c7-4d99-4ad2-9348-b002e21fa9e7"
+        ]
     },
     {
+        "id": "44062637-a2e8-4376-91f7-9996e5f3d746",
         "name": "Neo-Geo",
         "slug": "neo-geo",
         "image": "neo-geo.png",
@@ -497,9 +697,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1990,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1dc36f5d-c718-425b-93ea-90446aacf6a1"
+        ]
     },
     {
+        "id": "0b3be57d-7af2-4897-9464-fa89b8cec830",
         "name": "Super Nintendo/Super Famicom",
         "slug": "super-nintendo-super-famicom",
         "image": "super-nintendo-super-famicom.png",
@@ -507,9 +711,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1990,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "0bbb2d94-30c5-4f1f-8d12-006a224bc94e",
         "name": "Commodore CDTV",
         "slug": "commodore-cdtv",
         "image": "commodore-cdtv.png",
@@ -517,9 +725,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1991,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "f2492afc-d74b-4c34-bcc8-fb8431b7ea5e"
+        ]
     },
     {
+        "id": "fcaef4ba-dcbd-4e87-8a9a-08c8c4acdf62",
         "name": "CD-i",
         "slug": "cd-i",
         "image": "cd-i.png",
@@ -527,9 +739,14 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1991,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "9671770e-ad23-42b9-aaaa-70a74a46a885",
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "2659dc88-e174-482c-8ed0-4cec132e917f",
         "name": "Tera Drive",
         "slug": "tera-drive",
         "image": "tera-drive.png",
@@ -537,9 +754,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1991,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e"
+        ]
     },
     {
+        "id": "75f2b55b-3315-4f7b-8a68-f46ff2ff0642",
         "name": "Supervision",
         "slug": "supervision",
         "image": "supervision.png",
@@ -547,9 +768,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1992,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "917da8bc-f7c2-4a78-b9c0-d9849401ea0b"
+        ]
     },
     {
+        "id": "ce848fc3-0303-4023-a04e-b68efba98402",
         "name": "Wonder Mega",
         "slug": "wonder-mega",
         "image": "wonder-mega.png",
@@ -557,9 +782,14 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1992,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e",
+            "a33f98cc-13d9-42b1-9ca3-63bcce187f0d"
+        ]
     },
     {
+        "id": "9fce765d-4762-48c9-a3e4-2169df0aa4d1",
         "name": "Mega Duck/Cougar Boy",
         "slug": "mega-duck-cougar-boy",
         "image": "mega-duck-cougar-boy.png",
@@ -567,9 +797,15 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1993,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "d19e66a0-6504-4ff3-906d-c849eebdf32e",
+            "4de73f2a-97b7-44e6-940c-12b2d58da974",
+            "d04005e3-c09b-41e5-ad74-b5aed1f8969a"
+        ]
     },
     {
+        "id": "3aba50a7-d8c6-4028-b8c6-d8b62efa7c52",
         "name": "MegaVision",
         "slug": "megavision",
         "image": "megavision.png",
@@ -577,9 +813,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1994,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "30db53e5-597a-48bc-9ae4-f430eced9dd9"
+        ]
     },
     {
+        "id": "4ad53438-d593-49ba-b4ef-27bc3171b9f9",
         "name": "Genesis CDX/Multi-Mega CD",
         "slug": "genesis-cdx-multi-mega-cd",
         "image": "genesis-cdx-multi-mega-cd.png",
@@ -587,9 +827,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1994,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e"
+        ]
     },
     {
+        "id": "ce9b5001-2b8f-4897-b44b-9600d1ce9bb1",
         "name": "Neo-Geo CD",
         "slug": "neo-geo-cd",
         "image": "neo-geo-cd.png",
@@ -597,9 +841,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1994,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1dc36f5d-c718-425b-93ea-90446aacf6a1"
+        ]
     },
     {
+        "id": "a59554d8-ea34-4d94-8e3c-e132c9fdfb5a",
         "name": "Super A'Can",
         "slug": "super-acan",
         "image": "super-acan.png",
@@ -607,9 +855,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1995,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "b1279fe6-45b9-4480-9543-a9d31f12091f"
+        ]
     },
     {
+        "id": "13d12808-d812-493c-ba52-55d5432849db",
         "name": "Super Prosystem-16 Competition",
         "slug": "super-prosystem-16-competition",
         "image": "super-prosystem-16-competition.png",
@@ -617,9 +869,13 @@
         "type": "home_console",
         "generation": 4,
         "initial_release_year": 1995,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "93fe68de-f390-42a6-9d37-98e56faf9d86"
+        ]
     },
     {
+        "id": "e0942028-3586-4364-abfe-34a2645c9472",
         "name": "3DO",
         "slug": "3do",
         "image": "3do.png",
@@ -627,9 +883,15 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1993,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "6611a45b-5410-495f-9ce6-cbef99a2ad0f",
+            "c627cdbf-63b8-4d79-9546-22f7f3384dc5",
+            "9c5ef133-c81e-458b-81a4-f66845103782"
+        ]
     },
     {
+        "id": "c63dd3f2-789d-4a7f-b05d-dffab38de291",
         "name": "Amiga CD32",
         "slug": "amiga-cd32",
         "image": "amiga-cd32.png",
@@ -637,9 +899,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1993,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "f2492afc-d74b-4c34-bcc8-fb8431b7ea5e"
+        ]
     },
     {
+        "id": "09608031-d4aa-4a3b-bfe5-efdc67a8158a",
         "name": "FM Towns Marty",
         "slug": "fm-towns-marty",
         "image": "fm-towns-marty.png",
@@ -647,9 +913,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1993,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "3d88a4c1-3286-48fa-9be1-9cf0ab0b03be"
+        ]
     },
     {
+        "id": "04a1454f-0d1f-4419-9c03-e3c385a2f2ae",
         "name": "Pioneer LaserActive",
         "slug": "pioneer-laseractive",
         "image": "pioneer-laseractive.png",
@@ -657,9 +927,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1993,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "d67b4956-2ae2-478b-be6d-4d762df5408b"
+        ]
     },
     {
+        "id": "8deb2317-c43d-4367-b840-4f07a4f04cc0",
         "name": "Atari Jaguar",
         "slug": "atari-jaguar",
         "image": "atari-jaguar.png",
@@ -667,9 +941,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1993,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "9ced7f00-377c-4568-a0e4-4755badde897",
         "name": "PC-FX",
         "slug": "pc-fx",
         "image": "pc-fx.png",
@@ -677,9 +955,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1994,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "3cd688c7-4d99-4ad2-9348-b002e21fa9e7"
+        ]
     },
     {
+        "id": "6d3d2dba-a583-4163-a757-f3244366d482",
         "name": "Playdia",
         "slug": "playdia",
         "image": "playdia.png",
@@ -687,9 +969,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1994,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "918e2af0-e0da-44ca-9aeb-91b82175443c"
+        ]
     },
     {
+        "id": "778fa50d-7360-4f8b-a4d2-a931aa88f2f4",
         "name": "Sega Saturn",
         "slug": "sega-saturn",
         "image": "sega-saturn.png",
@@ -697,9 +983,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1994,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e"
+        ]
     },
     {
+        "id": "f6aff06f-bffc-4f39-8752-ddc674d30a75",
         "name": "PlayStation",
         "slug": "playstation",
         "image": "playstation.png",
@@ -707,9 +997,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1994,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "f6d8b29d-f4ec-40fd-ac8d-e985af86cf62",
         "name": "Virtual Boy",
         "slug": "virtual-boy",
         "image": "virtual-boy.png",
@@ -717,9 +1011,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1995,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "e6630ddb-1b35-458b-b73f-c63252c1b595",
         "name": "Casio Loopy",
         "slug": "casio-loopy",
         "image": "casio-loopy.png",
@@ -727,9 +1025,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1995,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c8fa1047-ceed-4d37-ae44-bbdeff43f614"
+        ]
     },
     {
+        "id": "338a2c12-3e4b-427f-a042-f33f9aa61532",
         "name": "R-Zone",
         "slug": "r-zone",
         "image": "r-zone.png",
@@ -737,9 +1039,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1995,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "7bd4f23f-90d0-492c-91bc-b33a1a94bd3c"
+        ]
     },
     {
+        "id": "73454146-01f1-4e3e-9e7f-30fd15e119ac",
         "name": "Atari Jaguar CD Pro",
         "slug": "atari-jaguar-cd-pro",
         "image": "atari-jaguar-cd-pro.png",
@@ -747,9 +1053,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1995,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "86d287a0-6854-4bb7-bb06-dd131114bd29",
         "name": "Apple Pippin",
         "slug": "apple-pippin",
         "image": "apple-pippin.png",
@@ -757,9 +1067,14 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1995,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "918e2af0-e0da-44ca-9aeb-91b82175443c",
+            "cfb9645a-6eb3-44a2-8802-a21dd1713329"
+        ]
     },
     {
+        "id": "ec830da1-2d81-4525-ba0f-93fb449075ac",
         "name": "Nintendo 64",
         "slug": "nintendo-64",
         "image": "nintendo-64.png",
@@ -767,9 +1082,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1996,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "c0bc6944-96af-4909-8da5-d1e2d683479f",
         "name": "Game.com",
         "slug": "game-com",
         "image": "game-com.png",
@@ -777,9 +1096,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1997,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "7bd4f23f-90d0-492c-91bc-b33a1a94bd3c"
+        ]
     },
     {
+        "id": "cce5fb99-fe65-49c0-8d9f-498fc796ff70",
         "name": "Neo Geo Pocket",
         "slug": "neo-geo-pocket",
         "image": "neo-geo-pocket.png",
@@ -787,9 +1110,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1998,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1dc36f5d-c718-425b-93ea-90446aacf6a1"
+        ]
     },
     {
+        "id": "f7f9c8e8-956d-46c5-806a-141cf0c1951a",
         "name": "Game Boy Color",
         "slug": "game-boy-color",
         "image": "game-boy-color.png",
@@ -797,9 +1124,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1998,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "7af4d5b4-c48f-4b0e-8e82-bd5be1e44af2",
         "name": "PocketStation",
         "slug": "pocketstation",
         "image": "pocketstation.png",
@@ -807,9 +1138,13 @@
         "type": "home_console",
         "generation": 5,
         "initial_release_year": 1999,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "baecfda1-20d0-4075-ba66-97fd4c9eab0d",
         "name": "Dreamcast",
         "slug": "dreamcast",
         "image": "dreamcast.png",
@@ -817,9 +1152,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 1998,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "058e7202-54aa-444f-89ec-bddf4be54e3e"
+        ]
     },
     {
+        "id": "119571de-e1b3-425b-97ca-69fc8eff04ce",
         "name": "Neo Geo Pocket Color",
         "slug": "neo-geo-pocket-color",
         "image": "neo-geo-pocket-color.png",
@@ -827,9 +1166,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 1999,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1dc36f5d-c718-425b-93ea-90446aacf6a1"
+        ]
     },
     {
+        "id": "70aa7592-7c33-44ef-b189-1d01dfc2dcce",
         "name": "WonderSwan/WonderSwan Color",
         "slug": "wonderswan-wonderswan-color",
         "image": "wonderswan-wonderswan-color.png",
@@ -837,9 +1180,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 1999,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "918e2af0-e0da-44ca-9aeb-91b82175443c"
+        ]
     },
     {
+        "id": "aa0992a3-308f-4e8b-ab3a-154b5a470577",
         "name": "PlayStation 2",
         "slug": "playstation-2",
         "image": "playstation-2.png",
@@ -847,9 +1194,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2000,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "36266116-a936-47fa-ba80-ee7fcfa1dfda",
         "name": "Game Boy Advance",
         "slug": "game-boy-advance",
         "image": "game-boy-advance.png",
@@ -857,9 +1208,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2001,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "ac9bc80c-3e47-488d-ba3e-b7896d6227df",
         "name": "Nintendo GameCube",
         "slug": "nintendo-gamecube",
         "image": "nintendo-gamecube.png",
@@ -867,9 +1222,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2001,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "6fa9ed0e-1cb0-4226-a91a-200dce875a83",
         "name": "Xbox",
         "slug": "xbox",
         "image": "xbox.png",
@@ -877,9 +1236,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2001,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "552c509b-a8a2-4a13-93ec-04012c2da607"
+        ]
     },
     {
+        "id": "190c28b1-6fe5-4b37-99e5-67d937889508",
         "name": "Pokémon mini",
         "slug": "pokemon-mini",
         "image": "pokemon-mini.png",
@@ -887,9 +1250,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2001,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "f6fc273a-cb93-4d6d-9f57-d16669abde61",
         "name": "GP32",
         "slug": "gp32",
         "image": "gp32.png",
@@ -897,9 +1264,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2001,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1e2d415f-edaa-4686-98a4-da4d264dacf1"
+        ]
     },
     {
+        "id": "99c06bf5-0432-4ffd-9358-6391820ab40d",
         "name": "Panasonic Q",
         "slug": "panasonic-q",
         "image": "panasonic-q.png",
@@ -907,9 +1278,14 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2001,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "6611a45b-5410-495f-9ce6-cbef99a2ad0f",
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "9505e752-4ea4-4624-9eaf-c298f6d3b74a",
         "name": "SwanCrystal",
         "slug": "swancrystal",
         "image": "swancrystal.png",
@@ -917,9 +1293,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2002,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "918e2af0-e0da-44ca-9aeb-91b82175443c"
+        ]
     },
     {
+        "id": "f3498bcf-869c-4fd3-8e82-b1bbc7309093",
         "name": "GameKing",
         "slug": "gameking",
         "image": "gameking.png",
@@ -927,9 +1307,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2003,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "e8eed187-b45f-486b-a068-e296b0fe0977"
+        ]
     },
     {
+        "id": "11bd6a36-688c-4958-92db-049703ef05e9",
         "name": "N-Gage",
         "slug": "n-gage",
         "image": "n-gage.png",
@@ -937,9 +1321,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2003,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "2b981fd9-6a4f-462d-8fea-4e929d962be6"
+        ]
     },
     {
+        "id": "af2bb244-851b-439b-8183-3b470044bfd0",
         "name": "PSX",
         "slug": "psx",
         "image": "psx.png",
@@ -947,9 +1335,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2003,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "437e429b-e91d-48f5-a2dc-261548d595c9",
         "name": "iQue Player",
         "slug": "ique-player",
         "image": "ique-player.png",
@@ -957,9 +1349,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2003,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "c3294321-d3d4-4601-a488-b0a8c028abde",
         "name": "Tapwave Zodiac",
         "slug": "tapwave-zodiac",
         "image": "tapwave-zodiac.png",
@@ -967,9 +1363,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2003,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "92b055d5-e34f-4769-adfc-1cab1542da56"
+        ]
     },
     {
+        "id": "3cd76458-96a2-4665-91c1-f4ae5ae30688",
         "name": "Atari Flashback",
         "slug": "atari-flashback",
         "image": "atari-flashback.png",
@@ -977,9 +1377,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2004,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "beddee3c-93f6-4859-a0da-5b0675129882",
         "name": "OneStation",
         "slug": "onestation",
         "image": "onestation.png",
@@ -987,9 +1391,13 @@
         "type": "home_console",
         "generation": 6,
         "initial_release_year": 2006,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "8aea4b09-aadd-45bf-961a-b75db8792913"
+        ]
     },
     {
+        "id": "a813a0f2-ad8d-4cac-89fe-b4cae2d8a1d2",
         "name": "Nintendo DS",
         "slug": "nintendo-ds",
         "image": "nintendo-ds.png",
@@ -997,9 +1405,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2004,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "f10a2750-b15a-41d1-8559-c29aae7ba350",
         "name": "PSP",
         "slug": "psp",
         "image": "psp.png",
@@ -1007,9 +1419,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2004,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "7fc0911f-3571-47a4-b76c-3140f154e81a",
         "name": "Gizmondo",
         "slug": "gizmondo",
         "image": "gizmondo.png",
@@ -1017,9 +1433,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2005,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "a2113e09-7d75-4242-9bb9-21cd18a696d0"
+        ]
     },
     {
+        "id": "a7b43af6-93ce-48e6-9507-130bd02efe5f",
         "name": "Xbox 360",
         "slug": "xbox-360",
         "image": "xbox-360.png",
@@ -1027,9 +1447,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2005,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "552c509b-a8a2-4a13-93ec-04012c2da607"
+        ]
     },
     {
+        "id": "134bade5-2fd9-4fc7-a77b-8ead5403419a",
         "name": "Samsung SPH-G1000",
         "slug": "samsung-sph-g1000",
         "image": "samsung-sph-g1000.png",
@@ -1037,9 +1461,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2005,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "23e71d83-fb0a-4cb0-b56e-d92d95b2447e"
+        ]
     },
     {
+        "id": "55a99bba-7f7c-46b3-a757-c7e2a712dcae",
         "name": "GP2X",
         "slug": "gp2x",
         "image": "gp2x.png",
@@ -1047,9 +1475,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2005,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "4054137c-be00-4558-86c4-2a5b17ccc1ac"
+        ]
     },
     {
+        "id": "971935ec-a9ef-4bcd-b874-026e9a536a76",
         "name": "HyperScan",
         "slug": "hyperscan",
         "image": "hyperscan.png",
@@ -1057,9 +1489,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2006,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "e0149937-263b-4b84-b83d-ae6ce24fd999"
+        ]
     },
     {
+        "id": "8aef43e1-a6ed-4d71-9135-45daab899d3b",
         "name": "PlayStation 3",
         "slug": "playstation-3",
         "image": "playstation-3.png",
@@ -1067,9 +1503,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2006,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "47515afd-7ae5-4dc4-8aed-a798f477cf1b",
         "name": "Wii",
         "slug": "wii",
         "image": "wii.png",
@@ -1077,9 +1517,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2006,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "2e4eb6f9-f683-431c-a182-1e3af518c7ca",
         "name": "Vii",
         "slug": "vii",
         "image": "vii.png",
@@ -1087,9 +1531,14 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2007,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "74983ecf-db76-48df-9917-19c5b47cad11",
+            "f5b6718f-87ad-4501-9703-d7c59b6cb551"
+        ]
     },
     {
+        "id": "d7ee7036-178e-4736-97b8-c8285ac7b5f8",
         "name": "Nintendo DSi",
         "slug": "nintendo-dsi",
         "image": "nintendo-dsi.png",
@@ -1097,9 +1546,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2008,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "609c5fe7-e0b0-4063-bfd9-eff4a0f12673",
         "name": "GP2X Wiz",
         "slug": "gp2x-wiz",
         "image": "gp2x-wiz.png",
@@ -1107,9 +1560,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2009,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "4054137c-be00-4558-86c4-2a5b17ccc1ac"
+        ]
     },
     {
+        "id": "7e2301b4-6d9e-498c-a5b2-26523f174983",
         "name": "Dingoo",
         "slug": "dingoo",
         "image": "dingoo.png",
@@ -1117,9 +1574,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2009,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "1d1e87fa-53dc-406f-a38b-05b0c150bf36"
+        ]
     },
     {
+        "id": "9e127666-a0d2-4a1a-b256-af3231218171",
         "name": "Zeebo",
         "slug": "zeebo",
         "image": "zeebo.png",
@@ -1127,9 +1588,14 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2009,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "8fc631d6-936e-4082-8863-231fe3800f78",
+            "4b8b10d7-a15e-4604-8619-fb0d6a425718"
+        ]
     },
     {
+        "id": "bf1bf34e-c0a6-48b6-9154-f805f4f9fde6",
         "name": "OnLive",
         "slug": "onlive",
         "image": "onlive.png",
@@ -1137,9 +1603,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2009,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "46337261-bf08-439c-951d-6d5413d9d880"
+        ]
     },
     {
+        "id": "4970f69d-7462-400c-8164-1c8a073ff589",
         "name": "Pandora",
         "slug": "pandora",
         "image": "pandora.png",
@@ -1147,9 +1617,13 @@
         "type": "home_console",
         "generation": 7,
         "initial_release_year": 2009,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "80c7200f-62b6-44b9-a278-1883ebd10e44"
+        ]
     },
     {
+        "id": "f803eb82-ab00-4118-be4a-9e54f73bb844",
         "name": "Nintendo 3DS",
         "slug": "nintendo-3ds",
         "image": "nintendo-3ds.png",
@@ -1157,9 +1631,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2011,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "9b212c19-8060-4971-a872-de8271c5b130",
         "name": "Xperia Play",
         "slug": "xperia-play",
         "image": "xperia-play.png",
@@ -1167,9 +1645,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2011,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "18637384-60f2-4b25-ba31-0962ecf6115d",
         "name": "PlayStation Vita",
         "slug": "playstation-vita",
         "image": "playstation-vita.png",
@@ -1177,9 +1659,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2011,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "becc511a-d087-4f18-8c8c-d9cef8e74bce",
         "name": "Nintendo Wii U",
         "slug": "nintendo-wii-u",
         "image": "nintendo-wii-u.png",
@@ -1187,9 +1673,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2012,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "4e9adcbe-c9d5-429a-b509-c582b83d205a",
         "name": "Neo Geo X",
         "slug": "neo-geo-x",
         "image": "neo-geo-x.png",
@@ -1197,9 +1687,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2012,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "a278ab7e-1e3f-4593-b726-4935d0e0cc25"
+        ]
     },
     {
+        "id": "3123207f-86b0-4a67-b3bc-113a71076475",
         "name": "Ouya",
         "slug": "ouya",
         "image": "ouya.png",
@@ -1207,9 +1701,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2013,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "da7cbf2f-2fdf-4818-9dc1-5062e4022c36"
+        ]
     },
     {
+        "id": "d1f1d69d-3c6a-4fa3-a130-e47257b8797a",
         "name": "Nvidia Shield Portable",
         "slug": "nvidia-shield-portable",
         "image": "nvidia-shield-portable.png",
@@ -1217,9 +1715,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2013,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c5c6aeaa-1b17-4cb1-af7e-bfa205e59a73"
+        ]
     },
     {
+        "id": "37d0530d-9508-4356-8107-e44305ef4986",
         "name": "PlayStation 4",
         "slug": "playstation-4",
         "image": "playstation-4.png",
@@ -1227,9 +1729,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2013,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "47dd4cab-bc82-492b-9fe7-9ad34c4845b3",
         "name": "Xbox One",
         "slug": "xbox-one",
         "image": "xbox-one.png",
@@ -1237,9 +1743,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2013,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "552c509b-a8a2-4a13-93ec-04012c2da607"
+        ]
     },
     {
+        "id": "06dd71e7-4cac-46b3-a3e4-fb8e707ea680",
         "name": "PlayStation TV",
         "slug": "playstation-tv",
         "image": "playstation-tv.png",
@@ -1247,9 +1757,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2013,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "b21e831e-db11-45c8-bd53-cbae263c60e8",
         "name": "New Nintendo 3DS",
         "slug": "new-nintendo-3ds",
         "image": "new-nintendo-3ds.png",
@@ -1257,9 +1771,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2014,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "de44fc62-2838-48f2-87e8-5d0eae3326ef",
         "name": "Fire TV Gaming Edition",
         "slug": "fire-tv-gaming-edition",
         "image": "fire-tv-gaming-edition.png",
@@ -1267,9 +1785,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2015,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "ab3021e5-0435-47d0-a48e-43d4a80f5e89"
+        ]
     },
     {
+        "id": "8c134af4-58c1-4bd0-95bf-2a378207c58b",
         "name": "Nvidia Shield TV",
         "slug": "nvidia-shield-tv",
         "image": "nvidia-shield-tv.png",
@@ -1277,9 +1799,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2015,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c5c6aeaa-1b17-4cb1-af7e-bfa205e59a73"
+        ]
     },
     {
+        "id": "6f6fddb9-e4ff-4541-a115-526852aafa15",
         "name": "Razer Forge TV",
         "slug": "razer-forge-tv",
         "image": "razer-forge-tv.png",
@@ -1287,9 +1813,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2015,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "8333bab3-00ea-497e-9e91-c9c82096208b"
+        ]
     },
     {
+        "id": "4f3d7c07-2468-4fb6-b590-fa556152a57e",
         "name": "Steam Machine",
         "slug": "steam-machine",
         "image": "steam-machine.png",
@@ -1297,9 +1827,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2015,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "0ee3364a-1425-4f7e-aabc-dacca0a1e950"
+        ]
     },
     {
+        "id": "ea2459ca-4877-4529-aba7-8795478008ef",
         "name": "GPD Win",
         "slug": "gpd-win",
         "image": "gpd-win.png",
@@ -1307,9 +1841,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2016,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eafda691-da84-40b0-a948-7a91c47498fe"
+        ]
     },
     {
+        "id": "2bca807c-e74b-453c-8767-5ef1ac9194bd",
         "name": "Nintendo Switch",
         "slug": "nintendo-switch",
         "image": "nintendo-switch.png",
@@ -1317,9 +1855,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2017,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "4ceed84a-fc17-44e9-8cfc-c3863c776a4e",
         "name": "GPD Win 2",
         "slug": "gpd-win-2",
         "image": "gpd-win-2.png",
@@ -1327,9 +1869,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2018,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eafda691-da84-40b0-a948-7a91c47498fe"
+        ]
     },
     {
+        "id": "5efda964-037f-40c8-8be7-121336f9f42f",
         "name": "Nintendo Switch Lite",
         "slug": "nintendo-switch-lite",
         "image": "nintendo-switch-lite.png",
@@ -1337,9 +1883,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2019,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "3c728820-92d1-4108-9b68-ae058f422368",
         "name": "Nintendo Switch Oled",
         "slug": "nintendo-switch-oled",
         "image": "nintendo-switch-oled.png",
@@ -1347,9 +1897,13 @@
         "type": "home_console",
         "generation": 8,
         "initial_release_year": 2021,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "1f328f2b-a08c-481d-8c5c-c7b1e47bef2b",
         "name": "Oculus/Meta Quest",
         "slug": "oculus-meta-quest",
         "image": "oculus-meta-quest.png",
@@ -1357,9 +1911,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2019,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "51946833-c3a7-489c-8485-d07f70f42da7"
+        ]
     },
     {
+        "id": "5c8e32ec-966e-41b4-be05-abc6850b38a5",
         "name": "Google Stadia",
         "slug": "google-stadia",
         "image": "google-stadia.png",
@@ -1367,9 +1925,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2019,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "d15153f1-9366-4066-b352-6ff375fc44e6"
+        ]
     },
     {
+        "id": "86432c0e-5905-409d-86f4-794006db98f1",
         "name": "Xbox Series X/S",
         "slug": "xbox-series-x-s",
         "image": "xbox-series-x-s.png",
@@ -1377,9 +1939,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2020,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "552c509b-a8a2-4a13-93ec-04012c2da607"
+        ]
     },
     {
+        "id": "c6fe9524-ed2b-4e28-b961-e9a79506cbf4",
         "name": "PlayStation 5",
         "slug": "playstation-5",
         "image": "playstation-5.png",
@@ -1387,9 +1953,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2020,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "c01d4954-17f9-459e-83b3-003b4cd7dec3"
+        ]
     },
     {
+        "id": "dda34589-e415-4623-b3d5-37264712e50a",
         "name": "Atari VCS",
         "slug": "atari-vcs",
         "image": "atari-vcs.png",
@@ -1397,9 +1967,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2020,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "12408c6f-b517-4c5c-bc04-b8be903e9177"
+        ]
     },
     {
+        "id": "cb879ed4-cfcc-44a0-a88a-2b34a8260538",
         "name": "Playdate",
         "slug": "playdate",
         "image": "playdate.png",
@@ -1407,9 +1981,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2021,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "7f11fb55-d01d-4d86-a230-fe352078339a"
+        ]
     },
     {
+        "id": "db3506af-1ae1-43a2-8ab6-b1855de7628e",
         "name": "Polymega",
         "slug": "polymega",
         "image": "polymega.png",
@@ -1417,9 +1995,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2021,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "2aa29454-321e-4beb-bb9e-d06fa2c13518"
+        ]
     },
     {
+        "id": "99dbca6a-81f5-45f6-988c-9d361cef5782",
         "name": "Evercade VS",
         "slug": "evercade-vs",
         "image": "evercade-vs.png",
@@ -1427,9 +2009,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2021,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "5ff8d430-47dc-4798-85df-21a21740264e"
+        ]
     },
     {
+        "id": "5e86867d-1c93-4a97-b67c-481a5a71127d",
         "name": "Aya Neo",
         "slug": "aya-neo",
         "image": "aya-neo.png",
@@ -1437,9 +2023,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2021,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "87d5f779-76ca-4529-bcd3-1de0a810a893"
+        ]
     },
     {
+        "id": "40a1b525-98d2-479e-aa52-340005e49f0b",
         "name": "OneXPlayer",
         "slug": "onexplayer",
         "image": "onexplayer.png",
@@ -1447,9 +2037,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2021,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "92149988-5baa-4adb-9568-92efa3d523e8"
+        ]
     },
     {
+        "id": "15ba5004-ff63-4db3-bdab-81103f0ef7d0",
         "name": "Steam Deck",
         "slug": "steam-deck",
         "image": "steam-deck.png",
@@ -1457,9 +2051,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2022,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "0ee3364a-1425-4f7e-aabc-dacca0a1e950"
+        ]
     },
     {
+        "id": "ac4bba6d-b311-462e-8eb0-b113d3ad9238",
         "name": "Logitech G Cloud",
         "slug": "logitech-g-cloud",
         "image": "logitech-g-cloud.png",
@@ -1467,9 +2065,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2022,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "678b41d4-5419-4159-b94d-1102aaca1267"
+        ]
     },
     {
+        "id": "270d3918-1ac2-4085-81da-afcdffe3d1ca",
         "name": "Rog Ally",
         "slug": "rog-ally",
         "image": "rog-ally.png",
@@ -1477,9 +2079,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2023,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "b68659e5-8406-4d35-82c3-9d691a00c85c"
+        ]
     },
     {
+        "id": "ac5105ce-c3f0-4041-b276-3c245cb3197f",
         "name": "AYN Loki",
         "slug": "ayn-loki",
         "image": "ayn-loki.png",
@@ -1487,9 +2093,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2023,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "7f529461-82b4-4511-a679-533b7e607488"
+        ]
     },
     {
+        "id": "125a8bef-362d-448d-a8d9-def7f1a27e2b",
         "name": "Legion Go",
         "slug": "legion-go",
         "image": "legion-go.png",
@@ -1497,9 +2107,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2023,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "d73344f0-2265-4478-8205-4c79d00ac1a6"
+        ]
     },
     {
+        "id": "8ed565ea-cd8c-4796-8361-44c30c50e87f",
         "name": "Orange Pi Neo",
         "slug": "orange-pi-neo",
         "image": "orange-pi-neo.png",
@@ -1507,9 +2121,14 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2024,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "9c90a0de-2e4d-465b-9c53-ff027f2b13c0",
+            "1eaf3369-914f-4728-8945-a5a37e7b0a5e"
+        ]
     },
     {
+        "id": "89233a9f-cc3e-4f36-9f67-8896464c2bc3",
         "name": "MSI Claw",
         "slug": "msi-claw",
         "image": "msi-claw.png",
@@ -1517,9 +2136,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2024,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "924fa1ba-7dd6-43bb-b7eb-eae014edf602"
+        ]
     },
     {
+        "id": "d4a7e8b0-d808-4c23-80c9-4544fbac93b5",
         "name": "Legion Go S",
         "slug": "legion-go-s",
         "image": "legion-go-s.png",
@@ -1527,9 +2150,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2025,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "d73344f0-2265-4478-8205-4c79d00ac1a6"
+        ]
     },
     {
+        "id": "95493c8d-f9b7-4b7c-af2f-f7fa7f39b11f",
         "name": "Nintendo Switch 2",
         "slug": "nintendo-switch-2",
         "image": "nintendo-switch-2.png",
@@ -1537,9 +2164,13 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2025,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "eee00f31-efc2-4613-af0d-a3088a44b990"
+        ]
     },
     {
+        "id": "022af31e-8f12-4e5a-baef-182bb031635d",
         "name": "ROG Xbox Ally",
         "slug": "rog-xbox-ally",
         "image": "rog-xbox-ally.png",
@@ -1547,6 +2178,10 @@
         "type": "home_console",
         "generation": 9,
         "initial_release_year": 2025,
-        "description": null
+        "description": null,
+        "manufacturer_ids": [
+            "b68659e5-8406-4d35-82c3-9d691a00c85c",
+            "552c509b-a8a2-4a13-93ec-04012c2da607"
+        ]
     }
 ]
