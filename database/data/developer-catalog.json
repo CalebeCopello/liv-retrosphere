@@ -1,0 +1,1472 @@
+[
+    {
+        "id": "2fd578ac-e581-5807-a3e7-430f40a97d0f",
+        "name": "A-Wave",
+        "slug": "a-wave",
+        "source_url": null
+    },
+    {
+        "id": "58d99f78-e552-56c9-bfde-fce756ee0e16",
+        "name": "A.I",
+        "slug": "a-i",
+        "source_url": null
+    },
+    {
+        "id": "133b7c36-0d31-5417-8623-9530aa3f8844",
+        "name": "Activision",
+        "slug": "activision",
+        "source_url": "https://en.wikipedia.org/wiki/Activision"
+    },
+    {
+        "id": "5fe3e50a-41d4-58ac-bfd3-0b6c17538438",
+        "name": "Advance Communication Company",
+        "slug": "advance-communication-company",
+        "source_url": null
+    },
+    {
+        "id": "a1f9401b-a1c3-50ea-8b46-3a3c09d916d3",
+        "name": "Aicom",
+        "slug": "aicom",
+        "source_url": "https://en.wikipedia.org/wiki/Aicom"
+    },
+    {
+        "id": "3fd11a55-644d-5274-8979-13f51725bd2a",
+        "name": "AIM",
+        "slug": "aim",
+        "source_url": "https://en.wikipedia.org/wiki/Fortyfive"
+    },
+    {
+        "id": "09119daa-8935-5afa-a4d0-52fe7a5ce2f8",
+        "name": "Aisystem Tokyo",
+        "slug": "aisystem-tokyo",
+        "source_url": null
+    },
+    {
+        "id": "193eadc0-95c3-520e-8f18-1f5b53deef7f",
+        "name": "Alpha Denshi",
+        "slug": "alpha-denshi",
+        "source_url": "https://en.wikipedia.org/wiki/ADK_Corporation"
+    },
+    {
+        "id": "32c15fdd-be0b-513e-b97d-b2ad5a3c63c6",
+        "name": "Amusement, Ltd.",
+        "slug": "amusement-ltd",
+        "source_url": null
+    },
+    {
+        "id": "06783145-e7b8-51e6-9932-47b3aec09736",
+        "name": "Angel",
+        "slug": "angel",
+        "source_url": "https://en.wikipedia.org/wiki/Bandai"
+    },
+    {
+        "id": "fbf05a9c-d05c-55fe-9f4e-f3d2f1643fe1",
+        "name": "Another",
+        "slug": "another",
+        "source_url": null
+    },
+    {
+        "id": "b2be93e2-3cab-5103-b8ff-b6c877fa0ff6",
+        "name": "Ape Inc.",
+        "slug": "ape-inc",
+        "source_url": "https://en.wikipedia.org/wiki/Creatures_Inc."
+    },
+    {
+        "id": "afb85ee0-c58e-5665-89d2-49668edb3ce0",
+        "name": "Arc System Works",
+        "slug": "arc-system-works",
+        "source_url": "https://en.wikipedia.org/wiki/Arc_System_Works"
+    },
+    {
+        "id": "838e00a0-8d57-57bb-956b-527d8829c5ac",
+        "name": "Artdink",
+        "slug": "artdink",
+        "source_url": "https://en.wikipedia.org/wiki/Artdink"
+    },
+    {
+        "id": "4264211b-b7af-54d9-abc5-da3b5dc3db28",
+        "name": "ASCII",
+        "slug": "ascii",
+        "source_url": "https://en.wikipedia.org/wiki/ASCII_Corporation"
+    },
+    {
+        "id": "fc29d8dd-00b7-54d6-83b7-97882059d032",
+        "name": "ASK",
+        "slug": "ask",
+        "source_url": null
+    },
+    {
+        "id": "18a2e0c1-4504-5493-b201-de32fe769c87",
+        "name": "Asmik",
+        "slug": "asmik",
+        "source_url": "https://en.wikipedia.org/wiki/Asmik_Ace"
+    },
+    {
+        "id": "412e9c28-231c-5727-8b78-2c30cc119a30",
+        "name": "Atelier Double",
+        "slug": "atelier-double",
+        "source_url": null
+    },
+    {
+        "id": "fef2d920-09c3-52e3-a540-79b223f98aab",
+        "name": "Athena",
+        "slug": "athena",
+        "source_url": "https://en.wikipedia.org/wiki/Athena_(game_developer)"
+    },
+    {
+        "id": "91bebde4-5f22-5b23-912d-b8fed85c0a09",
+        "name": "Atlus",
+        "slug": "atlus",
+        "source_url": "https://en.wikipedia.org/wiki/Atlus"
+    },
+    {
+        "id": "eada4a09-d80d-570b-bb31-fb23a17caf8a",
+        "name": "Audiogenic",
+        "slug": "audiogenic",
+        "source_url": "https://en.wikipedia.org/wiki/Audiogenic"
+    },
+    {
+        "id": "b3594f1a-bbfb-5f3b-9d25-711038d3fad2",
+        "name": "Axes Art Amusement",
+        "slug": "axes-art-amusement",
+        "source_url": null
+    },
+    {
+        "id": "e446006e-a7e7-5976-b192-bacd7dd9eb06",
+        "name": "Banpresto",
+        "slug": "banpresto",
+        "source_url": "https://en.wikipedia.org/wiki/Banpresto"
+    },
+    {
+        "id": "7026ac71-beda-5c84-9644-008f844775d6",
+        "name": "Beam Software",
+        "slug": "beam-software",
+        "source_url": "https://en.wikipedia.org/wiki/Beam_Software"
+    },
+    {
+        "id": "e92c0d8b-06a4-5bdf-bf66-ef7d6f191201",
+        "name": "Bear's",
+        "slug": "bears",
+        "source_url": null
+    },
+    {
+        "id": "d31a4055-d3cf-54d5-a9c5-4cea50f12480",
+        "name": "Bethesda Softworks",
+        "slug": "bethesda-softworks",
+        "source_url": "https://en.wikipedia.org/wiki/Bethesda_Softworks"
+    },
+    {
+        "id": "0da7ec25-230b-5a65-a03a-4c3fdb60b73d",
+        "name": "Birthday",
+        "slug": "birthday",
+        "source_url": "https://en.wikipedia.org/wiki/Birthday_(company)"
+    },
+    {
+        "id": "29bd3ad3-e2ae-5dfa-88e0-4c7d761499b9",
+        "name": "Bit Managers",
+        "slug": "bit-managers",
+        "source_url": "https://en.wikipedia.org/wiki/Bit_Managers"
+    },
+    {
+        "id": "10d6a0d2-ea6c-5ad3-8871-6f7aed30c3d9",
+        "name": "Bitmasters",
+        "slug": "bitmasters",
+        "source_url": null
+    },
+    {
+        "id": "11dffb29-2b2f-59dc-90a6-94e277f36e27",
+        "name": "Bits Laboratory",
+        "slug": "bits-laboratory",
+        "source_url": null
+    },
+    {
+        "id": "05b7211f-b0e5-5fe8-bd8d-e737cd73f749",
+        "name": "Bits Studios",
+        "slug": "bits-studios",
+        "source_url": "https://en.wikipedia.org/wiki/Bits_Studios"
+    },
+    {
+        "id": "7bfb5804-f6a8-5ae3-aa77-ee9d91fb7a51",
+        "name": "Bothtec",
+        "slug": "bothtec",
+        "source_url": null
+    },
+    {
+        "id": "adaa440d-4626-59f7-aba3-2b42b0fc1fde",
+        "name": "Bullet-Proof Software",
+        "slug": "bullet-proof-software",
+        "source_url": "https://en.wikipedia.org/wiki/Blue_Planet_Software"
+    },
+    {
+        "id": "b14e1e5b-43eb-5a83-8972-35763995d211",
+        "name": "C-Dream",
+        "slug": "c-dream",
+        "source_url": null
+    },
+    {
+        "id": "aa0479d4-fe0e-5db4-98d5-fcee326bfadb",
+        "name": "C-Lab",
+        "slug": "c-lab",
+        "source_url": null
+    },
+    {
+        "id": "ec02902b-dd79-5211-bc7b-e3bde64cdc3c",
+        "name": "Capcom",
+        "slug": "capcom",
+        "source_url": "https://en.wikipedia.org/wiki/Capcom"
+    },
+    {
+        "id": "3fee30a7-96be-5aa9-8124-f0697cdcfbf7",
+        "name": "Carry Lab",
+        "slug": "carry-lab",
+        "source_url": null
+    },
+    {
+        "id": "6f921c1d-5fc3-55f2-84b3-8010593a1fd4",
+        "name": "CBS Sony Group",
+        "slug": "cbs-sony-group",
+        "source_url": "https://en.wikipedia.org/wiki/Sony_Music_Entertainment_Japan"
+    },
+    {
+        "id": "8a92bccf-fc83-500b-b618-cdc18a313506",
+        "name": "Character Soft",
+        "slug": "character-soft",
+        "source_url": "https://en.wikipedia.org/wiki/Sanrio#Publishing"
+    },
+    {
+        "id": "6e6d014e-5780-599e-a14b-72e80f47eb2e",
+        "name": "Chatnoir",
+        "slug": "chatnoir",
+        "source_url": null
+    },
+    {
+        "id": "fc0108b2-54b5-5615-9fb0-99191c6452c9",
+        "name": "Chris Gray Enterprises",
+        "slug": "chris-gray-enterprises",
+        "source_url": "https://en.wikipedia.org/wiki/Gray_Matter_(company)"
+    },
+    {
+        "id": "3ef20469-0150-513e-8327-418520496863",
+        "name": "Chunsoft",
+        "slug": "chunsoft",
+        "source_url": "https://en.wikipedia.org/wiki/Chunsoft"
+    },
+    {
+        "id": "df8254a8-4db1-57de-85e8-cc5d4ab4ea2d",
+        "name": "Cirque Verte",
+        "slug": "cirque-verte",
+        "source_url": null
+    },
+    {
+        "id": "a7ffba72-e022-50a4-b9d8-24f79e67b7c8",
+        "name": "Coconuts Japan",
+        "slug": "coconuts-japan",
+        "source_url": null
+    },
+    {
+        "id": "b1b8d724-a3db-5a8b-b9f6-f5b0365ce626",
+        "name": "Compile",
+        "slug": "compile",
+        "source_url": "https://en.wikipedia.org/wiki/Compile_(company)"
+    },
+    {
+        "id": "a6a4dd38-86f0-536e-a1ac-4f0b00ae9be4",
+        "name": "Crea-Tech",
+        "slug": "crea-tech",
+        "source_url": "https://en.wikipedia.org/wiki/Crea-Tech"
+    },
+    {
+        "id": "f62cd4e2-c021-5dd1-9bf8-f04c2ba8b701",
+        "name": "Crosstalk",
+        "slug": "crosstalk",
+        "source_url": null
+    },
+    {
+        "id": "ba3203af-bb64-5891-91a6-56db7ac4a4e7",
+        "name": "Culture Brain",
+        "slug": "culture-brain",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_Brain"
+    },
+    {
+        "id": "5ece1b4e-076b-56de-ba2e-32747ed73f92",
+        "name": "Cyclone System",
+        "slug": "cyclone-system",
+        "source_url": null
+    },
+    {
+        "id": "c13f666d-499e-508e-ac6b-1a65a811de11",
+        "name": "Daiei Seisakusho",
+        "slug": "daiei-seisakusho",
+        "source_url": null
+    },
+    {
+        "id": "51230085-7fc2-5e47-bbac-7e8fa6158b55",
+        "name": "Dark Technologies",
+        "slug": "dark-technologies",
+        "source_url": null
+    },
+    {
+        "id": "a039d361-4901-54a9-bf4e-7bc04dade0a6",
+        "name": "Data East",
+        "slug": "data-east",
+        "source_url": "https://en.wikipedia.org/wiki/Data_East"
+    },
+    {
+        "id": "72a58c98-a023-59e3-a8be-89aec7c051a0",
+        "name": "David Braben",
+        "slug": "david-braben",
+        "source_url": "https://en.wikipedia.org/wiki/David_Braben"
+    },
+    {
+        "id": "a17d186b-5686-5dc0-bdfc-981c9a393499",
+        "name": "dB-SOFT",
+        "slug": "db-soft",
+        "source_url": "https://en.wikipedia.org/wiki/DB-SOFT"
+    },
+    {
+        "id": "65a92be8-9e16-55ef-aa02-7c33767ac733",
+        "name": "Dennou Kenkyusho",
+        "slug": "dennou-kenkyusho",
+        "source_url": null
+    },
+    {
+        "id": "f58001f9-17eb-5224-928c-9f47cff4641b",
+        "name": "Disco",
+        "slug": "disco",
+        "source_url": null
+    },
+    {
+        "id": "b717fd94-fdfa-51de-8c65-27f62e2e1111",
+        "name": "Distinctive Software",
+        "slug": "distinctive-software",
+        "source_url": "https://en.wikipedia.org/wiki/Distinctive_Software"
+    },
+    {
+        "id": "16237344-9c6c-5fd0-8f04-e7be2b949823",
+        "name": "Eastridge Technology",
+        "slug": "eastridge-technology",
+        "source_url": null
+    },
+    {
+        "id": "8b5947bb-88c4-5cf5-9f6c-038302418968",
+        "name": "EIM",
+        "slug": "eim",
+        "source_url": "https://en.wikipedia.org/wiki/EIM_(video_game_developer)"
+    },
+    {
+        "id": "0a5d6198-5257-5a8f-86c7-02e18fbfe0e6",
+        "name": "Electronic Arts",
+        "slug": "electronic-arts",
+        "source_url": "https://en.wikipedia.org/wiki/Electronic_Arts"
+    },
+    {
+        "id": "7fc4fb85-709f-5a47-8e5f-58606811c9a5",
+        "name": "Elite Systems",
+        "slug": "elite-systems",
+        "source_url": "https://en.wikipedia.org/wiki/Elite_Systems"
+    },
+    {
+        "id": "44999fd1-e0c0-5b3a-8018-3831ef23dec9",
+        "name": "Enigma Variations",
+        "slug": "enigma-variations",
+        "source_url": null
+    },
+    {
+        "id": "223b1613-881b-55ca-bb5d-28f25d0741f6",
+        "name": "Epoch",
+        "slug": "epoch",
+        "source_url": "https://en.wikipedia.org/wiki/Epoch_Co."
+    },
+    {
+        "id": "41fd9729-2f69-59ec-af30-bcc2801dea65",
+        "name": "Equilibrium",
+        "slug": "equilibrium",
+        "source_url": null
+    },
+    {
+        "id": "7142d162-67a4-5989-a300-cd0950acab2d",
+        "name": "Eurocom",
+        "slug": "eurocom",
+        "source_url": "https://en.wikipedia.org/wiki/Eurocom"
+    },
+    {
+        "id": "0058b90e-8ed5-5296-9787-f3d6964ff773",
+        "name": "FarSight Studios",
+        "slug": "farsight-studios",
+        "source_url": "https://en.wikipedia.org/wiki/Jay_Obernolte#Business"
+    },
+    {
+        "id": "a0195ae8-92d9-53b1-82c4-f1efef5e315f",
+        "name": "G-Amusements",
+        "slug": "g-amusements",
+        "source_url": null
+    },
+    {
+        "id": "728a73f6-1c8a-5c2c-b4f8-248ddc6cf7e9",
+        "name": "G.O.1",
+        "slug": "g-o-1",
+        "source_url": null
+    },
+    {
+        "id": "72841d3f-ac59-59bd-b03d-24323f83bf67",
+        "name": "Game Arts",
+        "slug": "game-arts",
+        "source_url": "https://en.wikipedia.org/wiki/Game_Arts"
+    },
+    {
+        "id": "8ef93de0-63c4-5b84-9e04-e0e33cf2bde6",
+        "name": "Game Freak",
+        "slug": "game-freak",
+        "source_url": "https://en.wikipedia.org/wiki/Game_Freak"
+    },
+    {
+        "id": "76184fd0-004f-5d8c-911e-3b233fc102da",
+        "name": "Game Studio",
+        "slug": "game-studio",
+        "source_url": "https://en.wikipedia.org/wiki/Game_Studio_(company)"
+    },
+    {
+        "id": "318468fc-f820-50bc-8084-44a35accac6f",
+        "name": "Geo Factory",
+        "slug": "geo-factory",
+        "source_url": null
+    },
+    {
+        "id": "7487a5df-b1db-5b89-b17a-f40039dcb3eb",
+        "name": "Graphic Research",
+        "slug": "graphic-research",
+        "source_url": null
+    },
+    {
+        "id": "c19800d9-ee94-5a42-bf81-cde9d845fddd",
+        "name": "Gray Matter",
+        "slug": "gray-matter",
+        "source_url": "https://en.wikipedia.org/wiki/Gray_Matter_(company)"
+    },
+    {
+        "id": "ef14dbfd-1c2c-51ed-a2b0-02db206a3035",
+        "name": "Gremlin Graphics",
+        "slug": "gremlin-graphics",
+        "source_url": "https://en.wikipedia.org/wiki/Gremlin_Interactive"
+    },
+    {
+        "id": "ee8ef9f3-da8c-5cec-bde7-6adcefc78954",
+        "name": "Gremlin Interactive",
+        "slug": "gremlin-interactive",
+        "source_url": "https://en.wikipedia.org/wiki/Gremlin_Interactive"
+    },
+    {
+        "id": "b46da797-f2f8-5cab-ab52-cd377a393586",
+        "name": "HAL Laboratory",
+        "slug": "hal-laboratory",
+        "source_url": "https://en.wikipedia.org/wiki/HAL_Laboratory"
+    },
+    {
+        "id": "24c0ff06-b1c3-56e5-a947-355a6ef7d5b7",
+        "name": "Hect",
+        "slug": "hect",
+        "source_url": null
+    },
+    {
+        "id": "aa35d55a-a794-5c94-b4b8-df6783de0807",
+        "name": "Home Data",
+        "slug": "home-data",
+        "source_url": "https://en.wikipedia.org/wiki/Magical_Company"
+    },
+    {
+        "id": "53537c4e-e27f-58c1-844c-bd58cead57b8",
+        "name": "Hot-B",
+        "slug": "hot-b",
+        "source_url": null
+    },
+    {
+        "id": "3f6abcbd-cdb8-5b72-9dc2-194cb58f01a5",
+        "name": "Hudson Soft",
+        "slug": "hudson-soft",
+        "source_url": "https://en.wikipedia.org/wiki/Hudson_Soft"
+    },
+    {
+        "id": "9ec578c3-a7cf-5d83-8518-460b08211290",
+        "name": "Human Creative",
+        "slug": "human-creative",
+        "source_url": null
+    },
+    {
+        "id": "1c029b6f-650a-595c-9dc7-94ce0061735b",
+        "name": "Human Entertainment",
+        "slug": "human-entertainment",
+        "source_url": "https://en.wikipedia.org/wiki/Human_Entertainment"
+    },
+    {
+        "id": "dae6626d-0d5e-5281-8f6b-8741e673ccf8",
+        "name": "HummingBirdSoft",
+        "slug": "hummingbirdsoft",
+        "source_url": "https://en.wikipedia.org/wiki/HummingBirdSoft"
+    },
+    {
+        "id": "a90a27ec-c2a2-58db-9e7a-e566a2449dab",
+        "name": "Hyperware",
+        "slug": "hyperware",
+        "source_url": null
+    },
+    {
+        "id": "b3bfff46-4613-5602-8ee8-c748f9ffff2d",
+        "name": "Ian Bell",
+        "slug": "ian-bell",
+        "source_url": "https://en.wikipedia.org/wiki/Ian_Bell_(programmer)"
+    },
+    {
+        "id": "8cf8f9ad-0268-5921-9602-f134464e773f",
+        "name": "IGS",
+        "slug": "igs",
+        "source_url": "https://en.wikipedia.org/wiki/Information_Global_Service"
+    },
+    {
+        "id": "28a86223-d4be-5c8c-9f09-424ac73d6dd2",
+        "name": "Imagineer",
+        "slug": "imagineer",
+        "source_url": "https://en.wikipedia.org/wiki/Imagineer_(Japanese_company)"
+    },
+    {
+        "id": "f1888cbf-3a53-56c9-a3ee-6225aaf3c67d",
+        "name": "Imagineering",
+        "slug": "imagineering",
+        "source_url": "https://en.wikipedia.org/wiki/Imagineering_(company)"
+    },
+    {
+        "id": "31e74fe6-1855-528e-8031-b5e9554d374a",
+        "name": "Imagitec",
+        "slug": "imagitec",
+        "source_url": "https://en.wikipedia.org/wiki/Imagitec_Design"
+    },
+    {
+        "id": "8fbba8a1-aab4-5637-b0e6-ee75f7804419",
+        "name": "Incredible Technologies",
+        "slug": "incredible-technologies",
+        "source_url": "https://en.wikipedia.org/wiki/Incredible_Technologies"
+    },
+    {
+        "id": "c65474c4-d2ad-5e73-ad04-e07e26616139",
+        "name": "Infinity",
+        "slug": "infinity",
+        "source_url": null
+    },
+    {
+        "id": "b5b7a771-6f47-5bfe-8f64-b2d5484cd6ba",
+        "name": "Intelligent Systems",
+        "slug": "intelligent-systems",
+        "source_url": "https://en.wikipedia.org/wiki/Intelligent_Systems"
+    },
+    {
+        "id": "faeeec2a-af98-59b4-baeb-a9e52486a851",
+        "name": "Interlink",
+        "slug": "interlink",
+        "source_url": null
+    },
+    {
+        "id": "a5f29054-7146-50a3-b958-3f90884e68ba",
+        "name": "Interplay Productions",
+        "slug": "interplay-productions",
+        "source_url": "https://en.wikipedia.org/wiki/Interplay_Entertainment"
+    },
+    {
+        "id": "6006461b-f836-571d-a908-aa4dd3078528",
+        "name": "Irem",
+        "slug": "irem",
+        "source_url": "https://en.wikipedia.org/wiki/Irem"
+    },
+    {
+        "id": "f47b3a0b-f9d9-5ea7-b2cf-9a00a2d88be9",
+        "name": "Ironwind Software",
+        "slug": "ironwind-software",
+        "source_url": null
+    },
+    {
+        "id": "c487b295-d4bb-5b39-b5a9-a64a1f94ee1a",
+        "name": "ISCO",
+        "slug": "isco",
+        "source_url": "https://en.wikipedia.org/wiki/ISCO_(videogame_developer)"
+    },
+    {
+        "id": "9dbaffe9-dbf0-59f4-a78c-b6033c59e2d8",
+        "name": "ITL",
+        "slug": "itl",
+        "source_url": null
+    },
+    {
+        "id": "2213f589-fc26-5e83-bd95-bc441c704f1d",
+        "name": "Jaleco",
+        "slug": "jaleco",
+        "source_url": "https://en.wikipedia.org/wiki/Jaleco"
+    },
+    {
+        "id": "7d41b93b-eaf6-5440-9ddb-5e642f5de868",
+        "name": "Japan Soft Technology",
+        "slug": "japan-soft-technology",
+        "source_url": null
+    },
+    {
+        "id": "04b29f6e-46db-50ae-8012-a10fd843618c",
+        "name": "Japan System House",
+        "slug": "japan-system-house",
+        "source_url": null
+    },
+    {
+        "id": "f0986126-a38e-5de7-a966-677f07462e84",
+        "name": "Japan System Supply",
+        "slug": "japan-system-supply",
+        "source_url": null
+    },
+    {
+        "id": "57f7873e-46c4-5196-9baf-48032a33b71c",
+        "name": "Jastec",
+        "slug": "jastec",
+        "source_url": null
+    },
+    {
+        "id": "149b9298-19e1-5096-9bdf-2fb4bc882ae3",
+        "name": "Jorudan",
+        "slug": "jorudan",
+        "source_url": null
+    },
+    {
+        "id": "c58d0aa8-3f2c-5ef4-96b4-998c6f0672c4",
+        "name": "K Amusement",
+        "slug": "k-amusement",
+        "source_url": null
+    },
+    {
+        "id": "1024caa9-3e15-5b5a-a87d-91ecf126a866",
+        "name": "K2",
+        "slug": "k2",
+        "source_url": null
+    },
+    {
+        "id": "3b76b216-da13-5a76-8ae5-7c2f595caa46",
+        "name": "KAZe",
+        "slug": "kaze",
+        "source_url": null
+    },
+    {
+        "id": "2d475492-2eaa-54cb-98f1-2cd5898f1811",
+        "name": "Kemco",
+        "slug": "kemco",
+        "source_url": "https://en.wikipedia.org/wiki/Kemco"
+    },
+    {
+        "id": "049c801b-f082-51ea-ada7-ce7a657d8506",
+        "name": "KID",
+        "slug": "kid",
+        "source_url": "https://en.wikipedia.org/wiki/KID"
+    },
+    {
+        "id": "97c11f79-b63d-59ab-8ede-cf976f15ed53",
+        "name": "Kitty Group",
+        "slug": "kitty-group",
+        "source_url": null
+    },
+    {
+        "id": "4211d193-a633-5e9f-ae07-1cbc6b412635",
+        "name": "Koei",
+        "slug": "koei",
+        "source_url": "https://en.wikipedia.org/wiki/Koei"
+    },
+    {
+        "id": "c945d7e6-f670-5b4c-be33-e1c1b36cde21",
+        "name": "Kogado Software Products",
+        "slug": "kogado-software-products",
+        "source_url": "https://en.wikipedia.org/wiki/Kogado_Software_Products"
+    },
+    {
+        "id": "6822ad92-731b-586e-b292-4b966e0c06de",
+        "name": "Konami",
+        "slug": "konami",
+        "source_url": "https://en.wikipedia.org/wiki/Konami"
+    },
+    {
+        "id": "7dd49db8-e8fe-55ef-ad11-c78e5fb4d4e0",
+        "name": "Kyugo Boueki",
+        "slug": "kyugo-boueki",
+        "source_url": null
+    },
+    {
+        "id": "7b91006d-bdce-5afe-b750-a2ac2af88aba",
+        "name": "Lenar",
+        "slug": "lenar",
+        "source_url": null
+    },
+    {
+        "id": "14d4ea34-f27b-5dfe-a8d6-8648a8d9bb4d",
+        "name": "Locomotive Corporation",
+        "slug": "locomotive-corporation",
+        "source_url": null
+    },
+    {
+        "id": "77b96711-0b45-556c-b73c-23c2a93c929a",
+        "name": "Loginsoft",
+        "slug": "loginsoft",
+        "source_url": null
+    },
+    {
+        "id": "a4f4f069-0b4d-5932-9529-93cbcf161b7e",
+        "name": "Loriciel",
+        "slug": "loriciel",
+        "source_url": "https://en.wikipedia.org/wiki/Loriciel"
+    },
+    {
+        "id": "0c120502-29a8-5ca7-ad86-c35c9483f5b8",
+        "name": "LucasArts",
+        "slug": "lucasarts",
+        "source_url": "https://en.wikipedia.org/wiki/LucasArts"
+    },
+    {
+        "id": "c889813f-966f-5074-b215-901087c59987",
+        "name": "Lucasfilm Games",
+        "slug": "lucasfilm-games",
+        "source_url": "https://en.wikipedia.org/wiki/Lucasfilm_Games"
+    },
+    {
+        "id": "4d6eec75-4e21-5863-ae29-a3bdbe5df20c",
+        "name": "Make Software",
+        "slug": "make-software",
+        "source_url": null
+    },
+    {
+        "id": "d459d6ef-0b32-51e0-9171-c027847e9bb8",
+        "name": "Marionette",
+        "slug": "marionette",
+        "source_url": null
+    },
+    {
+        "id": "58ed2e92-9ab4-59db-b213-1246963e0343",
+        "name": "Mars Corp.",
+        "slug": "mars-corp",
+        "source_url": null
+    },
+    {
+        "id": "bb932c55-3c9d-5c4b-9519-842aba4c153c",
+        "name": "Micronics",
+        "slug": "micronics",
+        "source_url": null
+    },
+    {
+        "id": "dcb87987-7a48-506c-9a3b-6ba1c46248ad",
+        "name": "MicroProse",
+        "slug": "microprose",
+        "source_url": "https://en.wikipedia.org/wiki/MicroProse"
+    },
+    {
+        "id": "3241c3d3-5a8d-52a0-9a12-c5bcfda2a010",
+        "name": "Mighty Craft",
+        "slug": "mighty-craft",
+        "source_url": null
+    },
+    {
+        "id": "901531f6-ea5e-54ca-a9ab-2b589c3951bc",
+        "name": "Minato Giken",
+        "slug": "minato-giken",
+        "source_url": null
+    },
+    {
+        "id": "fee90809-a2eb-594d-9b9c-00ce18e4ffbf",
+        "name": "Mind's Eye",
+        "slug": "minds-eye",
+        "source_url": null
+    },
+    {
+        "id": "038ecb8c-43f2-5c77-952b-ebcb04c8f65f",
+        "name": "Mindscape",
+        "slug": "mindscape",
+        "source_url": "https://en.wikipedia.org/wiki/Mindscape_(company)"
+    },
+    {
+        "id": "76cd633e-1df4-51ca-b0bd-f5c6ee92bee1",
+        "name": "MotiveTime",
+        "slug": "motivetime",
+        "source_url": "https://en.wikipedia.org/wiki/Elite_Systems#History"
+    },
+    {
+        "id": "8a45f490-2d7a-5c6a-bef2-8add84bd91ea",
+        "name": "Musical Plan",
+        "slug": "musical-plan",
+        "source_url": null
+    },
+    {
+        "id": "ad3f9e9e-7cbc-5b33-831b-d240f9a19e42",
+        "name": "Namco",
+        "slug": "namco",
+        "source_url": "https://en.wikipedia.org/wiki/Namco"
+    },
+    {
+        "id": "8a560401-9e9b-5616-9d2b-95468f326b03",
+        "name": "Natsume",
+        "slug": "natsume",
+        "source_url": "https://en.wikipedia.org/wiki/Natsume_Co.,_Ltd."
+    },
+    {
+        "id": "a0beec03-7845-509c-9b9a-5378a6d5c52d",
+        "name": "Neue Design",
+        "slug": "neue-design",
+        "source_url": null
+    },
+    {
+        "id": "1d4065cd-213d-5f1e-956f-c9b33d7cb13d",
+        "name": "Newtopia Planning",
+        "slug": "newtopia-planning",
+        "source_url": null
+    },
+    {
+        "id": "2c9e84d2-a4ef-5e0c-9bde-5e6bc3e4c08d",
+        "name": "Nichibutsu",
+        "slug": "nichibutsu",
+        "source_url": "https://en.wikipedia.org/wiki/Nichibutsu"
+    },
+    {
+        "id": "d42880d7-0c1f-5160-bb4d-f4168deb5990",
+        "name": "Nihon Falcom",
+        "slug": "nihon-falcom",
+        "source_url": "https://en.wikipedia.org/wiki/Nihon_Falcom"
+    },
+    {
+        "id": "5caca134-5bfb-5726-912f-30510921bb82",
+        "name": "Nihon Game",
+        "slug": "nihon-game",
+        "source_url": "https://en.wikipedia.org/wiki/Culture_Brain"
+    },
+    {
+        "id": "0e4bc64b-2562-5b13-8d3a-1736d538fcd0",
+        "name": "Nintendo",
+        "slug": "nintendo",
+        "source_url": "https://en.wikipedia.org/wiki/Nintendo"
+    },
+    {
+        "id": "83ad1872-66ed-5ec4-b533-a59499bf4438",
+        "name": "Nintendo EAD",
+        "slug": "nintendo-ead",
+        "source_url": "https://en.wikipedia.org/wiki/Nintendo_EAD"
+    },
+    {
+        "id": "298dcfdf-82c5-59bd-adac-62b4a369087b",
+        "name": "Nintendo R&D1",
+        "slug": "nintendo-r-and-d1",
+        "source_url": "https://en.wikipedia.org/wiki/Nintendo_Research_&_Development_1"
+    },
+    {
+        "id": "594fa181-6788-54dd-8edb-f43a9269c361",
+        "name": "Nintendo R&D2",
+        "slug": "nintendo-r-and-d2",
+        "source_url": "https://en.wikipedia.org/wiki/Nintendo_Research_&_Development_2"
+    },
+    {
+        "id": "73925edc-38e8-58a8-91d9-7a0e354c1846",
+        "name": "Nintendo R&D3",
+        "slug": "nintendo-r-and-d3",
+        "source_url": "https://en.wikipedia.org/wiki/Nintendo_Integrated_Research_&_Development"
+    },
+    {
+        "id": "1af301dc-b40e-51b9-8907-fe785e125cc3",
+        "name": "Nintendo R&D4",
+        "slug": "nintendo-r-and-d4",
+        "source_url": "https://en.wikipedia.org/wiki/Nintendo_Entertainment_Analysis_&_Development"
+    },
+    {
+        "id": "a2be54ec-4eac-54c4-b1e2-fdd5c3351450",
+        "name": "Nintendo Tokyo R&D Products",
+        "slug": "nintendo-tokyo-r-and-d-products",
+        "source_url": "https://en.wikipedia.org/wiki/List_of_Nintendo_development_teams#Former_divisions_and_subsidiaries"
+    },
+    {
+        "id": "b51312af-7a58-5c7f-81a2-af873715e089",
+        "name": "NMK",
+        "slug": "nmk",
+        "source_url": "https://en.wikipedia.org/wiki/NMK_(company)"
+    },
+    {
+        "id": "9e364073-81a9-5e8e-b32b-72f859046887",
+        "name": "NMS Software",
+        "slug": "nms-software",
+        "source_url": null
+    },
+    {
+        "id": "0486a97f-3a2b-50ba-bda7-5f6997769e14",
+        "name": "Nova",
+        "slug": "nova",
+        "source_url": null
+    },
+    {
+        "id": "d9d0989b-112b-5a5f-9e90-33effda7bc6d",
+        "name": "Novotrade International",
+        "slug": "novotrade-international",
+        "source_url": "https://en.wikipedia.org/wiki/Appaloosa_Interactive"
+    },
+    {
+        "id": "e83fd8f1-e7a0-5173-94cd-7f884b95a48e",
+        "name": "Now Production",
+        "slug": "now-production",
+        "source_url": "https://en.wikipedia.org/wiki/Now_Production"
+    },
+    {
+        "id": "5e5d399c-f69e-5e19-a3a6-e450cba984b8",
+        "name": "Ocean Software",
+        "slug": "ocean-software",
+        "source_url": "https://en.wikipedia.org/wiki/Ocean_Software"
+    },
+    {
+        "id": "abb52b2c-66d9-51eb-a385-e63cf48c618b",
+        "name": "OLM",
+        "slug": "olm",
+        "source_url": "https://en.wikipedia.org/wiki/OLM_(studio)"
+    },
+    {
+        "id": "9589571f-a2f8-514e-b5a3-33fbd7174175",
+        "name": "Opera House",
+        "slug": "opera-house",
+        "source_url": null
+    },
+    {
+        "id": "49907056-0686-5639-a316-2fca9b6ff370",
+        "name": "ORG Corporation",
+        "slug": "org-corporation",
+        "source_url": null
+    },
+    {
+        "id": "b4cecd77-63ad-5159-a3dc-8beafbdcc48d",
+        "name": "Origin Systems",
+        "slug": "origin-systems",
+        "source_url": "https://en.wikipedia.org/wiki/Origin_Systems"
+    },
+    {
+        "id": "152f730c-8bfa-54f2-9ee2-6d34a59b7e8f",
+        "name": "Orpheck",
+        "slug": "orpheck",
+        "source_url": null
+    },
+    {
+        "id": "32a2a186-0810-5292-9f60-74e88c863545",
+        "name": "Outback",
+        "slug": "outback",
+        "source_url": null
+    },
+    {
+        "id": "1074045b-e10b-5d8a-987e-5dc54bd8983e",
+        "name": "Pack-In-Video",
+        "slug": "pack-in-video",
+        "source_url": "https://en.wikipedia.org/wiki/Pack-In-Video"
+    },
+    {
+        "id": "9bd9314c-afc6-52ee-b741-c45220ed7c6e",
+        "name": "Painting by Numbers",
+        "slug": "painting-by-numbers",
+        "source_url": null
+    },
+    {
+        "id": "507a81c5-77ff-501d-9712-b42c83430c8c",
+        "name": "Pandora Box",
+        "slug": "pandora-box",
+        "source_url": null
+    },
+    {
+        "id": "e7864021-d30f-5300-927a-980ac6e42e91",
+        "name": "Park Place Productions",
+        "slug": "park-place-productions",
+        "source_url": "https://en.wikipedia.org/wiki/Park_Place_Productions"
+    },
+    {
+        "id": "628067c6-612d-5214-a49f-f2ea798e4fd6",
+        "name": "Pax Softnica",
+        "slug": "pax-softnica",
+        "source_url": null
+    },
+    {
+        "id": "b0989f9b-f839-5483-8fc5-f0c2966c501f",
+        "name": "Pixel",
+        "slug": "pixel",
+        "source_url": null
+    },
+    {
+        "id": "cea82101-b70c-5c14-be19-1c521801fc4f",
+        "name": "Plex",
+        "slug": "plex",
+        "source_url": null
+    },
+    {
+        "id": "f2edfd08-e4d6-51cc-beca-181087047920",
+        "name": "Probe Software",
+        "slug": "probe-software",
+        "source_url": "https://en.wikipedia.org/wiki/Probe_Software"
+    },
+    {
+        "id": "557bf232-dbe2-5890-8580-2412c18feab1",
+        "name": "Quest",
+        "slug": "quest",
+        "source_url": "https://en.wikipedia.org/wiki/Quest_Corporation"
+    },
+    {
+        "id": "02c4be84-1ff9-594a-ae59-c9acfd2e62d7",
+        "name": "Radiance Software",
+        "slug": "radiance-software",
+        "source_url": null
+    },
+    {
+        "id": "157b356a-7e1f-5be9-9155-2b44f3d5c45d",
+        "name": "Radical Entertainment",
+        "slug": "radical-entertainment",
+        "source_url": "https://en.wikipedia.org/wiki/Radical_Entertainment"
+    },
+    {
+        "id": "12c32020-1f35-581c-af15-ae5f6369768a",
+        "name": "Radioactive Software",
+        "slug": "radioactive-software",
+        "source_url": null
+    },
+    {
+        "id": "e01c5288-065a-5de1-9a40-6e4e13238087",
+        "name": "Rainbow Arts",
+        "slug": "rainbow-arts",
+        "source_url": "https://en.wikipedia.org/wiki/Rainbow_Arts"
+    },
+    {
+        "id": "054b5265-beba-50b4-819a-f66e112fdb65",
+        "name": "Random House",
+        "slug": "random-house",
+        "source_url": null
+    },
+    {
+        "id": "66367ba5-6ff0-5e4a-a107-9854974f17e1",
+        "name": "Rare",
+        "slug": "rare",
+        "source_url": "https://en.wikipedia.org/wiki/Rare_(company)"
+    },
+    {
+        "id": "33cc5f73-e427-5a0f-b0f0-8be02923df88",
+        "name": "Realtime Associates",
+        "slug": "realtime-associates",
+        "source_url": "https://en.wikipedia.org/wiki/Realtime_Associates"
+    },
+    {
+        "id": "024ec154-693d-5433-8115-d6841bcb9986",
+        "name": "Riedel Software Productions",
+        "slug": "riedel-software-productions",
+        "source_url": "https://en.wikipedia.org/wiki/Running_with_Scissors_(company)#Origins"
+    },
+    {
+        "id": "7ea390a4-c4f5-5a92-82c0-e10116b8d7e3",
+        "name": "Riverhillsoft",
+        "slug": "riverhillsoft",
+        "source_url": "https://en.wikipedia.org/wiki/Riverhillsoft"
+    },
+    {
+        "id": "3c9f318f-19c6-5b66-9173-f6f0d19c6d5a",
+        "name": "Rocket Science Productions",
+        "slug": "rocket-science-productions",
+        "source_url": null
+    },
+    {
+        "id": "4567fe59-d78e-5a5c-8eb1-2d9402b8d591",
+        "name": "Sakata SAS",
+        "slug": "sakata-sas",
+        "source_url": null
+    },
+    {
+        "id": "6d41b49b-41a6-5904-9cda-7c40b2053c7f",
+        "name": "Sammy",
+        "slug": "sammy",
+        "source_url": "https://en.wikipedia.org/wiki/Sammy_Corporation"
+    },
+    {
+        "id": "c40be692-e2cc-5b1c-90a9-4e6e4c7cadc4",
+        "name": "Sandcastle",
+        "slug": "sandcastle",
+        "source_url": null
+    },
+    {
+        "id": "4ba52238-f038-5843-9395-8d56a213a8e1",
+        "name": "Sanritsu",
+        "slug": "sanritsu",
+        "source_url": "https://en.wikipedia.org/wiki/Sanritsu"
+    },
+    {
+        "id": "cc6b65ce-cedd-5c94-8df9-9b5e02a53f4b",
+        "name": "Sanritsu Denki",
+        "slug": "sanritsu-denki",
+        "source_url": "https://en.wikipedia.org/wiki/Sanritsu_Denki"
+    },
+    {
+        "id": "a1eeac0f-30ea-5433-bcea-24208d6c75fd",
+        "name": "Scitron & Art",
+        "slug": "scitron-and-art",
+        "source_url": null
+    },
+    {
+        "id": "d6c2bdb3-dc18-5d5f-8d3b-46d5bcd2e512",
+        "name": "Sculptured Software",
+        "slug": "sculptured-software",
+        "source_url": "https://en.wikipedia.org/wiki/Sculptured_Software"
+    },
+    {
+        "id": "88cc6085-f0e3-5695-9ac8-d01e105009c3",
+        "name": "Seibu Kaihatsu",
+        "slug": "seibu-kaihatsu",
+        "source_url": "https://en.wikipedia.org/wiki/Seibu_Kaihatsu"
+    },
+    {
+        "id": "cebff9b3-d7e4-5a75-985b-e462a8f21e15",
+        "name": "SETA",
+        "slug": "seta",
+        "source_url": "https://en.wikipedia.org/wiki/SETA_Corporation"
+    },
+    {
+        "id": "3253cbea-8d6a-596e-9432-ca0323523b85",
+        "name": "Shimada Kikaku",
+        "slug": "shimada-kikaku",
+        "source_url": null
+    },
+    {
+        "id": "2d64c68d-3469-53b7-9571-48d9097641ae",
+        "name": "Shouei System",
+        "slug": "shouei-system",
+        "source_url": null
+    },
+    {
+        "id": "8bb4a6b9-b9f4-52b1-a47c-99485d07a83b",
+        "name": "Sigma Enterprises",
+        "slug": "sigma-enterprises",
+        "source_url": null
+    },
+    {
+        "id": "6501b9b9-2b5a-5b8d-840d-28feda795cbe",
+        "name": "SNK",
+        "slug": "snk",
+        "source_url": "https://en.wikipedia.org/wiki/SNK"
+    },
+    {
+        "id": "6acbe5fc-62bd-5d98-be33-1183acf3ab55",
+        "name": "SOFEL",
+        "slug": "sofel",
+        "source_url": "https://en.wikipedia.org/wiki/SOFEL"
+    },
+    {
+        "id": "e23aeb22-4b6d-5d24-bf51-cb75d252d11c",
+        "name": "Soft House",
+        "slug": "soft-house",
+        "source_url": null
+    },
+    {
+        "id": "4e2e3594-68e3-551a-8392-1fe903910294",
+        "name": "Soft Machine",
+        "slug": "soft-machine",
+        "source_url": null
+    },
+    {
+        "id": "b38013cb-9f8a-538d-8230-b17a4e6bfa45",
+        "name": "Soft Pro",
+        "slug": "soft-pro",
+        "source_url": null
+    },
+    {
+        "id": "d83b5153-14ee-5816-a2f8-535b8710edb6",
+        "name": "Softie",
+        "slug": "softie",
+        "source_url": null
+    },
+    {
+        "id": "66d4c7d5-f80e-5980-acb8-8d1b634fc04c",
+        "name": "Softvision",
+        "slug": "softvision",
+        "source_url": null
+    },
+    {
+        "id": "ab1b9058-214b-54ec-bd29-11c3c21a08ca",
+        "name": "Software Creations",
+        "slug": "software-creations",
+        "source_url": "https://en.wikipedia.org/wiki/Software_Creations"
+    },
+    {
+        "id": "29152f7b-aaeb-5d97-8578-9871a010f34c",
+        "name": "Sol Corporation",
+        "slug": "sol-corporation",
+        "source_url": null
+    },
+    {
+        "id": "b35efc2c-e1f9-5ab3-af77-9ae8310545db",
+        "name": "Source Research & Development",
+        "slug": "source-research-and-development",
+        "source_url": null
+    },
+    {
+        "id": "947b6eb2-d654-5518-bb7d-4c4962f20680",
+        "name": "Special FX Software",
+        "slug": "special-fx-software",
+        "source_url": null
+    },
+    {
+        "id": "fd4ca03e-fb86-5ede-b8e2-c4fff9610c05",
+        "name": "Spidersoft",
+        "slug": "spidersoft",
+        "source_url": "https://en.wikipedia.org/wiki/Rockstar_Lincoln"
+    },
+    {
+        "id": "fce43bb0-c903-559b-b018-8347f016eb40",
+        "name": "Square",
+        "slug": "square",
+        "source_url": "https://en.wikipedia.org/wiki/Square_(video_game_company)"
+    },
+    {
+        "id": "13b85236-c8ac-5290-b0b3-ee4a168c3c47",
+        "name": "SRS",
+        "slug": "srs",
+        "source_url": null
+    },
+    {
+        "id": "05620f49-c04a-5c0b-8f4a-cbba334b12d4",
+        "name": "Sunsoft",
+        "slug": "sunsoft",
+        "source_url": "https://en.wikipedia.org/wiki/Sunsoft"
+    },
+    {
+        "id": "85b51b53-0a85-5768-8d15-ec856e03a4ae",
+        "name": "System 3",
+        "slug": "system-3",
+        "source_url": "https://en.wikipedia.org/wiki/System_3_(company)"
+    },
+    {
+        "id": "19e53834-7c30-51e1-ae1e-3374d60bfc72",
+        "name": "SystemSoft",
+        "slug": "systemsoft",
+        "source_url": "https://en.wikipedia.org/wiki/SystemSoft_Alpha"
+    },
+    {
+        "id": "80e50540-a59b-59b9-bdee-6381bb1e9b96",
+        "name": "T&E Soft",
+        "slug": "t-and-e-soft",
+        "source_url": "https://en.wikipedia.org/wiki/T&E_Soft"
+    },
+    {
+        "id": "1dac0c70-0734-5552-8361-7fd350743a4e",
+        "name": "Taito",
+        "slug": "taito",
+        "source_url": "https://en.wikipedia.org/wiki/Taito"
+    },
+    {
+        "id": "55c7687a-b7ab-512e-8671-684b87eda86b",
+        "name": "Takara",
+        "slug": "takara",
+        "source_url": "https://en.wikipedia.org/wiki/Takara"
+    },
+    {
+        "id": "ff2d13ff-8321-526b-b153-3b2443fc94f2",
+        "name": "Takeru",
+        "slug": "takeru",
+        "source_url": "https://en.wikipedia.org/wiki/Takeru_(company)"
+    },
+    {
+        "id": "e3987d06-f5e6-5721-911d-a5bd62c58793",
+        "name": "Tamtex",
+        "slug": "tamtex",
+        "source_url": null
+    },
+    {
+        "id": "a1c1a3d5-98fa-58b5-b6ed-a527df4e9766",
+        "name": "Techno Quest",
+        "slug": "techno-quest",
+        "source_url": null
+    },
+    {
+        "id": "3bfacb53-c3d7-5014-9c52-cb5ca518ca39",
+        "name": "Technosite",
+        "slug": "technosite",
+        "source_url": null
+    },
+    {
+        "id": "e9c4012c-9eed-5916-adb2-fb4dd25b51f9",
+        "name": "Technōs Japan",
+        "slug": "technos-japan",
+        "source_url": "https://en.wikipedia.org/wiki/Technōs_Japan"
+    },
+    {
+        "id": "57175374-3e4c-5021-8860-43a65fdee459",
+        "name": "Tecmo",
+        "slug": "tecmo",
+        "source_url": "https://en.wikipedia.org/wiki/Tecmo"
+    },
+    {
+        "id": "e79fbde1-001b-5ef3-8993-578d57ebd430",
+        "name": "Teeny Weeny Games",
+        "slug": "teeny-weeny-games",
+        "source_url": "https://en.wikipedia.org/wiki/Perfect_Entertainment"
+    },
+    {
+        "id": "4371a6e9-9bf7-5fe0-92cd-2219640eb365",
+        "name": "Telenet Japan",
+        "slug": "telenet-japan",
+        "source_url": "https://en.wikipedia.org/wiki/Telenet_Japan"
+    },
+    {
+        "id": "39bc1d41-e68e-5231-8c2b-b201657a3246",
+        "name": "Tengen",
+        "slug": "tengen",
+        "source_url": "https://en.wikipedia.org/wiki/Tengen_(company)"
+    },
+    {
+        "id": "bdacb813-64f6-521d-821d-ef82fba1a1df",
+        "name": "The Sales Curve",
+        "slug": "the-sales-curve",
+        "source_url": "https://en.wikipedia.org/wiki/SCi_Games"
+    },
+    {
+        "id": "9b419d1d-16a7-5605-a007-021c0193122a",
+        "name": "The Software Toolworks",
+        "slug": "the-software-toolworks",
+        "source_url": "https://en.wikipedia.org/wiki/The_Software_Toolworks"
+    },
+    {
+        "id": "ff833e9b-fa15-556d-8062-7eb731b786c2",
+        "name": "Thinking Rabbit",
+        "slug": "thinking-rabbit",
+        "source_url": "https://en.wikipedia.org/wiki/Thinking_Rabbit"
+    },
+    {
+        "id": "0915e9c2-1a06-5dfe-9dbf-890d51a8b8f2",
+        "name": "Titus France",
+        "slug": "titus-france",
+        "source_url": "https://en.wikipedia.org/wiki/Titus_France"
+    },
+    {
+        "id": "13729cc7-2670-5300-8dcb-d4d91657d731",
+        "name": "Toho",
+        "slug": "toho",
+        "source_url": "https://en.wikipedia.org/wiki/Toho"
+    },
+    {
+        "id": "bd633f9b-5dec-5693-9082-fd5ff8ea261b",
+        "name": "Tokuma Shoten",
+        "slug": "tokuma-shoten",
+        "source_url": "https://en.wikipedia.org/wiki/Tokuma_Shoten"
+    },
+    {
+        "id": "65339b0f-44f8-5368-94fb-03ea07ce32b9",
+        "name": "Tokyo Shoseki",
+        "slug": "tokyo-shoseki",
+        "source_url": "https://en.wikipedia.org/wiki/Tokyo_Shoseki"
+    },
+    {
+        "id": "aeeb63ef-7dc2-5121-8910-9668a6c7655c",
+        "name": "Tom Create",
+        "slug": "tom-create",
+        "source_url": null
+    },
+    {
+        "id": "d82c5285-0386-5636-a4e5-1ef87ebfab30",
+        "name": "Tomy",
+        "slug": "tomy",
+        "source_url": "https://en.wikipedia.org/wiki/Tomy"
+    },
+    {
+        "id": "a9fbe901-2c6c-50ba-b46c-5d542dbe20a5",
+        "name": "Tose",
+        "slug": "tose",
+        "source_url": "https://en.wikipedia.org/wiki/Tose_(company)"
+    },
+    {
+        "id": "cd724561-3194-566b-be85-f985ba3f3b88",
+        "name": "Towa Chiki",
+        "slug": "towa-chiki",
+        "source_url": "https://en.wikipedia.org/wiki/Towa_Chiki"
+    },
+    {
+        "id": "6cfcada2-3876-5e8f-94b6-ed6c93d254ea",
+        "name": "Twilight",
+        "slug": "twilight",
+        "source_url": "https://en.wikipedia.org/wiki/Twilight_(company)"
+    },
+    {
+        "id": "8b52cb73-185d-5f8e-bd84-b92a50296a01",
+        "name": "Use Corporation",
+        "slug": "use-corporation",
+        "source_url": null
+    },
+    {
+        "id": "2ec40344-2bc3-563c-94cf-9788d1360579",
+        "name": "Vic Tokai",
+        "slug": "vic-tokai",
+        "source_url": "https://en.wikipedia.org/wiki/Vic_Tokai"
+    },
+    {
+        "id": "24a204fa-6aae-5d4d-9064-7f77dfbe95e2",
+        "name": "Victor Musical Industries",
+        "slug": "victor-musical-industries",
+        "source_url": "https://en.wikipedia.org/wiki/Victor_Musical_Industries"
+    },
+    {
+        "id": "a5ad79a7-941f-5e05-a3e1-30cf1b106c8d",
+        "name": "Virgin Games",
+        "slug": "virgin-games",
+        "source_url": "https://en.wikipedia.org/wiki/Virgin_Interactive_Entertainment"
+    },
+    {
+        "id": "70986314-f29d-5bf0-b0b5-c392795622b0",
+        "name": "Virgin Mastertronic",
+        "slug": "virgin-mastertronic",
+        "source_url": "https://en.wikipedia.org/wiki/Virgin_Mastertronic"
+    },
+    {
+        "id": "7ddf39f7-f550-5029-884f-3f1c7ca060d9",
+        "name": "Visco",
+        "slug": "visco",
+        "source_url": "https://en.wikipedia.org/wiki/Visco_Corporation"
+    },
+    {
+        "id": "7315bfb0-fd6a-572d-a609-96ad2dac2956",
+        "name": "Visual Concepts",
+        "slug": "visual-concepts",
+        "source_url": "https://en.wikipedia.org/wiki/Visual_Concepts"
+    },
+    {
+        "id": "bd5c11ad-fd38-52ce-b884-bb5ec6da599b",
+        "name": "Westone",
+        "slug": "westone",
+        "source_url": "https://en.wikipedia.org/wiki/Westone_Bit_Entertainment"
+    },
+    {
+        "id": "8a8858e0-0ed5-58bb-af70-7d5994eea907",
+        "name": "Westwood Associates",
+        "slug": "westwood-associates",
+        "source_url": "https://en.wikipedia.org/wiki/Westwood_Studios"
+    },
+    {
+        "id": "9317e48a-93e1-5839-84f6-e96f49275677",
+        "name": "Whiteboard",
+        "slug": "whiteboard",
+        "source_url": null
+    },
+    {
+        "id": "791a56b0-af16-5f68-9bf7-602de7576bd4",
+        "name": "Winkysoft",
+        "slug": "winkysoft",
+        "source_url": null
+    },
+    {
+        "id": "3088fad5-66aa-5a57-b1f3-0841932ab137",
+        "name": "Workss",
+        "slug": "workss",
+        "source_url": null
+    },
+    {
+        "id": "1a8ce586-bcf8-5f32-be41-9ee01938c245",
+        "name": "Yuu Yuu",
+        "slug": "yuu-yuu",
+        "source_url": null
+    },
+    {
+        "id": "b265077b-54a4-5f8d-9cc6-9a7db60bea02",
+        "name": "ZAP Corporation",
+        "slug": "zap-corporation",
+        "source_url": null
+    },
+    {
+        "id": "3bfc571f-222b-563a-b2c7-dae397b66030",
+        "name": "Zippo Games",
+        "slug": "zippo-games",
+        "source_url": "https://en.wikipedia.org/wiki/Rare_(company)#Founding_(1985–1993)"
+    }
+]
