@@ -31,7 +31,7 @@ class Publisher extends Model
     {
         return $this->belongsToMany(
             NesGame::class,
-            'mes_game_publisher',
+            'nes_game_publisher',
             'publisher_id',
             'nes_game_id',
         )
