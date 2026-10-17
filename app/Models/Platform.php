@@ -41,4 +41,17 @@ class Platform extends Model
             ->withPivot('id')
             ->withTimestamps();
     }
+
+    public function nesGames(): BelongsToMany
+    {
+        return $this->belongsToMany(
+            NesGame::class,
+            'platform_nes_game',
+            'platform_id',
+            'nes_game_id',
+        )
+            ->using(PlatformNesGame::class)
+            ->withPivot('id')
+            ->withTimestamps();
+    }
 }
