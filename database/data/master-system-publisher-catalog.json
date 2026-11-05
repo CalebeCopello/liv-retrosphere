@@ -1,0 +1,140 @@
+[
+    {
+        "id": "199e7348-cf35-5843-a282-8cb7f57b9afa",
+        "name": "Flying Edge",
+        "slug": "flying-edge",
+        "source_url": null
+    },
+    {
+        "id": "28becfe4-e35f-5b00-94fe-f8a062066d06",
+        "name": "Tengen",
+        "slug": "tengen",
+        "source_url": null
+    },
+    {
+        "id": "3d4354ce-9c58-5e54-acf6-e99c54eae054",
+        "name": "Codemasters",
+        "slug": "codemasters",
+        "source_url": null
+    },
+    {
+        "id": "45b9c800-d60e-5270-bb37-092f4a2df30f",
+        "name": "Virgin Interactive Entertainment",
+        "slug": "virgin-interactive-entertainment",
+        "source_url": null
+    },
+    {
+        "id": "52401a8b-a5f9-5d09-a1d3-36d154e10e93",
+        "name": "TecMagik",
+        "slug": "tecmagik",
+        "source_url": null
+    },
+    {
+        "id": "6018abea-4221-500d-a7cc-9d97cde6d707",
+        "name": "Gremlin Graphics",
+        "slug": "gremlin-graphics",
+        "source_url": null
+    },
+    {
+        "id": "67f5ffef-f94a-587a-a746-a46fe6259679",
+        "name": "Image Works",
+        "slug": "image-works",
+        "source_url": null
+    },
+    {
+        "id": "6a11758f-0694-5007-abd2-91416ce518f2",
+        "name": "Titus",
+        "slug": "titus",
+        "source_url": null
+    },
+    {
+        "id": "72c2f04a-5399-59b3-a5d0-dc22d9bdd96d",
+        "name": "Domark",
+        "slug": "domark",
+        "source_url": null
+    },
+    {
+        "id": "76054695-dd51-524c-a152-ffce361b7275",
+        "name": "Seismic Software",
+        "slug": "seismic-software",
+        "source_url": null
+    },
+    {
+        "id": "85dbbeb0-aa47-5cf7-ae65-023507c58ce5",
+        "name": "Salio",
+        "slug": "salio",
+        "source_url": null
+    },
+    {
+        "id": "861abaa6-56a4-5660-a606-ee91c12f8319",
+        "name": "Arena Entertainment",
+        "slug": "arena-entertainment",
+        "source_url": null
+    },
+    {
+        "id": "a31ede76-1896-5cef-9289-eb404d880663",
+        "name": "Virgin Games",
+        "slug": "virgin-games",
+        "source_url": null
+    },
+    {
+        "id": "a678e5a5-fa80-5727-8b5b-4405b4b29f23",
+        "name": "Sony Imagesoft",
+        "slug": "sony-imagesoft",
+        "source_url": null
+    },
+    {
+        "id": "b5a0b41b-f3d9-5032-870b-1005cbadb8d0",
+        "name": "Acclaim Entertainment",
+        "slug": "acclaim-entertainment",
+        "source_url": null
+    },
+    {
+        "id": "bcd560f1-1676-5221-a95e-c4220f4dd061",
+        "name": "U.S. Gold",
+        "slug": "u-s-gold",
+        "source_url": null
+    },
+    {
+        "id": "c2918c24-d755-5290-a7aa-96137ed5a7d4",
+        "name": "Core Design",
+        "slug": "core-design",
+        "source_url": null
+    },
+    {
+        "id": "c66a74fc-9fd5-56c4-a842-c8939c2bed7e",
+        "name": "Tec Toy",
+        "slug": "tec-toy",
+        "source_url": null
+    },
+    {
+        "id": "d7ff55a6-6913-522d-89c0-11352223a2fe",
+        "name": "Parker Brothers",
+        "slug": "parker-brothers",
+        "source_url": null
+    },
+    {
+        "id": "e3478028-6e7c-5d48-a67c-2f27c478ed3a",
+        "name": "Grandslam Video",
+        "slug": "grandslam-video",
+        "source_url": null
+    },
+    {
+        "id": "eb1b56f4-cc6a-5ec6-a935-7d21ca3d799d",
+        "name": "Sega",
+        "slug": "sega",
+        "source_url": null
+    },
+    {
+        "id": "f4785eaa-141a-5fbe-8581-d4a46fa05a4f",
+        "name": "Infogrames",
+        "slug": "infogrames",
+        "source_url": null
+    },
+    {
+        "id": "ff0851f2-5453-583d-8a3d-eb5de178ed05",
+        "name": "Activision",
+        "slug": "activision",
+        "source_url": null
+    }
+]

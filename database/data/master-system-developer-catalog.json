@@ -1,0 +1,422 @@
+[
+    {
+        "id": "04b29f6e-46db-50ae-8012-a10fd843618c",
+        "name": "Japan System House",
+        "slug": "japan-system-house",
+        "source_url": null
+    },
+    {
+        "id": "05b7211f-b0e5-5fe8-bd8d-e737cd73f749",
+        "name": "Bits Studios",
+        "slug": "bits-studios",
+        "source_url": null
+    },
+    {
+        "id": "05c86b20-a524-5b3d-a6c3-47e3502fa80e",
+        "name": "Parker Brothers",
+        "slug": "parker-brothers",
+        "source_url": null
+    },
+    {
+        "id": "09119daa-8935-5afa-a4d0-52fe7a5ce2f8",
+        "name": "Aisystem Tokyo",
+        "slug": "aisystem-tokyo",
+        "source_url": null
+    },
+    {
+        "id": "0a5d6198-5257-5a8f-86c7-02e18fbfe0e6",
+        "name": "Electronic Arts",
+        "slug": "electronic-arts",
+        "source_url": null
+    },
+    {
+        "id": "0fd06077-2c3d-5b19-aa78-778b062a1a99",
+        "name": "Sega",
+        "slug": "sega",
+        "source_url": null
+    },
+    {
+        "id": "1628a717-da59-5958-a32e-8bd873640deb",
+        "name": "Tec Toy",
+        "slug": "tec-toy",
+        "source_url": null
+    },
+    {
+        "id": "193eadc0-95c3-520e-8f18-1f5b53deef7f",
+        "name": "Alpha Denshi",
+        "slug": "alpha-denshi",
+        "source_url": null
+    },
+    {
+        "id": "1dac0c70-0734-5552-8361-7fd350743a4e",
+        "name": "Taito",
+        "slug": "taito",
+        "source_url": null
+    },
+    {
+        "id": "24a0aa58-de13-578e-a2d9-82976e787e6b",
+        "name": "Codemasters",
+        "slug": "codemasters",
+        "source_url": null
+    },
+    {
+        "id": "2859f534-6c39-504a-afbf-e90418c0b7e9",
+        "name": "Novotrade",
+        "slug": "novotrade",
+        "source_url": null
+    },
+    {
+        "id": "29bd3ad3-e2ae-5dfa-88e0-4c7d761499b9",
+        "name": "Bit Managers",
+        "slug": "bit-managers",
+        "source_url": null
+    },
+    {
+        "id": "2ec40344-2bc3-563c-94cf-9788d1360579",
+        "name": "Vic Tokai",
+        "slug": "vic-tokai",
+        "source_url": null
+    },
+    {
+        "id": "3253cbea-8d6a-596e-9432-ca0323523b85",
+        "name": "Shimada Kikaku",
+        "slug": "shimada-kikaku",
+        "source_url": null
+    },
+    {
+        "id": "33cc5f73-e427-5a0f-b0f0-8be02923df88",
+        "name": "Realtime Associates",
+        "slug": "realtime-associates",
+        "source_url": null
+    },
+    {
+        "id": "37e43e26-caf5-50b8-a093-2cad5b20866e",
+        "name": "Aspect",
+        "slug": "aspect",
+        "source_url": null
+    },
+    {
+        "id": "382087a3-a3f8-5e94-af54-fc7e1724db04",
+        "name": "Cryo Interactive",
+        "slug": "cryo-interactive",
+        "source_url": null
+    },
+    {
+        "id": "39bc1d41-e68e-5231-8c2b-b201657a3246",
+        "name": "Tengen",
+        "slug": "tengen",
+        "source_url": null
+    },
+    {
+        "id": "4029fd26-488e-58fd-a651-2b299217b609",
+        "name": "Developer Resources",
+        "slug": "developer-resources",
+        "source_url": null
+    },
+    {
+        "id": "49733564-d5b3-5fc0-a614-5ca19ac4ede3",
+        "name": "Teque London",
+        "slug": "teque-london",
+        "source_url": null
+    },
+    {
+        "id": "4ba52238-f038-5843-9395-8d56a213a8e1",
+        "name": "Sanritsu",
+        "slug": "sanritsu",
+        "source_url": null
+    },
+    {
+        "id": "59a658c3-24f7-566c-a903-aeb6c496bf22",
+        "name": "Data Design Interactive",
+        "slug": "data-design-interactive",
+        "source_url": null
+    },
+    {
+        "id": "606405c6-e295-569f-af4a-b1c6ebe39644",
+        "name": "Eden Entertainment Software",
+        "slug": "eden-entertainment-software",
+        "source_url": null
+    },
+    {
+        "id": "63125096-f611-5dc7-a1f5-489249862a07",
+        "name": "Syrox Developments",
+        "slug": "syrox-developments",
+        "source_url": null
+    },
+    {
+        "id": "7142d162-67a4-5989-a300-cd0950acab2d",
+        "name": "Eurocom",
+        "slug": "eurocom",
+        "source_url": null
+    },
+    {
+        "id": "719a49e3-a159-573e-a64b-37dccfecc4c2",
+        "name": "Salio",
+        "slug": "salio",
+        "source_url": null
+    },
+    {
+        "id": "7b841e40-5644-55a3-a9f9-d9fb2aea2bfd",
+        "name": "Steve Lamb",
+        "slug": "steve-lamb",
+        "source_url": null
+    },
+    {
+        "id": "802ab6e2-11e7-5f31-a2c8-f4ae87b570e0",
+        "name": "BlueSky Software",
+        "slug": "bluesky-software",
+        "source_url": null
+    },
+    {
+        "id": "86f70150-46c2-5d0e-a276-1ec8a686cdd0",
+        "name": "Epyx",
+        "slug": "epyx",
+        "source_url": null
+    },
+    {
+        "id": "89baf068-10a4-56db-a739-bf92ef952e79",
+        "name": "Polygames",
+        "slug": "polygames",
+        "source_url": null
+    },
+    {
+        "id": "8a560401-9e9b-5616-9d2b-95468f326b03",
+        "name": "Natsume",
+        "slug": "natsume",
+        "source_url": null
+    },
+    {
+        "id": "8a9e74ea-a750-5074-ad01-fceb2ec1b9ae",
+        "name": "Microsmiths",
+        "slug": "microsmiths",
+        "source_url": null
+    },
+    {
+        "id": "8c5454f2-cedd-56ee-a259-f137ef5de1f4",
+        "name": "Titus",
+        "slug": "titus",
+        "source_url": null
+    },
+    {
+        "id": "901531f6-ea5e-54ca-a9ab-2b589c3951bc",
+        "name": "Minato Giken",
+        "slug": "minato-giken",
+        "source_url": null
+    },
+    {
+        "id": "9317e48a-93e1-5839-84f6-e96f49275677",
+        "name": "Whiteboard",
+        "slug": "whiteboard",
+        "source_url": null
+    },
+    {
+        "id": "939a7b7a-124c-5998-a8b5-8d178d2d1a0d",
+        "name": "Images Software",
+        "slug": "images-software",
+        "source_url": null
+    },
+    {
+        "id": "9589571f-a2f8-514e-b5a3-33fbd7174175",
+        "name": "Opera House",
+        "slug": "opera-house",
+        "source_url": null
+    },
+    {
+        "id": "95e74306-36cd-5acf-a39a-68bd92e04a81",
+        "name": "Designer Software",
+        "slug": "designer-software",
+        "source_url": null
+    },
+    {
+        "id": "98e08e4f-5f7b-58db-aba9-2bc22f17389d",
+        "name": "Tiertex",
+        "slug": "tiertex",
+        "source_url": null
+    },
+    {
+        "id": "9c9188e3-2c0e-5f40-a5b5-da9b4e7c6cec",
+        "name": "The Bitmap Brothers",
+        "slug": "the-bitmap-brothers",
+        "source_url": null
+    },
+    {
+        "id": "9e364073-81a9-5e8e-b32b-72f859046887",
+        "name": "NMS Software",
+        "slug": "nms-software",
+        "source_url": null
+    },
+    {
+        "id": "a181bb9c-4031-5b76-a579-a00d4bcdf300",
+        "name": "Virtual Studio",
+        "slug": "virtual-studio",
+        "source_url": null
+    },
+    {
+        "id": "a1f9401b-a1c3-50ea-8b46-3a3c09d916d3",
+        "name": "Aicom",
+        "slug": "aicom",
+        "source_url": null
+    },
+    {
+        "id": "a2d8e4be-cf7d-55db-a055-11b831d69e32",
+        "name": "SIMS",
+        "slug": "sims",
+        "source_url": null
+    },
+    {
+        "id": "a4d4e843-74c5-5a1e-af44-bcbf9d258703",
+        "name": "TecMagik",
+        "slug": "tecmagik",
+        "source_url": null
+    },
+    {
+        "id": "a5ad79a7-941f-5e05-a3e1-30cf1b106c8d",
+        "name": "Virgin Games",
+        "slug": "virgin-games",
+        "source_url": null
+    },
+    {
+        "id": "a805c3c3-935f-5df6-ac15-9b9a376be5fa",
+        "name": "Ancient",
+        "slug": "ancient",
+        "source_url": null
+    },
+    {
+        "id": "ab1b9058-214b-54ec-bd29-11c3c21a08ca",
+        "name": "Software Creations",
+        "slug": "software-creations",
+        "source_url": null
+    },
+    {
+        "id": "adef2d17-6292-51dd-ad1c-c79567f91a6c",
+        "name": "Arc Developments",
+        "slug": "arc-developments",
+        "source_url": null
+    },
+    {
+        "id": "afb85ee0-c58e-5665-89d2-49668edb3ce0",
+        "name": "Arc System Works",
+        "slug": "arc-system-works",
+        "source_url": null
+    },
+    {
+        "id": "b07bf8e9-538b-57c0-a3a3-60b02d44f781",
+        "name": "Sega Interactive Development Division",
+        "slug": "sega-interactive-development-division",
+        "source_url": null
+    },
+    {
+        "id": "b0fbc824-82dd-5f3a-ab46-fee818c7eed4",
+        "name": "The Kremlin",
+        "slug": "the-kremlin",
+        "source_url": null
+    },
+    {
+        "id": "b1b8d724-a3db-5a8b-b9f6-f5b0365ce626",
+        "name": "Compile",
+        "slug": "compile",
+        "source_url": null
+    },
+    {
+        "id": "b237fa86-112c-549e-aa76-a27ef3ded944",
+        "name": "Technical Wave",
+        "slug": "technical-wave",
+        "source_url": null
+    },
+    {
+        "id": "b265077b-54a4-5f8d-9cc6-9a7db60bea02",
+        "name": "Zap Corporation",
+        "slug": "zap-corporation",
+        "source_url": null
+    },
+    {
+        "id": "b6fec2a4-2d84-5e11-ae89-5a2be9184502",
+        "name": "Venture Technologies",
+        "slug": "venture-technologies",
+        "source_url": null
+    },
+    {
+        "id": "bd5c11ad-fd38-52ce-b884-bb5ec6da599b",
+        "name": "Westone",
+        "slug": "westone",
+        "source_url": null
+    },
+    {
+        "id": "c3712e77-9d87-5f7b-a771-83d6296e0e68",
+        "name": "I.T.L",
+        "slug": "i-t-l",
+        "source_url": null
+    },
+    {
+        "id": "c680c5ee-886a-5d06-a9ff-e7f907941be5",
+        "name": "Nexa",
+        "slug": "nexa",
+        "source_url": null
+    },
+    {
+        "id": "ca9439fc-c603-514a-a9f6-079fe83e0db3",
+        "name": "Virgin Interactive Entertainment",
+        "slug": "virgin-interactive-entertainment",
+        "source_url": null
+    },
+    {
+        "id": "d3dc50ac-f220-5d42-a998-e089cee20e1c",
+        "name": "Core Design",
+        "slug": "core-design",
+        "source_url": null
+    },
+    {
+        "id": "d4719d3d-7ba7-5e61-a4d7-b2236f4ec855",
+        "name": "Cream",
+        "slug": "cream",
+        "source_url": null
+    },
+    {
+        "id": "d5ca943e-538a-5a39-aa6f-38cc4e96c180",
+        "name": "Code To Go",
+        "slug": "code-to-go",
+        "source_url": null
+    },
+    {
+        "id": "dadc9d63-7bdc-5e2c-af8f-b6b27b056b1e",
+        "name": "Rage Software",
+        "slug": "rage-software",
+        "source_url": null
+    },
+    {
+        "id": "e235d745-ec92-5f4e-aa23-d84c5cf2b9d4",
+        "name": "Graftgold",
+        "slug": "graftgold",
+        "source_url": null
+    },
+    {
+        "id": "e79fbde1-001b-5ef3-8993-578d57ebd430",
+        "name": "Teeny Weeny Games",
+        "slug": "teeny-weeny-games",
+        "source_url": null
+    },
+    {
+        "id": "eada4a09-d80d-570b-bb31-fb23a17caf8a",
+        "name": "Audiogenic",
+        "slug": "audiogenic",
+        "source_url": null
+    },
+    {
+        "id": "ef14dbfd-1c2c-51ed-a2b0-02db206a3035",
+        "name": "Gremlin Graphics",
+        "slug": "gremlin-graphics",
+        "source_url": null
+    },
+    {
+        "id": "f1888cbf-3a53-56c9-a3ee-6225aaf3c67d",
+        "name": "Imagineering",
+        "slug": "imagineering",
+        "source_url": null
+    },
+    {
+        "id": "f2edfd08-e4d6-51cc-beca-181087047920",
+        "name": "Probe Software",
+        "slug": "probe-software",
+        "source_url": null
+    }
+]
