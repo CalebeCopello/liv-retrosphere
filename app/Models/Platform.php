@@ -22,7 +22,7 @@ class Platform extends Model
         'description',
         'image',
         'source_url',
-        'is_shown'
+        'is_shown',
     ];
 
     protected function casts(): array
@@ -53,5 +53,11 @@ class Platform extends Model
             ->using(PlatformNesGame::class)
             ->withPivot('id')
             ->withTimestamps();
+    }
+
+    public function masterSystemGames(): BelongsToMany
+    {
+        return $this->belongsToMany(MasterSystemGame::class, 'platform_master_system_game', 'platform_id', 'master_system_game_id')
+            ->using(PlatformMasterSystemGame::class)->withPivot('id')->withTimestamps();
     }
 }

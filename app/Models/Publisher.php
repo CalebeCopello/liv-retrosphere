@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Publisher extends Model
 {
-        use HasUuids;
+    use HasUuids;
 
     protected $table = 'publishers';
 
@@ -38,5 +38,11 @@ class Publisher extends Model
             ->using(PublisherNesGame::class)
             ->withPivot('id', 'regions')
             ->withTimestamps();
+    }
+
+    public function masterSystemGames(): BelongsToMany
+    {
+        return $this->belongsToMany(MasterSystemGame::class, 'publisher_master_system_game', 'publisher_id', 'master_system_game_id')
+            ->using(PublisherMasterSystemGame::class)->withPivot('id', 'regions')->withTimestamps();
     }
 }

@@ -17,7 +17,7 @@ class Developer extends Model
         'name',
         'slug',
         'aliases',
-        'source_url'
+        'source_url',
     ];
 
     protected function casts(): array
@@ -38,5 +38,11 @@ class Developer extends Model
             ->using(DeveloperNesGame::class)
             ->withPivot('id')
             ->withTimestamps();
+    }
+
+    public function masterSystemGames(): BelongsToMany
+    {
+        return $this->belongsToMany(MasterSystemGame::class, 'developer_master_system_game', 'developer_id', 'master_system_game_id')
+            ->using(DeveloperMasterSystemGame::class)->withPivot('id')->withTimestamps();
     }
 }
